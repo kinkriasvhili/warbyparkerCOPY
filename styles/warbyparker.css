@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #454545;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* Header Container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #ffffff;
+}
+
+/* Remove default list styles */
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #454545;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2c2c2c;
+}
+
+/* Header Left */
+.left-section-ol a span {
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: #454545;
+  font-weight: 550;
+}
+.left-section-ol i {
+  display: none;
+  font-size: 22px;
+  margin-right: 0.7em;
+  cursor: pointer;
+}
+/* Header Middle */
+.header-middle .middle-section-ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9em;
+}
+
+.header-middle .middle-section-ol li {
+  list-style-type: none;
+}
+
+.header-middle li a,
+.header-middle li button {
+  font-size: 16px;
+  color: #454545;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-middle li a:hover,
+.header-middle li button:hover {
+  color: #606060;
+}
+
+/* Header Right */
+.header-right .right-section-ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1em;
+}
+.header-right button span {
+  color: #454545;
+}
+.header-right button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.header-right button:hover {
+  background-color: #f2f2f2;
+}
+
+.header-right img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.header-right img:hover {
+  transform: scale(1.1);
+}
+
+.header-right a {
+  color: #454545;
+  font-weight: normal;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-right a:hover {
+  color: #606060;
+}
+
+.header-right .sign-in-button {
+  border: 1px solid #e0e0e0;
+  padding: 5px 10px;
+}
+
+/* Media Query for 1200px and Below */
+@media (max-width: 1200px) {
+  .left-section-ol i {
+    display: flex;
+  }
+  .header-middle {
+    display: none;
+  }
+}
