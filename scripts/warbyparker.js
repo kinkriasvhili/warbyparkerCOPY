@@ -121,3 +121,18 @@ menuIcon.addEventListener("click", function () {
     menuIcon.classList.add("fa-bars");
   }
 });
+
+// button choose
+const chooseButtons = document.querySelectorAll(".btn-choose-glasses");
+chooseButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    if (!button.classList.contains("active")) {
+      chooseButtons.forEach((button) => {
+        if (button.classList.contains("active")) {
+          button.classList.remove("active");
+        }
+      });
+      button.classList.add("active");
+    }
+  });
+});
