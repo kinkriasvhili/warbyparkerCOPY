@@ -5,7 +5,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
-  margin-bottom: 100000px;
 }
 
 /* Header Container */
@@ -435,12 +434,16 @@ main .home-container {
 .video-container {
   margin-top: 40px;
   width: 100%;
-  height: 500px;
+  height: 550px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .warbyparker-video {
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -528,6 +531,206 @@ main .home-container {
   display: flex;
   align-items: center;
 }
+/* differentPersons */
+.differentPersons {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.persons-title p {
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(98, 98, 98);
+}
+.persons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  height: 26vw;
+}
+.persons div {
+  position: relative;
+  height: 100%;
+  width: 22.5vw;
+}
+.person-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.person-image button {
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  border: none;
+  background-color: white;
+  padding: 9px 15px;
+  border-radius: 25px;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.custom-design-info {
+  margin-top: 100px;
+  background-color: rgba(0, 73, 117, 1);
+  height: 250px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  padding: 90px;
+}
+.custom-design-info a {
+  margin-top: 30px;
+  color: white;
+  transition: 0.2s;
+}
+.custom-design-info a:hover {
+  color: rgb(176, 176, 176);
+}
+/* pay-with-insurance */
+.pay-with-insurance {
+  background-color: rgb(224, 247, 255);
+  display: flex;
+  /* flex-direction: columnc; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  gap: 40px;
+}
+.pay-with-info {
+  margin-left: -32px;
+  display: flex;
+  color: rgb(98, 98, 98);
+  flex-direction: column;
+  /* width: 80vw; */
+  width: 40vw;
+  align-items: start;
+  text-align: start;
+}
+.pay-with-info p {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.pay-with-inputs {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.pay-with-inputs input {
+  border-radius: 20px;
+  border: 1px solid gray;
+  width: 100%;
+  padding: 20px;
+  outline: none;
+}
+.pay-with-inputs input:hover {
+  border: 1px solid rgb(89, 89, 89);
+}
+.pay-with-inputs button {
+  background-color: rgba(0, 110, 165, 1);
+  padding: 13px 39px;
+  height: 48px;
+  color: white;
+  border: none;
+  font-size: 17px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+.pay-with-inputs button:hover {
+  background-color: rgb(0, 87, 130);
+}
+/*pair purchased,  */
+
+.pair-purchase {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 12vw;
+  align-items: center;
+}
+.pair-purchase-info-container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pair-purchase-info-container h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.pair-purchase-info-container p {
+  color: gray;
+}
+.pair-purchase-info-container a {
+  font-weight: bold;
+  color: rgb(48, 48, 255);
+  transition: 0.2s;
+}
+.pair-purchase-info-container a:hover {
+  color: rgb(38, 38, 192);
+}
+
+.people-image-container {
+  object-fit: cover;
+  width: 35vw;
+  height: 35vw;
+}
+
+.people-image {
+  width: 100%;
+  height: 100%;
+}
+/* footer */
+footer {
+  margin-top: 100px;
+  background-color: rgb(250, 242, 242);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 500px;
+}
+.get-email-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-bottom: 1px solid black;
+  justify-content: space-around;
+  align-items: center;
+}
+.get-email-input-container {
+  width: 40vw;
+  margin-right: 39px;
+}
+.get-email-input-container input {
+  border-radius: 20px;
+  border: 1px solid gray;
+  width: 100%;
+  padding: 20px;
+  outline: none;
+}
 /* Media Query for 1200px and Below */
 @media (max-width: 1200px) {
   .left-section-ol i {
@@ -551,6 +754,15 @@ main .home-container {
   .home-container p {
     font-size: 2.2em;
     line-height: 35px;
+  }
+  .pay-with-insurance {
+    flex-direction: column;
+  }
+  .pay-with-info {
+    width: 80vw;
+  }
+  .pay-with-inputs {
+    width: 80vw;
   }
 }
 @media (max-width: 1000px) {
