@@ -161,14 +161,14 @@
   },
   {
     "id": "a1dfad12-12f3-42e6-b012-123e5f6a7123",
-    "image": "images/products/eyeglasses/eyeglasses-daisy.webp",
+    "image": "images/products/eyeglasses/eyeglasses-daisy.jpg",
     "name": "Daisy",
     "type": "eyeglasses",
     "priceCents": 9500
   },
   {
     "id": "b2efad34-23f4-43f7-c123-234e6g7a8234",
-    "image": "images/products/eyeglasses/eyeglasses-gillian.webp",
+    "image": "images/products/eyeglasses/eyeglasses-gillian.jpg",
     "name": "Gillian",
     "type": "eyeglasses",
     "priceCents": 9500
@@ -182,35 +182,35 @@
   },
   {
     "id": "d4hfad78-45g6-65h9-e345-456g8i9c0456",
-    "image": "images/products/eyeglasses/eyeglasses-kimball.webp",
+    "image": "images/products/eyeglasses/eyeglasses-kimball.jpg",
     "name": "Kimball",
     "type": "eyeglasses",
     "priceCents": 9500
   },
   {
     "id": "e5ifad90-56h7-76i0-f456-567h9j0d1567",
-    "image": "images/products/eyeglasses/eyeglasses-shea.webp",
+    "image": "images/products/eyeglasses/eyeglasses-shea.jpg",
     "name": "Shea",
     "type": "eyeglasses",
     "priceCents": 9500
   },
   {
     "id": "f6jgad12-67i8-87j1-g567-678i0k1e2678",
-    "image": "images/products/eyeglasses/eyeglasses-stockton.webp",
+    "image": "images/products/eyeglasses/eyeglasses-stockton.jpg",
     "name": "Stockton",
     "type": "eyeglasses",
     "priceCents": 9500
   },
   {
     "id": "g7khab34-78j9-98k2-h678-789j1l2f3789",
-    "image": "images/products/eyeglasses/eyeglasses-tatum.webp",
+    "image": "images/products/eyeglasses/eyeglasses-tatum.jpg",
     "name": "Tatum",
     "type": "eyeglasses",
     "priceCents": 9500
   },
   {
     "id": "h8lmac56-89k0-09l3-i789-890k2m3g4890",
-    "image": "images/products/eyeglasses/eyeglasses-weathers.webp",
+    "image": "images/products/eyeglasses/eyeglasses-weathers.jpg",
     "name": "Weathers",
     "type": "eyeglasses",
     "priceCents": 9500
@@ -224,7 +224,7 @@
   },
   {
     "id": "j0poca12-01m2-21n5-k901-012m4o5i6012",
-    "image": "images/products/eyeglasses/eyeglasses-welty.webp",
+    "image": "images/products/eyeglasses/eyeglasses-welty.jpg",
     "name": "Welty",
     "type": "eyeglasses",
     "priceCents": 9500
