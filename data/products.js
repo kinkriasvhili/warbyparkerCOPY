@@ -1,3 +1,13 @@
+export function getProduct(productId) {
+  let matchingProduct;
+  products.forEach((product) => {
+    if (product.id == productId) {
+      matchingProduct = product;
+    }
+  });
+  return matchingProduct;
+}
+
 class Product {
   id;
   image;
@@ -5,7 +15,7 @@ class Product {
   priceCents;
   type;
   location;
-
+  favourite;
   constructor(productDetails) {
     this.id = productDetails.id;
     this.image = productDetails.image;
@@ -13,9 +23,14 @@ class Product {
     this.priceCents = productDetails.priceCents;
     this.type = productDetails.type;
     this.location = productDetails.location;
+    this.favourite = productDetails.favourite;
   }
 }
 export let products = JSON.parse(localStorage.getItem("glassesproducts")) || [];
+
+export function saveProductToStorage() {
+  localStorage.setItem("glassesproducts", JSON.stringify(products));
+}
 
 export async function loadProductsFetch(fun) {
   try {
@@ -35,8 +50,4 @@ export async function loadProductsFetch(fun) {
       `Oops there might be some error in your code try again later ${error}`
     );
   }
-}
-
-function saveProductToStorage() {
-  localStorage.setItem("glassesproducts", JSON.stringify(products));
 }

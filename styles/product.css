@@ -51,11 +51,15 @@
   gap: 5px;
   transition: background-color 0.3s ease;
 }
-.product-favourite button img,
+.product-favourite button i,
 .product-add-cart button img {
   width: 20px;
   height: 20px;
   transition: transform 0.3s ease;
+}
+.product-favourite button i {
+  display: flex;
+  align-self: center;
 }
 .product-describtion {
   position: relative;

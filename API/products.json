@@ -5,7 +5,8 @@
     "name": "Barkley",
     "type": "sunglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "f2a5a7e4-b9d3-4d7e-8e9f-63a66b44b705",
@@ -13,7 +14,8 @@
     "name": "Brimmer",
     "type": "sunglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "d60a5f3a-cd3d-4a6f-a7d9-f1c98f57e5bb",
@@ -21,7 +23,8 @@
     "name": "Carmel",
     "type": "sunglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "a4db4f26-fd73-41a5-bb27-dc0f7e3dbd99",
@@ -29,7 +32,8 @@
     "name": "Downing",
     "type": "sunglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "b27f14c1-4a2d-45d7-bf5f-e1547f7c61a5",
@@ -37,7 +41,8 @@
     "name": "Eilo",
     "type": "sunglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "e15a5f3a-64a9-45d8-a1c8-f1b98d67e2aa",
@@ -45,7 +50,8 @@
     "name": "Esme",
     "type": "sunglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "a64b5f3a-a68f-45a7-b7d9-f1c99d67f2bb",
@@ -53,7 +59,8 @@
     "name": "Fletcher",
     "type": "sunglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "c3a5f7a5-d8c4-456b-9b89-e1547f7f51e6",
@@ -61,7 +68,8 @@
     "name": "Percey",
     "type": "sunglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "d71a9c5f-4b2d-486a-b5f9-e1547f7f61a8",
@@ -69,7 +77,8 @@
     "name": "Rhea",
     "type": "sunglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "f25f1a3a-79c6-4d57-919e-1547f7f11b8f",
@@ -77,7 +86,8 @@
     "name": "Sutton",
     "type": "sunglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "b46a1bda-4f7d-4d5d-9e4c-b1a2f6e0dfb1",
@@ -85,7 +95,8 @@
     "name": "Baird",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "c56d2bea-5e7c-4d6e-9f5c-c1b3f7e1efc2",
@@ -93,7 +104,8 @@
     "name": "Blakely",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "d67e3cfb-6f8d-4e7f-a6g6-d2c4g8f2gfd3",
@@ -101,7 +113,8 @@
     "name": "Carlton",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "e78f4dfc-7g9e-4f8g-a7h7-e3d5h9g3hge4",
@@ -109,7 +122,8 @@
     "name": "Chamberlain",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "f89g5efg-8h0f-5g9h-a8i8-f4e6i0h4ihf5",
@@ -117,7 +131,8 @@
     "name": "Crane",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "g9ah6fgh-9i1g-5h0i-a9j9-g5f7j1i5jih6",
@@ -125,7 +140,8 @@
     "name": "Durand",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "h0bi7ghi-aj2h-6i1j-b0k0-h6g8k2j6kji7",
@@ -133,7 +149,8 @@
     "name": "Esme",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "i1cj8hij-bk3i-6j2k-c1l1-i7h9l3k7lkj8",
@@ -141,7 +158,8 @@
     "name": "Grillian",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "j2dk9ijk-cl4j-7k3l-d2m2-j8i0m4l8mlk9",
@@ -149,7 +167,8 @@
     "name": "Hayden",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "k3elajkl-dm5k-7l4m-e3n3-k9j1n5m9nml0",
@@ -157,76 +176,87 @@
     "name": "Nadia",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "location": "warbyparker"
+    "location": "warbyparker",
+    "favourite": false
   },
   {
     "id": "a1dfad12-12f3-42e6-b012-123e5f6a7123",
     "image": "images/products/eyeglasses/eyeglasses-daisy.jpg",
     "name": "Daisy",
     "type": "eyeglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "favourite": false
   },
   {
     "id": "b2efad34-23f4-43f7-c123-234e6g7a8234",
     "image": "images/products/eyeglasses/eyeglasses-gillian.jpg",
     "name": "Gillian",
     "type": "eyeglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "favourite": false
   },
   {
     "id": "c3gfad56-34f5-54g8-d234-345f7h8b9345",
     "image": "images/products/eyeglasses/eyeglasses-haskell.webp",
     "name": "Haskell",
     "type": "eyeglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "favourite": false
   },
   {
     "id": "d4hfad78-45g6-65h9-e345-456g8i9c0456",
     "image": "images/products/eyeglasses/eyeglasses-kimball.jpg",
     "name": "Kimball",
     "type": "eyeglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "favourite": false
   },
   {
     "id": "e5ifad90-56h7-76i0-f456-567h9j0d1567",
     "image": "images/products/eyeglasses/eyeglasses-shea.jpg",
     "name": "Shea",
     "type": "eyeglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "favourite": false
   },
   {
     "id": "f6jgad12-67i8-87j1-g567-678i0k1e2678",
     "image": "images/products/eyeglasses/eyeglasses-stockton.jpg",
     "name": "Stockton",
     "type": "eyeglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "favourite": false
   },
   {
     "id": "g7khab34-78j9-98k2-h678-789j1l2f3789",
     "image": "images/products/eyeglasses/eyeglasses-tatum.jpg",
     "name": "Tatum",
     "type": "eyeglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "favourite": false
   },
   {
     "id": "h8lmac56-89k0-09l3-i789-890k2m3g4890",
     "image": "images/products/eyeglasses/eyeglasses-weathers.jpg",
     "name": "Weathers",
     "type": "eyeglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "favourite": false
   },
   {
     "id": "i9nobd78-90l1-10m4-j890-901l3n4h5901",
     "image": "images/products/eyeglasses/eyeglasses-whalen.webp",
     "name": "Whalen",
     "type": "eyeglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "favourite": false
   },
   {
     "id": "j0poca12-01m2-21n5-k901-012m4o5i6012",
     "image": "images/products/eyeglasses/eyeglasses-welty.jpg",
     "name": "Welty",
     "type": "eyeglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "favourite": false
   }
 ]

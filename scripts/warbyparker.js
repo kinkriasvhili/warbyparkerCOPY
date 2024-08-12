@@ -1,8 +1,7 @@
-import { headerStyle } from "./pageStyles/headerStyle.js";
 import { loadProductsFetch, products } from "../data/products.js";
 import { formatCurrency } from "./utils/money.js";
-
 import { loadHeader } from "./utils/loadheader.js";
+import { addToFavourite } from "../data/faovurite.js";
 
 function renderProductsWarbyparker() {
   const productsContainer = document.querySelector(".products");
@@ -24,7 +23,11 @@ function renderProductsWarbyparker() {
           <img src="${product.image}" alt="" />
         </div>
         <div class="product-favourite">
-          <button><img src="images/icons/favorite.svg" alt="" /></button>
+          <button data-productId="${
+            product.id
+          }"><i class="fa-regular fa-heart favouriteBtn fav-btn-${
+        product.id
+      }"></i></button>
         </div>
         <div class="product-add-cart">
           <button><img src="images/icons/cart.svg" alt="" /></button>
@@ -37,6 +40,7 @@ function renderProductsWarbyparker() {
     }
   });
   productsContainer.innerHTML = productsHtml;
+  addToFavourite();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
