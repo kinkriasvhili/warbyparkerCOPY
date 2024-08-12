@@ -1,138 +1,42 @@
-// Select elements for Home Try-On
-const buttonTryOn = document.getElementById("homeTryOnBtn-js");
-const windowTryOn = document.getElementById("windowHomeTryOn-js");
-
-// Select elements for EyeGlasses
-const buttonEyeGlasses = document.getElementById("eyeGlassesBtn-js");
-const windowEyeGlasses = document.getElementById("windoweyeGlasses-js");
-
-// Select elements for SunGlasses
-const buttonSunGlasses = document.getElementById("EyeGlasses-js");
-const windowSunGlasses = document.getElementById("windowsunGlasses-js");
-
-// select elements for getPrescription
-const buttongetPrescription = document.getElementById("getPrescriptionBtn-js");
-const windowgetPrescription = document.getElementById(
-  "windowgetPrescription-js"
-);
-// Function to toggle visibility
-function toggleWindow(button, window, classNameOn, classNameOff) {
-  if (window.classList.contains(classNameOff)) {
-    window.classList.remove(classNameOff);
-    window.classList.add(classNameOn);
-  } else {
-    window.classList.remove(classNameOn);
-    window.classList.add(classNameOff);
-  }
-}
-
-// Function to handle clicks outside
-function handleClickOutside(event) {
-  // Check for Home Try-On
-  if (
-    !windowTryOn.contains(event.target) &&
-    !buttonTryOn.contains(event.target)
-  ) {
-    if (windowTryOn.classList.contains("show-window-homeTryOn")) {
-      windowTryOn.classList.remove("show-window-homeTryOn");
-      windowTryOn.classList.add("show-window-homeTryOn-off");
+import { warbyParkerStyle } from "./pageStyles/warbyparkerStyle.js";
+import { loadProductsFetch, products } from "../data/products.js";
+import { formatCurrency } from "./utils/money.js";
+function renderProductsWarbyparker() {
+  const productsContainer = document.querySelector(".products");
+  const glassesTypeButtons = document.querySelectorAll(".btn-choose-glasses");
+  let glassesType;
+  [...glassesTypeButtons].forEach((button) => {
+    if (button.classList.contains("active")) {
+      glassesType = button.innerText.toLowerCase();
     }
-  }
-
-  // Check for EyeGlasses
-  if (
-    !windowEyeGlasses.contains(event.target) &&
-    !buttonEyeGlasses.contains(event.target)
-  ) {
-    if (windowEyeGlasses.classList.contains("show-window-eyeGlasses")) {
-      windowEyeGlasses.classList.remove("show-window-eyeGlasses");
-      windowEyeGlasses.classList.add("show-window-eyeGlasses-off");
-    }
-  }
-
-  // Check for SunGlasses
-  if (
-    !windowSunGlasses.contains(event.target) &&
-    !buttonSunGlasses.contains(event.target)
-  ) {
-    if (windowSunGlasses.classList.contains("show-window-sunGlasses")) {
-      windowSunGlasses.classList.remove("show-window-sunGlasses");
-      windowSunGlasses.classList.add("show-window-sunGlasses-off");
-    }
-  }
-
-  // Check for getPrescription
-  if (
-    !windowgetPrescription.contains(event.target) &&
-    !buttongetPrescription.contains(event.target)
-  ) {
-    if (
-      windowgetPrescription.classList.contains("show-window-getPrescription")
-    ) {
-      windowgetPrescription.classList.remove("show-window-getPrescription");
-      windowgetPrescription.classList.add("show-window-getPrescription-off");
-    }
-  }
-}
-
-// Add event listeners to buttons
-buttonTryOn.addEventListener("click", () =>
-  toggleWindow(
-    buttonTryOn,
-    windowTryOn,
-    "show-window-homeTryOn",
-    "show-window-homeTryOn-off"
-  )
-);
-buttonEyeGlasses.addEventListener("click", () =>
-  toggleWindow(
-    buttonEyeGlasses,
-    windowEyeGlasses,
-    "show-window-eyeGlasses",
-    "show-window-eyeGlasses-off"
-  )
-);
-buttonSunGlasses.addEventListener("click", () =>
-  toggleWindow(
-    buttonSunGlasses,
-    windowSunGlasses,
-    "show-window-sunGlasses",
-    "show-window-sunGlasses-off"
-  )
-);
-buttongetPrescription.addEventListener("click", () =>
-  toggleWindow(
-    buttongetPrescription,
-    windowgetPrescription,
-    "show-window-getPrescription",
-    "show-window-getPrescription-off"
-  )
-);
-// Add event listener to document for clicks outside
-document.addEventListener("click", handleClickOutside);
-
-const menuIcon = document.getElementById("menu-icon");
-menuIcon.addEventListener("click", function () {
-  if (menuIcon.classList.contains("fa-bars")) {
-    menuIcon.classList.remove("fa-bars");
-    menuIcon.classList.add("fa-x");
-  } else {
-    menuIcon.classList.remove("fa-x");
-    menuIcon.classList.add("fa-bars");
-  }
-});
-
-// button choose
-const chooseButtons = document.querySelectorAll(".btn-choose-glasses");
-chooseButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    if (!button.classList.contains("active")) {
-      chooseButtons.forEach((button) => {
-        if (button.classList.contains("active")) {
-          button.classList.remove("active");
-        }
-      });
-      button.classList.add("active");
+    button.addEventListener("click", () => {
+      renderProductsWarbyparker();
+    });
+  });
+  let productsHtml = ``;
+  products.forEach((product) => {
+    if (product.type == glassesType) {
+      productsHtml += `<div class="product">
+        <div class="product-image">
+          <img src="${product.image}" alt="" />
+        </div>
+        <div class="product-favourite">
+          <button><img src="images/icons/favorite.svg" alt="" /></button>
+        </div>
+        <div class="product-add-cart">
+          <button><img src="images/icons/cart.svg" alt="" /></button>
+        </div>
+        <div class="product-describtion">
+          <p class="product-name">${product.name}</p>
+          <p class="product-price">$${formatCurrency(product.priceCents)}</p>
+        </div>
+      </div>`;
     }
   });
+  productsContainer.innerHTML = productsHtml;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  warbyParkerStyle();
+  loadProductsFetch(renderProductsWarbyparker);
 });

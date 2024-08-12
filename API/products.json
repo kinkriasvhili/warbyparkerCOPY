@@ -1,0 +1,142 @@
+[
+  {
+    "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+    "image": "images/products/sunglasses/sunglasses-barkley.webp",
+    "name": "Barkley",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "f2a5a7e4-b9d3-4d7e-8e9f-63a66b44b705",
+    "image": "images/products/sunglasses/sunglasses-brimmer.webp",
+    "name": "Brimmer",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "d60a5f3a-cd3d-4a6f-a7d9-f1c98f57e5bb",
+    "image": "images/products/sunglasses/sunglasses-carmel.jpg",
+    "name": "Carmel",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "a4db4f26-fd73-41a5-bb27-dc0f7e3dbd99",
+    "image": "images/products/sunglasses/sunglasses-downing.webp",
+    "name": "Downing",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "b27f14c1-4a2d-45d7-bf5f-e1547f7c61a5",
+    "image": "images/products/sunglasses/sunglasses-eilo.webp",
+    "name": "Eilo",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "e15a5f3a-64a9-45d8-a1c8-f1b98d67e2aa",
+    "image": "images/products/sunglasses/sunglasses-esme.webp",
+    "name": "Esme",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "a64b5f3a-a68f-45a7-b7d9-f1c99d67f2bb",
+    "image": "images/products/sunglasses/sunglasses-fletcher.jpg",
+    "name": "Fletcher",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "c3a5f7a5-d8c4-456b-9b89-e1547f7f51e6",
+    "image": "images/products/sunglasses/sunglasses-percey.webp",
+    "name": "Percey",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "d71a9c5f-4b2d-486a-b5f9-e1547f7f61a8",
+    "image": "images/products/sunglasses/sunglasses-rhea.webp",
+    "name": "Rhea",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "f25f1a3a-79c6-4d57-919e-1547f7f11b8f",
+    "image": "images/products/sunglasses/sunglasses-sutton.jpg",
+    "name": "Sutton",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "b46a1bda-4f7d-4d5d-9e4c-b1a2f6e0dfb1",
+    "image": "images/products/eyeglasses/eyeglasses-baird.webp",
+    "name": "Baird",
+    "type": "eyeglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "c56d2bea-5e7c-4d6e-9f5c-c1b3f7e1efc2",
+    "image": "images/products/eyeglasses/eyeglasses-blakely.webp",
+    "name": "Blakely",
+    "type": "eyeglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "d67e3cfb-6f8d-4e7f-a6g6-d2c4g8f2gfd3",
+    "image": "images/products/eyeglasses/eyeglasses-carlton.webp",
+    "name": "Carlton",
+    "type": "eyeglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "e78f4dfc-7g9e-4f8g-a7h7-e3d5h9g3hge4",
+    "image": "images/products/eyeglasses/eyeglasses-chamberlain.webp",
+    "name": "Chamberlain",
+    "type": "eyeglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "f89g5efg-8h0f-5g9h-a8i8-f4e6i0h4ihf5",
+    "image": "images/products/eyeglasses/eyeglasses-crane.webp",
+    "name": "Crane",
+    "type": "eyeglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "g9ah6fgh-9i1g-5h0i-a9j9-g5f7j1i5jih6",
+    "image": "images/products/eyeglasses/eyeglasses-durand.webp",
+    "name": "Durand",
+    "type": "eyeglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "h0bi7ghi-aj2h-6i1j-b0k0-h6g8k2j6kji7",
+    "image": "images/products/eyeglasses/eyeglasses-esme.webp",
+    "name": "Esme",
+    "type": "eyeglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "i1cj8hij-bk3i-6j2k-c1l1-i7h9l3k7lkj8",
+    "image": "images/products/eyeglasses/eyeglasses-grillian.webp",
+    "name": "Grillian",
+    "type": "eyeglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "j2dk9ijk-cl4j-7k3l-d2m2-j8i0m4l8mlk9",
+    "image": "images/products/eyeglasses/eyeglasses-hayden.webp",
+    "name": "Hayden",
+    "type": "eyeglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "k3elajkl-dm5k-7l4m-e3n3-k9j1n5m9nml0",
+    "image": "images/products/eyeglasses/eyeglasses-nadia.webp",
+    "name": "Nadia",
+    "type": "eyeglasses",
+    "priceCents": 9500
+  }
+]
