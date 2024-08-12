@@ -1,6 +1,9 @@
-import { warbyParkerStyle } from "./pageStyles/warbyparkerStyle.js";
+import { headerStyle } from "./pageStyles/headerStyle.js";
 import { loadProductsFetch, products } from "../data/products.js";
 import { formatCurrency } from "./utils/money.js";
+
+import { loadHeader } from "./utils/loadheader.js";
+
 function renderProductsWarbyparker() {
   const productsContainer = document.querySelector(".products");
   const glassesTypeButtons = document.querySelectorAll(".btn-choose-glasses");
@@ -15,7 +18,7 @@ function renderProductsWarbyparker() {
   });
   let productsHtml = ``;
   products.forEach((product) => {
-    if (product.type == glassesType) {
+    if (product.type == glassesType && product.location === "warbyparker") {
       productsHtml += `<div class="product">
         <div class="product-image">
           <img src="${product.image}" alt="" />
@@ -37,6 +40,6 @@ function renderProductsWarbyparker() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  warbyParkerStyle();
+  loadHeader();
   loadProductsFetch(renderProductsWarbyparker);
 });

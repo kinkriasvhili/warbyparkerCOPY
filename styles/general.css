@@ -1,0 +1,37 @@
+/* General Styles */
+body {
+  font-family: arial;
+  color: rgb(98, 98, 98);
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* Header Container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #ffffff;
+}
+
+/* Remove default list styles */
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: rgb(98, 98, 98);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2c2c2c;
+}

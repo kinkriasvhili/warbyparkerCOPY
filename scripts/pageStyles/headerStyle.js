@@ -1,4 +1,4 @@
-export function warbyParkerStyle() {
+export function headerStyle() {
   // Select elements for Home Try-On
   const buttonTryOn = document.getElementById("homeTryOnBtn-js");
   const windowTryOn = document.getElementById("windowHomeTryOn-js");
@@ -77,7 +77,6 @@ export function warbyParkerStyle() {
       }
     }
   }
-
   // Add event listeners to buttons
   buttonTryOn.addEventListener("click", () =>
     toggleWindow(

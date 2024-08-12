@@ -4,6 +4,7 @@ class Product {
   name;
   priceCents;
   type;
+  location;
 
   constructor(productDetails) {
     this.id = productDetails.id;
@@ -11,6 +12,7 @@ class Product {
     this.name = productDetails.name;
     this.priceCents = productDetails.priceCents;
     this.type = productDetails.type;
+    this.location = productDetails.location;
   }
 }
 export let products = JSON.parse(localStorage.getItem("glassesproducts")) || [];
