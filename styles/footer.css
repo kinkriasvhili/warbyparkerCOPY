@@ -1,30 +1,129 @@
 footer {
   margin-top: 100px;
-  background-color: rgb(250, 242, 242);
+  background-color: rgb(242, 242, 242); /* Closer to white */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 500px;
 }
+
 .get-email-container {
   display: flex;
   flex-direction: row;
   width: 90%;
   padding-bottom: 30px;
   padding-top: 30px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid lightgray;
   justify-content: space-around;
   align-items: center;
 }
+
 .get-email-input-container {
   width: 40vw;
   margin-right: 39px;
 }
+
 .get-email-input-container input {
   border-radius: 20px;
   border: 1px solid gray;
   width: 100%;
   padding: 20px;
   outline: none;
+}
+
+/* Footer columns styling */
+.footer-links-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-column div h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-column div ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column div ul li {
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #787878;
+}
+
+/* Footer help section */
+.footer-help-container {
+  display: flex;
+}
+
+.footer-help-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-help-container div ul li {
+  transform: translate(+50%, 0);
+}
+
+@media (max-width: 800px) {
+  .footer-links-container {
+    flex-direction: column;
+  }
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-column div {
+    border-bottom: 1px solid lightgray;
+    margin-right: 20px;
+  }
+  .footer-column div ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  /* Footer help section */
+  .footer-help-container {
+    width: 90%;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid lightgray;
+  }
+
+  .footer-help-container p {
+    font-size: 16px;
+    color: #555;
+  }
 }
