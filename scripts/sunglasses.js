@@ -4,5 +4,5 @@ import { loadGlassesProducts } from "./glassesShop.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   loadHeader();
-  loadProductsFetch(loadGlassesProducts("eyeglasses"));
+  loadProductsFetch(loadGlassesProducts("sunglasses"));
 });
