@@ -3,7 +3,9 @@ import { products, loadProductsFetch } from "../../data/products.js";
 import { formatCurrency } from "../utils/money.js";
 import { addToFavourite } from "../../data/faovurite.js";
 
-export function loadGlassesProducts(type) {
+export async function loadGlassesProducts(type) {
+  await loadProductsFetch();
+
   const productsContainerElement = document.querySelector(".products");
   let productsHtml = ``;
   products.forEach((product) => {

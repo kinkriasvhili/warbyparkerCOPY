@@ -258,5 +258,75 @@
     "type": "eyeglasses",
     "priceCents": 9500,
     "favourite": false
+  },
+  {
+    "id": "e39f76a8-7f91-4118-9b87-2f0348e66a16",
+    "image": "images/products/sunglasses/sunglasses-atchison.webp",
+    "name": "Atchison",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "5dc9e5e4-1b45-4692-9150-5fcda14f6789",
+    "image": "images/products/sunglasses/sunglasses-atrell.webp",
+    "name": "Atrell",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "682fd92d-2f6f-4b5f-9635-bdfbe1d34f79",
+    "image": "images/products/sunglasses/sunglasses-belmar.webp",
+    "name": "Belmar",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "ca3d7e68-e20c-4abf-bb6b-754b14721b9f",
+    "image": "images/products/sunglasses/sunglasses-blaise.webp",
+    "name": "Blaise",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "34a6d6b2-cc25-4b3b-8b7e-cb8e0e0b5e99",
+    "image": "images/products/sunglasses/sunglasses-braden.webp",
+    "name": "Braden",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "4c301e6c-d457-4723-b3e6-2463c2e3054e",
+    "image": "images/products/sunglasses/sunglasses-cowley.webp",
+    "name": "Cowley",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "eeb69ef2-b7c8-4b7e-8998-3cbf78d1489f",
+    "image": "images/products/sunglasses/sunglasses-fisher.webp",
+    "name": "Fisher",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "cf2f43a1-e045-4db7-b548-d37248ac5f54",
+    "image": "images/products/sunglasses/sunglasses-gemma.jpg",
+    "name": "Gemma",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "3a3d4c6d-8f61-44a7-b282-b0ed8b69cf06",
+    "image": "images/products/sunglasses/sunglasses-newman.webp",
+    "name": "Newman",
+    "type": "sunglasses",
+    "priceCents": 9500
+  },
+  {
+    "id": "053bc528-2ff5-4d7d-b97e-7a5b7f4d55a5",
+    "image": "images/products/sunglasses/sunglasses-roosevlet.jpg",
+    "name": "Roosevelt",
+    "type": "sunglasses",
+    "priceCents": 9500
   }
 ]

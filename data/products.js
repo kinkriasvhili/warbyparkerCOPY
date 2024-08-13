@@ -28,10 +28,6 @@ class Product {
 }
 export let products = JSON.parse(localStorage.getItem("glassesproducts")) || [];
 
-export function saveProductToStorage() {
-  localStorage.setItem("glassesproducts", JSON.stringify(products));
-}
-
 export async function loadProductsFetch(fun) {
   try {
     let promise;
@@ -41,13 +37,17 @@ export async function loadProductsFetch(fun) {
     products = data.map((productDetails) => {
       return new Product(productDetails);
     });
-    if (fun) {
+    if (typeof fun === "function") {
       fun();
     }
-    return promise;
+    return products;
   } catch (error) {
     console.log(
       `Oops there might be some error in your code try again later ${error}`
     );
   }
+}
+
+export function saveProductToStorage() {
+  localStorage.setItem("glassesproducts", JSON.stringify(products));
 }
