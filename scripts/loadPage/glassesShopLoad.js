@@ -1,7 +1,7 @@
-import { loadHeader } from "./utils/loadheader.js";
-import { products, loadProductsFetch } from "../data/products.js";
-import { formatCurrency } from "./utils/money.js";
-import { addToFavourite } from "../data/faovurite.js";
+import { loadHeader } from "../utils/loadheader.js";
+import { products, loadProductsFetch } from "../../data/products.js";
+import { formatCurrency } from "../utils/money.js";
+import { addToFavourite } from "../../data/faovurite.js";
 
 export function loadGlassesProducts(type) {
   const productsContainerElement = document.querySelector(".products");
