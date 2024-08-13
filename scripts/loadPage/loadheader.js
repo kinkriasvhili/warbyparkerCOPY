@@ -1,3 +1,4 @@
+// import { headerStyle } from "../pageStyles/headerStyle.js";
 import { headerStyle } from "../pageStyles/headerStyle.js";
 
 export async function loadHeader() {

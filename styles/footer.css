@@ -1,0 +1,30 @@
+footer {
+  margin-top: 100px;
+  background-color: rgb(250, 242, 242);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 500px;
+}
+.get-email-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-bottom: 1px solid black;
+  justify-content: space-around;
+  align-items: center;
+}
+.get-email-input-container {
+  width: 40vw;
+  margin-right: 39px;
+}
+.get-email-input-container input {
+  border-radius: 20px;
+  border: 1px solid gray;
+  width: 100%;
+  padding: 20px;
+  outline: none;
+}

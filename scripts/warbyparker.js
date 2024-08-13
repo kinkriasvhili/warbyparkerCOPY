@@ -1,7 +1,8 @@
 import { loadProductsFetch, products } from "../data/products.js";
 import { formatCurrency } from "./utils/money.js";
-import { loadHeader } from "./utils/loadheader.js";
+import { loadHeader } from "./loadPage/loadheader.js";
 import { addToFavourite } from "../data/faovurite.js";
+import { loadFooter } from "./loadPage/loadfooter.js";
 
 function renderProductsWarbyparker() {
   const productsContainer = document.querySelector(".products");
@@ -45,5 +46,6 @@ function renderProductsWarbyparker() {
 
 document.addEventListener("DOMContentLoaded", () => {
   loadHeader();
+  loadFooter();
   loadProductsFetch(renderProductsWarbyparker);
 });

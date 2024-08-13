@@ -1,8 +1,9 @@
-import { loadHeader } from "./utils/loadheader.js";
+import { loadHeader } from "./loadPage/loadheader.js";
 import { loadProductsFetch } from "../data/products.js";
 import { formatCurrency } from "./utils/money.js";
 import { addToFavourite } from "../../data/faovurite.js";
 import { favourite } from "../data/faovurite.js";
+import { loadFooter } from "./loadPage/loadfooter.js";
 
 async function loadFavouriteProducts() {
   await loadProductsFetch();
@@ -32,5 +33,6 @@ async function loadFavouriteProducts() {
   productsContainerElement.innerHTML = productsHtml;
   addToFavourite();
   loadHeader();
+  loadFooter();
 }
 loadFavouriteProducts();
