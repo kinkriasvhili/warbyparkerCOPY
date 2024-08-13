@@ -77,3 +77,10 @@
   font-size: 18px;
   font-weight: bolder;
 }
+
+.product-price {
+  transform: translate(-40%, 0);
+}
+.product-name {
+  transform: translate(+20%, 0);
+}

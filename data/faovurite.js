@@ -31,10 +31,11 @@ export function addToFavourite() {
         const newFavourite = [];
         favourite.forEach((favProduct) => {
           if (favProduct.id != productId) {
-            favourite.push(favProduct);
+            newFavourite.push(favProduct);
           }
         });
         favourite = newFavourite;
+
         // favourite change
         products.forEach((product) => {
           if (product.id == productId) {

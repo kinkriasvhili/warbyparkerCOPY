@@ -197,11 +197,14 @@
   padding: 5px 10px;
 }
 /* Media Query for 1200px and Below */
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .left-section-ol i {
     display: flex;
   }
   .header-middle {
+    display: none;
+  }
+  .singInText {
     display: none;
   }
 }
