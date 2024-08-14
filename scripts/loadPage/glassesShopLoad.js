@@ -22,6 +22,12 @@ export async function loadGlassesProducts(type) {
             }"></i>
           </button>
         </div>
+        
+        <div class="added-to-cart js-added-cart-${product.id}">
+          <i class="fa-solid fa-plus"></i>
+          Added
+        </div>
+
         <div class="product-add-cart">
           <button class="js-cart-btn" data-productId="${product.id}">
             <img class="js-cart-btn-${

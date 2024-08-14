@@ -84,3 +84,14 @@
 .product-name {
   transform: translate(+20%, 0);
 }
+.added-to-cart {
+  color: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-10%, -250%);
+  display: none;
+}
+.showAddedToCartElement {
+  display: inline;
+}

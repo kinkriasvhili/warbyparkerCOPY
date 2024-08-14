@@ -200,6 +200,7 @@
 /* cart quantity */
 
 .quantity-caunter {
+  z-index: 30;
   background-color: lightblue;
   border: none;
   border-radius: 100px;

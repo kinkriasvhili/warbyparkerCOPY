@@ -1,4 +1,7 @@
 import { products, getProduct, saveProductToStorage } from "./products.js";
+import { loadHeader } from "../scripts/loadPage/loadheader.js";
+import { loadFavouriteProducts } from "../scripts/favouritePage.js";
+
 export let favourite = JSON.parse(localStorage.getItem("favourite")) || [];
 
 function saveFavouriteProduct() {
@@ -21,6 +24,7 @@ export function addToFavourite() {
             product.favourite = true;
           }
         });
+        loadHeader();
         saveProductToStorage();
         saveFavouriteProduct();
       } else {
@@ -42,6 +46,8 @@ export function addToFavourite() {
             product.favourite = false;
           }
         });
+        loadFavouriteProducts();
+        loadHeader();
         saveProductToStorage();
         saveFavouriteProduct();
       }

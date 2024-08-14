@@ -6,7 +6,7 @@ import { favourite } from "../data/faovurite.js";
 import { loadFooter } from "./loadPage/loadfooter.js";
 import { addToCart } from "../data/cart.js";
 
-async function loadFavouriteProducts() {
+export async function loadFavouriteProducts() {
   await loadProductsFetch();
 
   const productsContainerElement = document.querySelector(".products");
@@ -22,6 +22,12 @@ async function loadFavouriteProducts() {
           <i class="fa-regular fa-heart favouriteBtn fav-btn-${product.id}"></i>
         </button>
       </div>
+
+      <div class="added-to-cart js-added-cart-${product.id}">
+        <i class="fa-solid fa-plus"></i>
+        Added
+      </div>
+
       <div class="product-add-cart">
        <button class="js-cart-btn" data-productId="${product.id}">
           <img class="js-cart-btn-${
@@ -35,7 +41,9 @@ async function loadFavouriteProducts() {
       </div>
     </div>`;
   });
-  productsContainerElement.innerHTML = productsHtml;
+  if (productsContainerElement) {
+    productsContainerElement.innerHTML = productsHtml;
+  }
   addToFavourite();
   addToCart();
   loadHeader();

@@ -10,6 +10,14 @@ function cartQuantityCounter() {
   });
   document.querySelector(".cart-quantity-span").innerHTML = cartQuantity;
 }
+function favouriteQuantityCounter() {
+  let favouriteQuantity = 0;
+  favourite.forEach((favouriteItem) => {
+    favouriteQuantity++;
+  });
+  document.querySelector(".favourite-quantity-span").innerHTML =
+    favouriteQuantity;
+}
 
 export async function loadHeader() {
   try {
@@ -19,8 +27,8 @@ export async function loadHeader() {
     }
     const headerHtml = await response.text();
     document.getElementById("header-placeholder").innerHTML = headerHtml;
-    console.log("me");
     cartQuantityCounter();
+    favouriteQuantityCounter();
     headerStyle();
   } catch (error) {
     console.error("Error loading header:", error);

@@ -2,11 +2,13 @@ import { getProduct } from "./products.js";
 import { loadCartProducts } from "../scripts/loadPage/cartProductsLoad.js";
 import { loadCartPayment } from "../scripts/loadPage/cartPaymentLoad.js";
 import { loadHeader } from "../scripts/loadPage/loadheader.js";
+import { addToCartAffect } from "../scripts/pageStyles/addToCartAffect.js";
 
 export let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 export function addToCart() {
   let productId;
+  let addedMessageTimeouts = {};
   document.querySelectorAll(".js-cart-btn").forEach((button) => {
     button.addEventListener("click", () => {
       productId = button.getAttribute("data-productId");
@@ -29,6 +31,7 @@ export function addToCart() {
       }
       loadHeader();
       saveToCart();
+      addToCartAffect(productId, addedMessageTimeouts);
     });
   });
 }
