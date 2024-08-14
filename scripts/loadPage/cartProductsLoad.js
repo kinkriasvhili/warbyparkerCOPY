@@ -3,6 +3,7 @@ import { addToCart, removeFromCart } from "../../data/cart.js";
 import { addToFavourite } from "../../data/faovurite.js";
 import { cart } from "../../data/cart.js";
 import { getProduct } from "../../data/products.js";
+import formatCurrency from "../utils/money.js";
 
 export async function loadCartProducts() {
   await loadProductsFetch();
@@ -13,7 +14,9 @@ export async function loadCartProducts() {
     cartHtml += `
     <div class="productContainer">
         <div class="product-remove">
-          <button class="remove-btn js-remove-button" data-product-id="${cartItem.productId}">X</button>
+          <button class="remove-btn js-remove-button" data-product-id="${
+            cartItem.productId
+          }">X</button>
         </div>
         <div class="image-container">
           <img
@@ -25,11 +28,18 @@ export async function loadCartProducts() {
           <div class="product-color">
             <h4>${product.name} - <span>cristal</span></h4>
           </div>
+           <div class="product-color">
+            <h4> Price - <span>$${formatCurrency(
+              product.priceCents
+            )}</span></h4>
+          </div>
           <div class="product-size">
             <h4>Frame Width - <span>medium</span></h4>
           </div>
           <div class="product-quantity">
-            <h4>quantity:<span class="cart-quantity-number-js"> ${cartItem.quantity}</span></h4>
+            <h4>quantity:<span class="cart-quantity-number-js"> ${
+              cartItem.quantity
+            }</span></h4>
           </div>
           <div class="product-update">
             <button class="update-btn active">Update</button>
