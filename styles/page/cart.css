@@ -65,12 +65,13 @@ button {
   border-radius: 15px;
   padding: 10px 15px;
   transition: 0.2s;
+  display: none;
 }
 .product-update button:hover {
   background-color: rgb(1, 102, 153);
 }
-.product-update .save-btn {
-  display: none;
+.product-update .active {
+  display: flex;
 }
 .product-info-container {
   width: 40%;
@@ -144,6 +145,23 @@ button {
 }
 .place-order-button-container button:hover {
   background-color: rgb(188, 2, 2);
+}
+.quantity-input {
+  width: 30px;
+  outline: none;
+  border: 1px solid lightgray;
+  color: rgb(119, 119, 119);
+  border-radius: 4px;
+  display: none;
+}
+.product-quantity .active {
+  display: inline;
+}
+.cart-quantity-number-js {
+  display: none;
+}
+.quantity-active {
+  display: inline;
 }
 @media (max-width: 850px) {
   .cart-container {

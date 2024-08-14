@@ -11,8 +11,9 @@ export async function loadCartPayment() {
   let shippingCents = 500;
   let estimatedTaxPercent = 10;
   cart.forEach((cartItem) => {
+    console.log(cartItem.quantity);
     let product = getProduct(cartItem.productId);
-    productPriceCents += product.priceCents;
+    productPriceCents += product.priceCents * cartItem.quantity;
     itemQuantity += cartItem.quantity;
   });
   if (cart.length == 0) {
