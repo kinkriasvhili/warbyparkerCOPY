@@ -4,6 +4,7 @@ import { formatCurrency } from "./utils/money.js";
 import { addToFavourite } from "../../data/faovurite.js";
 import { favourite } from "../data/faovurite.js";
 import { loadFooter } from "./loadPage/loadfooter.js";
+import { addToCart } from "../data/cart.js";
 
 async function loadFavouriteProducts() {
   await loadProductsFetch();
@@ -22,7 +23,11 @@ async function loadFavouriteProducts() {
         </button>
       </div>
       <div class="product-add-cart">
-        <button><img src="images/icons/cart.svg" alt="" /></button>
+       <button class="js-cart-btn" data-productId="${product.id}">
+          <img class="js-cart-btn-${
+            product.id
+          }" src="images/icons/cart.svg" alt="" />
+        </button>
       </div>
       <div class="product-describtion">
         <p class="product-name">${product.name}</p>
@@ -32,6 +37,7 @@ async function loadFavouriteProducts() {
   });
   productsContainerElement.innerHTML = productsHtml;
   addToFavourite();
+  addToCart();
   loadHeader();
   loadFooter();
 }

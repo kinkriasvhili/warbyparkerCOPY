@@ -2,7 +2,7 @@ import { loadHeader } from "../loadPage/loadheader.js";
 import { products, loadProductsFetch } from "../../data/products.js";
 import { formatCurrency } from "../utils/money.js";
 import { addToFavourite } from "../../data/faovurite.js";
-
+import { addToCart } from "../../data/cart.js";
 export async function loadGlassesProducts(type) {
   await loadProductsFetch();
 
@@ -23,7 +23,11 @@ export async function loadGlassesProducts(type) {
           </button>
         </div>
         <div class="product-add-cart">
-          <button><img src="images/icons/cart.svg" alt="" /></button>
+          <button class="js-cart-btn" data-productId="${product.id}">
+            <img class="js-cart-btn-${
+              product.id
+            }" src="images/icons/cart.svg" alt="" />
+          </button>
         </div>
         <div class="product-describtion">
           <p class="product-name">${product.name}</p>
@@ -34,4 +38,5 @@ export async function loadGlassesProducts(type) {
   });
   productsContainerElement.innerHTML = productsHtml;
   addToFavourite();
+  addToCart();
 }

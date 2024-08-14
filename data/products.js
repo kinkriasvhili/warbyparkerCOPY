@@ -42,9 +42,7 @@ export async function loadProductsFetch(fun) {
     }
     return products;
   } catch (error) {
-    console.log(
-      `Oops there might be some error in your code try again later ${error}`
-    );
+    console.log(`Oops there might be some error in your code. ${error}`);
   }
 }
 
