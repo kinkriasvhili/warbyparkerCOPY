@@ -1,6 +1,6 @@
 import { getProduct } from "./products.js";
-import { loadCartProducts } from "../scripts/cartPage.js";
-
+import { loadCartProducts } from "../scripts/loadPage/cartProductsLoad.js";
+import { loadCartPayment } from "../scripts/loadPage/cartPaymentLoad.js";
 export let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 export function addToCart() {
@@ -43,6 +43,7 @@ export function removeFromCart() {
       cart = newCart;
       saveToCart();
       loadCartProducts();
+      loadCartPayment();
     });
   });
 }
