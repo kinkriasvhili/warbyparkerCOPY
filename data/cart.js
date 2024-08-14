@@ -1,6 +1,8 @@
 import { getProduct } from "./products.js";
 import { loadCartProducts } from "../scripts/loadPage/cartProductsLoad.js";
 import { loadCartPayment } from "../scripts/loadPage/cartPaymentLoad.js";
+import { loadHeader } from "../scripts/loadPage/loadheader.js";
+
 export let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 export function addToCart() {
@@ -25,6 +27,7 @@ export function addToCart() {
           quantity: 1,
         });
       }
+      loadHeader();
       saveToCart();
     });
   });
@@ -42,6 +45,7 @@ export function removeFromCart() {
       });
       cart = newCart;
       saveToCart();
+      loadHeader();
       loadCartProducts();
       loadCartPayment();
     });
