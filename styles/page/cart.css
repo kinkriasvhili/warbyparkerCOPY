@@ -1,0 +1,82 @@
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+.cartProducts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  width: 60%;
+  margin-top: 50px;
+  margin-left: 2vw;
+}
+.productContainer {
+  width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  height: 30vh;
+  background-color: white;
+}
+.product-remove {
+  position: absolute;
+  right: 10px;
+  transform: translate(0, +10%);
+}
+.product-remove button {
+  border: none;
+  background: none;
+  font-size: 15px;
+}
+.productContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.image-container {
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.image-container img {
+  max-width: 400px;
+  width: 100%;
+}
+.product-update {
+  margin-top: -10px;
+}
+.product-update button {
+  border: 1px solid lightgray;
+  background-color: rgba(0, 110, 165, 1);
+  color: white;
+  border-radius: 15px;
+  padding: 10px 15px;
+  transition: 0.2s;
+}
+.product-update button:hover {
+  background-color: rgb(1, 102, 153);
+}
+.product-update .save-btn {
+  display: none;
+}
+.product-info-container {
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.product-info-container span {
+  font-size: 15px;
+  color: rgb(65, 65, 65);
+  font-weight: lighter;
+}

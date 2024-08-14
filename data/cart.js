@@ -1,8 +1,9 @@
 import { getProduct } from "./products.js";
+import { loadCartProducts } from "../scripts/cartPage.js";
 
 export let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-export function addToCart(id) {
+export function addToCart() {
   let productId;
   document.querySelectorAll(".js-cart-btn").forEach((button) => {
     button.addEventListener("click", () => {
@@ -25,6 +26,23 @@ export function addToCart(id) {
         });
       }
       saveToCart();
+    });
+  });
+}
+export function removeFromCart() {
+  let newCart = [];
+
+  document.querySelectorAll(".js-remove-button").forEach((button) => {
+    button.addEventListener("click", () => {
+      let productId = button.getAttribute("data-product-id");
+      cart.forEach((cartItem) => {
+        if (cartItem.productId != productId) {
+          newCart.push(cartItem);
+        }
+      });
+      cart = newCart;
+      saveToCart();
+      loadCartProducts();
     });
   });
 }
