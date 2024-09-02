@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  overflow: hidden;
+}
+header {
+  text-align: center;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  height: 50px;
+}
+header span {
+  color: rgb(82, 82, 82);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.mainContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.orderPageParagraph {
+  position: relative;
+  width: 100%;
+}
+.orderPageParagraph h1 {
+  font-size: 29px;
+  color: rgb(82, 82, 82);
+  font-weight: 500;
+}
+.orderPageInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding-left: 10px;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid rgb(174, 174, 174);
+}
+input::placeholder {
+  color: gray;
+  transition: 0.3s ease all;
+}
+
+input:focus::placeholder {
+  color: #666;
+  font-size: 12px;
+  transform: translateY(-12px);
+  pointer-events: none;
+}
+.orderPageSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+.orderPageSection input,
+.orderPageSection select {
+  width: 48%;
+}
+a {
+  text-decoration: none;
+  width: 100%;
+}
+.orderPageButton {
+  width: 100%;
+  background-color: rgb(42, 42, 255);
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+@media (max-width: 1200px) {
+  .mainContainer {
+    width: 60%;
+  }
+}
+@media (max-width: 1000px) {
+  .mainContainer {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .mainContainer {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .mainContainer {
+    width: 80%;
+  }
+}

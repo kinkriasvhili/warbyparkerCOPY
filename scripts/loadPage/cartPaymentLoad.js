@@ -48,7 +48,7 @@ export async function loadCartPayment() {
           </div>
         </div>
         <div class="place-order-button-container">
-          <a href="cart.html">
+          <a href="placeOrder.html">
             <button>Place Your Order</button>
           </a>
         </div>`;
