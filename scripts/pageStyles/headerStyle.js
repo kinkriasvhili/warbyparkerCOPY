@@ -18,6 +18,9 @@ export function headerStyle() {
   const windowgetPrescription = document.getElementById(
     "windowgetPrescription-js"
   );
+
+  //header middle
+  const middleHeaderElement = document.querySelector(".header-middle");
   // Function to toggle visibility
   function toggleWindow(button, window, classNameOn, classNameOff) {
     if (window.classList.contains(classNameOff)) {
@@ -59,6 +62,7 @@ export function headerStyle() {
       !buttonSunGlasses.contains(event.target)
     ) {
       if (windowSunGlasses.classList.contains("show-window-sunGlasses")) {
+        console.log("hello");
         windowSunGlasses.classList.remove("show-window-sunGlasses");
         windowSunGlasses.classList.add("show-window-sunGlasses-off");
       }
@@ -116,9 +120,14 @@ export function headerStyle() {
   const menuIcon = document.getElementById("menu-icon");
   menuIcon.addEventListener("click", function () {
     if (menuIcon.classList.contains("fa-bars")) {
+      middleHeaderElement.classList.add("header-middle-on");
+      document.body.style.overflow = "hidden";
       menuIcon.classList.remove("fa-bars");
       menuIcon.classList.add("fa-x");
     } else {
+      middleHeaderElement.classList.remove("header-middle-on");
+      document.body.style.overflow = "auto";
+
       menuIcon.classList.remove("fa-x");
       menuIcon.classList.add("fa-bars");
     }
