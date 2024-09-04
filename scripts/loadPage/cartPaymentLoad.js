@@ -48,9 +48,9 @@ export async function loadCartPayment() {
           </div>
         </div>
         <div class="place-order-button-container">
-        
+          <a href="placeOrder.html">
             <button class="js-placeOrder-button">Place Your Order</button>
-          
+           </a>
         </div>`;
   document.querySelector(".payment-order-container").innerHTML = paymentHtml;
   const placeOrderButton = document.querySelector(".js-placeOrder-button");
@@ -61,11 +61,10 @@ export async function loadCartPayment() {
     placeOrderButton.classList.remove("placeOrderButtonOff");
   }
   placeOrderButton.addEventListener("click", () => {
-    // localStorage.removeItem("cart");
+    localStorage.removeItem("cart");
     console.log("me");
     makeOrder(cart);
     let order = JSON.parse(localStorage.getItem("order"));
     console.log(order);
   });
 }
-//  <a href="placeOrder.html"> </a>

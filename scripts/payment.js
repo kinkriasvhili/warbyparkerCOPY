@@ -61,12 +61,14 @@ function checkInputFilled() {
   pageButtonElement.classList.add("paymentButtonOff");
 
   pageButtonElement.addEventListener("click", () => {
-    let creditCard = {};
+    let creditCard = JSON.parse(localStorage.getItem("creditCard")) || [];
     if (inputs.length >= 4) {
-      creditCard.cardNumber = inputs[0].value;
-      creditCard.expiration = inputs[1].value;
-      creditCard.securityCode = inputs[2].value;
-      creditCard.zipCode = inputs[3].value;
+      creditCard.push({
+        cardNumber: inputs[0].value,
+        expiration: inputs[1].value,
+        securityCode: inputs[2].value,
+        zipCode: inputs[3].value,
+      });
     }
     localStorage.setItem("creditCard", JSON.stringify(creditCard));
   });

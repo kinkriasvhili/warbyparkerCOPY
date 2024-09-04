@@ -1,19 +1,23 @@
-const inputs = document.querySelectorAll("input");
+const inputs = document.querySelectorAll(".requiredInput");
+const optionalInput = document.querySelector(".optionalInput");
+
 const pageButtonElement = document.querySelector(".orderPageButton");
 pageButtonElement.disabled = true;
 pageButtonElement.classList.add("orderPageButtonOff");
 
 pageButtonElement.addEventListener("click", () => {
-  let account = {};
-  if (inputs.length >= 6) {
-    account.name = inputs[0].value;
-    account.street = inputs[1].value;
-    account.apt = inputs[2].value;
-    account.zip = inputs[3].value;
-    account.city = inputs[4].value;
-    account.state = inputs[5].value;
+  let account = JSON.parse(localStorage.getItem("account")) || [];
+  if (inputs.length >= 5) {
+    account.push({
+      name: inputs[0].value,
+      address: inputs[1].value,
+      zipCode: inputs[2].value,
+      city: inputs[3].value,
+      state: inputs[4].value,
+      ...(optionalInput ? { apt: optionalInput.value } : {}),
+    });
   }
-  localStorage.setItem("account", JSON.stringify(account));
+  saveAccount(account);
   console.log(account);
 });
 
@@ -34,4 +38,8 @@ function checkAllFilled() {
       allFilled = false;
     }
   });
+}
+
+export function saveAccount(account) {
+  localStorage.setItem("account", JSON.stringify(account));
 }
