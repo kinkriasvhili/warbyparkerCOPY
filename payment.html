@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/page/paymet.css" />
+    <title>warby Parker</title>
+  </head>
+  <body>
+    <header>
+      <a class="headerA" href="/warbyparker.html">
+        <span>WARBY PARKER</span>
+      </a>
+    </header>
+    <main>
+      <div class="previouseStep">
+        <a href="/placeOrder.html">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+      <div class="mainContainer">
+        <div class="creditCardContainer">
+          <div class="creditCardChecker">
+            <div class="checkCreditInputContainer">
+              <input class="checkboxInput" type="checkbox" />
+              <span>Credit or debit card</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-credit-card"></i>
+            </div>
+          </div>
+
+          <div class="inputsContainer paypalOnInput">
+            <div class="topInput">
+              <input class="inputText" placeholder="Card number" type="text" />
+            </div>
+            <div class="middleInput">
+              <input class="inputText" placeholder="Expiration" type="text" />
+              <input
+                class="inputText"
+                placeholder="Security code"
+                type="text"
+              />
+            </div>
+            <div class="bottomInput">
+              <input class="inputText" placeholder="Zip code" type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="paypalContainer">
+          <div class="paypal-toggle">
+            <div class="checkboxPaypalContainer">
+              <span> Use PayPal </span>
+              <input
+                class="checkboxInput"
+                type="checkbox"
+                id="paypal-checkbox"
+              />
+            </div>
+
+            <i class="fa-brands fa-paypal"></i>
+          </div>
+          <div id="paypal-button-container" style="display: none"></div>
+        </div>
+        <div class="buttonContaier">
+          <button class="paymentButton paypalOnButton">
+            <a href="">Review your order</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=Ac_boLiE3BUhazLgX9fqtYGYJTiFYBmG6PlfPnw2Ak0ij3wtBvaxZFLzKyJ1KciyGhDd1iN2fUl7AxEQ"></script>
+    <script type="module" src="scripts/payment.js"></script>
+  </body>
+</html>
