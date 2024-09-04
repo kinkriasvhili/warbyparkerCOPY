@@ -186,3 +186,7 @@ button {
     width: 60%;
   }
 }
+.placeOrderButtonOff {
+  opacity: 0.7;
+  pointer-events: none;
+}

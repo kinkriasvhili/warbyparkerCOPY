@@ -2,7 +2,7 @@ import { loadProductsFetch } from "../../data/products.js";
 import { formatCurrency } from "../utils/money.js";
 import { cart } from "../../data/cart.js";
 import { getProduct } from "../../data/products.js";
-
+import { makeOrder } from "../../data/order.js";
 export async function loadCartPayment() {
   await loadProductsFetch();
   let paymentHtml = ``;
@@ -48,9 +48,24 @@ export async function loadCartPayment() {
           </div>
         </div>
         <div class="place-order-button-container">
-          <a href="placeOrder.html">
-            <button>Place Your Order</button>
-          </a>
+        
+            <button class="js-placeOrder-button">Place Your Order</button>
+          
         </div>`;
   document.querySelector(".payment-order-container").innerHTML = paymentHtml;
+  const placeOrderButton = document.querySelector(".js-placeOrder-button");
+  if (cart.length == 0) {
+    placeOrderButton.disabled = true;
+    placeOrderButton.classList.add("placeOrderButtonOff");
+  } else {
+    placeOrderButton.classList.remove("placeOrderButtonOff");
+  }
+  placeOrderButton.addEventListener("click", () => {
+    // localStorage.removeItem("cart");
+    console.log("me");
+    makeOrder(cart);
+    let order = JSON.parse(localStorage.getItem("order"));
+    console.log(order);
+  });
 }
+//  <a href="placeOrder.html"> </a>
