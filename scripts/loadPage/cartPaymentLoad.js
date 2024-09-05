@@ -4,7 +4,7 @@ import { cart } from "../../data/cart.js";
 import { getProduct } from "../../data/products.js";
 import { makeOrderList, saveOrder } from "../../data/order.js";
 
-export async function loadCartPayment() {
+export async function loadCartPayment(deliveryPriceCents) {
   await loadProductsFetch();
   let paymentHtml = ``;
   let productPriceCents = 0;
@@ -21,7 +21,13 @@ export async function loadCartPayment() {
   }
   let totalBeforeTaxCents = shippingCents + productPriceCents;
   let estimatedTax = (productPriceCents * estimatedTaxPercent) / 100;
-  let totalPriceCents = estimatedTax + totalBeforeTaxCents;
+  let totalPriceCents = 0;
+  if (deliveryPriceCents) {
+    totalPriceCents = estimatedTax + totalBeforeTaxCents + deliveryPriceCents;
+  } else {
+    totalPriceCents = estimatedTax + totalBeforeTaxCents;
+  }
+
   paymentHtml = `        
         <div class="order-summary">
           <h3>Order Summary</h3>
@@ -52,14 +58,21 @@ export async function loadCartPayment() {
           <a href="placeOrder.html">
             <button class="js-placeOrder-button">Place Your Order</button>
           </a>
+          
         </div>`;
   document.querySelector(".payment-order-container").innerHTML = paymentHtml;
   const placeOrderButton = document.querySelector(".js-placeOrder-button");
   if (cart.length == 0) {
     placeOrderButton.disabled = true;
     placeOrderButton.classList.add("placeOrderButtonOff");
+    document
+      .querySelector(".delivery-container-js")
+      .classList.add("deliveryOff");
   } else {
     placeOrderButton.classList.remove("placeOrderButtonOff");
+    document
+      .querySelector(".delivery-container-js")
+      .classList.remove("deliveryOff");
   }
   /** 
 

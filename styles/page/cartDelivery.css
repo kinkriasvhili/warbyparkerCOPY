@@ -1,0 +1,69 @@
+.delivery-container-js {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  margin-top: 40px;
+  width: 59vw;
+  background-color: white;
+  padding: 10px;
+  gap: 20px;
+  color: rgb(98, 98, 98);
+  font-weight: bold;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgb(188, 188, 188);
+}
+.option:nth-child(3) {
+  border-bottom: none;
+}
+
+.option div {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  gap: 10px;
+}
+.deliveryCheckBox {
+  appearance: none; /* Remove default checkbox styling */
+  width: 15px;
+  height: 15px;
+  border: 1px solid #007bff; /* Blue border */
+  border-radius: 50%; /* Make it round */
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.deliveryCheckBox:checked {
+  background-color: #fff; /* Blue color when checked */
+  border: 1px solid #007bff;
+}
+
+.deliveryCheckBox:checked::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2.2px;
+  width: 9px;
+  height: 9px;
+  background-color: #007bff; /* White space inside */
+  border-radius: 50%;
+}
+.deliveryOff {
+  display: none;
+}

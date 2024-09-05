@@ -1,5 +1,5 @@
 import { cart } from "./cart.js";
-
+import { inputChecked } from "../scripts/loadPage/loadCartDelivery.js";
 let newOrder = [];
 
 function generateUniqueId(existingIds) {
@@ -23,9 +23,10 @@ export function makeOrderList() {
   let orderId = generateUniqueId(existingIds);
   let order = JSON.parse(localStorage.getItem("orderPlace")) || [];
   if (cart) {
-    order.push({ cart, orderId });
+    let optionId = JSON.parse(localStorage.getItem("deliveryId")) || 1;
+    order.push({ cart, orderId, optionId });
     saveOrder(order);
-    console.log(order);
+    console.log(optionId);
   }
 }
 export function saveOrder(order) {
