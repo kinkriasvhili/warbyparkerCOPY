@@ -9,12 +9,24 @@ async function loadOrder() {
   let orders = JSON.parse(localStorage.getItem("orderPlace")) || [];
   let account = JSON.parse(localStorage.getItem("account")) || [];
   orders.forEach((order, index) => {
-    order.cart.forEach((cartItem) => {
-      let { productId } = cartItem;
-      let product = getProduct(productId);
-      productHtml = productComponent(product);
-    });
+    if (order.cart.length > 1) {
+      order.cart.forEach((cartItem) => {
+        let { productId } = cartItem;
+        let product = getProduct(productId);
+        productHtml += productComponent(product);
+      });
+    } else {
+      order.cart.forEach((cartItem) => {
+        let { productId } = cartItem;
+        let product = getProduct(productId);
+        productHtml = productComponent(product);
+      });
+    }
+
     let accountPlace = account[index];
+    account.forEach((acc) => {
+      console.log(acc);
+    });
     orderHtml = `
       <p class="order-info orderId-js">Order ID: ${order.orderId}</p>
       <p class="order-info accountName-js">Name: ${accountPlace.name}</p>
@@ -33,6 +45,7 @@ async function loadOrder() {
             </div>
             <!-- product END -->
           </div>`;
+    productHtml = ``;
   });
 }
 loadOrder();
