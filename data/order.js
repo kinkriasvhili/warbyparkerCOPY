@@ -1,3 +1,5 @@
+import { cart } from "./cart.js";
+
 let newOrder = [];
 
 function generateUniqueId(existingIds) {
@@ -16,18 +18,16 @@ function generateUniqueId(existingIds) {
   return id;
 }
 
-// Usage
-
-export function makeOrder(cart) {
+export function makeOrderList() {
   let existingIds = new Set();
   let orderId = generateUniqueId(existingIds);
-
+  let order = JSON.parse(localStorage.getItem("orderPlace")) || [];
   if (cart) {
-    newOrder.push({ cart, orderId });
-    saveOrder();
+    order.push({ cart, orderId });
+    saveOrder(order);
+    console.log(order);
   }
 }
-
-export function saveOrder() {
-  localStorage.setItem("order", JSON.stringify(newOrder));
+export function saveOrder(order) {
+  localStorage.setItem("orderPlace", JSON.stringify(order));
 }

@@ -1,0 +1,42 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+/* product */
+.product-add-cart,
+.product-favourite {
+  display: none;
+}
+.product-describtion {
+  bottom: 0;
+}
+/* header */
+header {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  height: 50px;
+}
+header span {
+  color: rgb(82, 82, 82);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  width: 100%;
+}
+/* main */
+.js-main-container {
+  margin-top: 20px;
+}
+.ordersContainer {
+  /* background-color: red; */
+}
