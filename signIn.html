@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/page/signIn.css" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="leftSideContainer">
+        <a class="goBackArrow" href="warbyparker.html">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <div class="infoContainer">
+          <h1>Hello!</h1>
+          <p><span class="loginInfo">Sign In</span> Your account</p>
+        </div>
+        <div class="inputContainer">
+          <input placeholder="E-mail" type="text" />
+          <div class="password-container">
+            <input placeholder="Password" type="password" id="password-input" />
+            <i class="fa-solid fa-eye" id="toggle-password"></i>
+          </div>
+          <div class="password-container register register-off">
+            <input
+              placeholder="Repeat Password"
+              type="password"
+              id="password-input"
+            />
+            <i class="fa-solid fa-eye" id="toggle-password"></i>
+          </div>
+        </div>
+        <div class="additionalContainer">
+          <div class="remember">
+            <!-- <i class="fa-solid fa-eye" id="toggle-password"></i> -->
+            <input class="rememberInput" type="checkbox" />
+            <span>Remember password</span>
+          </div>
+          <div class="forgetPassword">
+            <a href="#"> Forgot password? </a>
+          </div>
+        </div>
+        <div class="button-container">
+          <button>
+            <p class="loginButton">Log In</p>
+          </button>
+        </div>
+        <div class="registerContainer">
+          <p>Don't have an account <a class="createAccount">Register</a></p>
+        </div>
+      </div>
+      <div class="rightSideContainer">
+        <div class="leftSideHeader">
+          <h1>Welcome Back</h1>
+        </div>
+        <div class="leftSideInfo">
+          Welcome to our exclusive glasses shop, where style meets vision!
+          Discover a curated collection of eyewear designed to help you see the
+          world in a whole new light. Whether you're looking for something
+          sleek, modern, or timeless, we've got the perfect fit for you. Let's
+          get you back to looking sharp!
+        </div>
+      </div>
+    </div>
+    <script type="module" src="scripts/signIn.js"></script>
+  </body>
+</html>
