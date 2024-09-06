@@ -15,15 +15,8 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   margin-left: 5px;
   text-align: center;
-  width: 90%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.product-image {
-  width: 70%;
-}
+
 .product-image img {
   width: 100%;
   border-radius: 10px;
