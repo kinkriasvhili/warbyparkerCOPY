@@ -21,19 +21,27 @@ function generateUniqueId(existingIds) {
 export function makeOrderList(totalPrice) {
   let existingIds = new Set();
   let orderId = generateUniqueId(existingIds);
+  console.log(orderId);
   let order = JSON.parse(localStorage.getItem("orderPlace")) || [];
   if (cart) {
     let optionId;
+
     if (inputChecked()) {
       optionId = JSON.parse(localStorage.getItem("deliveryId"));
     } else {
       optionId = 1;
     }
-    console.log(optionId);
+    let optionDate = "";
+    document.querySelectorAll(".date-js").forEach((date) => {
+      if (date.getAttribute("data-option-id") == optionId) {
+        optionDate = date;
+      }
+    });
+    let optionDateString = optionDate.innerHTML;
     order.push({
       cart,
       orderId,
-      optionId,
+      optionDateString,
       totalPrice: totalPrice ? totalPrice : "",
     });
     saveOrder(order);

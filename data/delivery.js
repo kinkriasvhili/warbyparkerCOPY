@@ -26,9 +26,41 @@ export function getDeliveryOption(deliveryOptionId) {
   });
   return matchingDelivery;
 }
+export function removeOrder() {
+  let orders = JSON.parse(localStorage.getItem("orderPlace"));
+  let today = dayjs();
+  let ordersContainer = document.querySelectorAll(
+    ".order .delivery-details span"
+  );
+  let newOrder = [];
+
+  ordersContainer.forEach((orderTime) => {
+    // Assuming the year should be the current year
+    let orderDate = dayjs(
+      orderTime.innerHTML + `, ${today.year()}`,
+      "dddd, MMMM D, YYYY"
+    );
+
+    let orderId;
+    if (today.isAfter(orderDate)) {
+      orderId = orderTime.getAttribute("data-order-id");
+      orders.forEach((order) => {
+        if (order.orderId == orderId) {
+          //
+        } else {
+          newOrder.push(order);
+        }
+      });
+    } else {
+      console.log(false);
+    }
+  });
+  localStorage.setItem("orderPlace", JSON.stringify(newOrder));
+  setInterval(() => {}, 1000);
+}
 
 export function calculateDeliveryDate(addedDays) {
-  const today = dayjs();
+  let today = dayjs();
   let deliveryDate = today.add(addedDays, "days");
   let dateString = deliveryDate.format("dddd, MMMM D");
   return dateString;

@@ -10,8 +10,9 @@ function deliveryComponent(option) {
   return `
   <div class="option">
     <div>
-      <p>${calculateDeliveryDate(option.deliveryDays)}</p>
-      
+      <p class="date-js" data-option-id="${option.optionId}">
+        ${calculateDeliveryDate(option.deliveryDays)}
+      </p>
     </div>
     <div>
       <input data-option-id="${

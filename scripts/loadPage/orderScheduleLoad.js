@@ -5,6 +5,7 @@ import {
   getDeliveryOption,
   calculateDeliveryDate,
 } from "../../data/delivery.js";
+import { removeOrder } from "../../data/delivery.js";
 function showDetails() {
   const detailsIcons = document.querySelectorAll(".details-active-icon i");
   const detailsInfos = document.querySelectorAll(".details-info");
@@ -36,9 +37,10 @@ function showDetails() {
     });
   });
 }
-function getDays() {}
-async function loadOrder() {
+
+export async function loadOrder() {
   await loadProductsFetch();
+
   let productHtml = ``;
   let orderHtml = ``;
   let orders = JSON.parse(localStorage.getItem("orderPlace")) || [];
@@ -58,48 +60,52 @@ async function loadOrder() {
         productHtml = productComponent(product);
       });
     }
-    let deliveryOption = getDeliveryOption(order.optionId);
-    let deliveryDate = calculateDeliveryDate(deliveryOption.deliveryDays);
+    let deliveryDate = order.optionDateString;
+
     order.cart.forEach((cartItem) => {
       quantity += cartItem.quantity;
     });
-    console.log();
     let accountPlace = account[index];
-    orderHtml = `
+    if (accountPlace) {
+      orderHtml = `
       <p class="order-info orderId-js">Order ID: ${order.orderId}</p>
       <p class="order-info accountName-js">Name: ${accountPlace.name}</p>
       <p class="order-info address-js">Address: ${accountPlace.address}</p>
       <p class="order-info city-js">City: ${accountPlace.city}</p>
       <p class="order-info state-js">State: ${accountPlace.state}</p>`;
+    }
 
-    document.querySelector(".ordersContainer").innerHTML += `
-          <div class="order">
-            <div class="orders-info-container">
-              ${orderHtml}
-            </div>
-            <!-- product START-->
-            <div class="products">
-              ${productHtml}
-            </div>
-            <!-- product END -->
-            <div class="details-container">
-              <div class="details-active-icon">
-                <p>Product Details</p>
-                <i class="fa-solid fa-chevron-down details-off" data-order-id="${order.orderId}"></i>
+    if (document.querySelector(".ordersContainer")) {
+      document.querySelector(".ordersContainer").innerHTML += `
+            <div class="order ">
+              <div class="orders-info-container">
+                ${orderHtml}
               </div>
-              <div class="details-info details-info-off" data-order-id="${order.orderId}">
-                <div class="product-details ">
-                  <p class="price">Total price: $${order.totalPrice}</p>
-                  <p class="quantity">Products quantity: ${quantity}</p>
+              <!-- product START-->
+              <div class="products">
+                ${productHtml}
+              </div>
+              <!-- product END -->
+              <div class="details-container">
+                <div class="details-active-icon">
+                  <p>Product Details</p>
+                  <i class="fa-solid fa-chevron-down details-off" data-order-id="${order.orderId}"></i>
                 </div>
-                <div class="delivery-details">
-                  <p class="deliveryDate">Delivery time: <span>${deliveryDate}</span></p>
+                <div class="details-info details-info-off" data-order-id="${order.orderId}">
+                  <div class="product-details ">
+                    <p class="price">Total price: $${order.totalPrice}</p>
+                    <p class="quantity">Products quantity: ${quantity}</p>
+                  </div>
+                  <div class="delivery-details">
+                    <p class="deliveryDate">Delivery time: <span data-order-id="${order.orderId}">${deliveryDate}</span></p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>`;
-    productHtml = ``;
+            </div>`;
+      productHtml = ``;
+    }
     showDetails();
   });
+  removeOrder();
 }
 loadOrder();
