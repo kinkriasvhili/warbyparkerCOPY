@@ -334,13 +334,13 @@
     "id": "12asde89-98fg-12hj-er43-56g9h8jk5432-67porsvbxyz-12qwepoiuwxl",
     "type": "accessories",
     "name": "Anti-Fog Lens Spray",
-    "image": "images/products/accessories/Anti-FogLensSpray",
+    "image": "images/products/accessories/Anti-FogLensSpray.webp",
     "priceCents": 3500
   },
   {
     "id": "90bqazxc-56gh-12lk-op43-23fg9vbcxz45-56qwezxcvbn-34rtyasdflmk",
     "type": "accessories",
-    "name": "Clean My Lenses Kit with Anti-Fog Spray",
+    "name": "Clean My Lenses Kit",
     "image": "images/products/accessories/CleanMyLensesKitwithAnti-FogSpray.webp",
     "priceCents": 3500
   },

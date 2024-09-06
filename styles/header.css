@@ -1,4 +1,5 @@
 /* Header Left */
+
 .left-section-ol a span {
   letter-spacing: 2px;
   font-size: 24px;
@@ -12,6 +13,7 @@
   cursor: pointer;
 }
 /* Header Middle */
+
 .header-middle .middle-section-ol {
   display: flex;
   justify-content: center;
@@ -191,12 +193,18 @@
 .header-right a:hover {
   color: #606060;
 }
+li span {
+  font-size: 14px;
+  font-weight: bold;
+}
 
 .header-right .sign-in-button {
   border: 1px solid #e0e0e0;
   padding: 5px 10px;
 }
-
+.right-section-ol span {
+  font-weight: normal;
+}
 /* cart quantity */
 
 .quantity-caunter {
@@ -223,7 +231,7 @@ Media Query for 1200px and Below */
     display: flex;
   }
   .header-middle {
-    display: none;
+    display: flex;
     position: absolute;
     left: 0;
     z-index: 10;
@@ -231,9 +239,14 @@ Media Query for 1200px and Below */
     background-color: white;
     height: 100%;
     text-align: top;
+    max-height: 0px; /* Initially collapsed */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
   }
   .header-middle-on {
     display: flex;
+    overflow: visible;
+    max-height: 100%;
   }
   .middle-section-ol {
     display: flex;
@@ -241,7 +254,8 @@ Media Query for 1200px and Below */
     padding: 20px;
   }
   .header-middle .middle-section-ol {
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-bottom: 200px;
   }
   .middle-section-ol li {
     font-weight: bold;
@@ -253,8 +267,8 @@ Media Query for 1200px and Below */
   .show-window-homeTryOn {
     top: 0px;
     overflow: hidden;
-    width: 40vw;
-    right: -53vw;
+    max-width: 30vw;
+    right: -40vw;
   }
   .singInText {
     display: none;
@@ -263,31 +277,6 @@ Media Query for 1200px and Below */
     display: inline;
   }
   .windowImages {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0;
-    width: 100%;
-  }
-
-  .image-window-section img {
     display: none;
-  }
-  .image-window-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .image-window-section .window-button {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    transform: translateX(0);
-    color: rgb(98, 98, 98);
-    font-size: 14px;
-    padding-inline: 0;
-    padding-block: 0;
   }
 }
