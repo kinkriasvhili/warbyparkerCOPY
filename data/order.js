@@ -18,15 +18,25 @@ function generateUniqueId(existingIds) {
   return id;
 }
 
-export function makeOrderList() {
+export function makeOrderList(totalPrice) {
   let existingIds = new Set();
   let orderId = generateUniqueId(existingIds);
   let order = JSON.parse(localStorage.getItem("orderPlace")) || [];
   if (cart) {
-    let optionId = JSON.parse(localStorage.getItem("deliveryId")) || 1;
-    order.push({ cart, orderId, optionId });
-    saveOrder(order);
+    let optionId;
+    if (inputChecked()) {
+      optionId = JSON.parse(localStorage.getItem("deliveryId"));
+    } else {
+      optionId = 1;
+    }
     console.log(optionId);
+    order.push({
+      cart,
+      orderId,
+      optionId,
+      totalPrice: totalPrice ? totalPrice : "",
+    });
+    saveOrder(order);
   }
 }
 export function saveOrder(order) {

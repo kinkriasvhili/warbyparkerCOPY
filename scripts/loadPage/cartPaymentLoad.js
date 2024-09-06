@@ -58,7 +58,6 @@ export async function loadCartPayment(deliveryPriceCents) {
           <a href="placeOrder.html">
             <button class="js-placeOrder-button">Place Your Order</button>
           </a>
-          
         </div>`;
   document.querySelector(".payment-order-container").innerHTML = paymentHtml;
   const placeOrderButton = document.querySelector(".js-placeOrder-button");
@@ -74,12 +73,12 @@ export async function loadCartPayment(deliveryPriceCents) {
       .querySelector(".delivery-container-js")
       .classList.remove("deliveryOff");
   }
-  /** 
-
-   * 
-  */
+  /**
+   *
+   */
   placeOrderButton.addEventListener("click", () => {
-    makeOrderList();
+    //
+    makeOrderList(formatCurrency(totalPriceCents));
     loadCartPayment();
     localStorage.removeItem("cart");
   });

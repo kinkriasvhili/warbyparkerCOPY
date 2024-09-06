@@ -1,14 +1,5 @@
 body {
-  padding: 0;
-  margin: 0;
-}
-/* product */
-.product-add-cart,
-.product-favourite {
-  display: none;
-}
-.product-describtion {
-  bottom: 0;
+  margin-bottom: 50px;
 }
 /* header */
 header {
@@ -32,10 +23,99 @@ a {
   text-decoration: none;
   width: 100%;
 }
+/* ? */
+p {
+  margin: 0;
+}
 /* main */
+.ordersContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
 .js-main-container {
   margin-top: 20px;
 }
-.ordersContainer {
-  /* background-color: red; */
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* product */
+.products {
+  width: 90%;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping of products */
+  gap: 20px; /* Adds space between products */
+}
+.product-add-cart,
+.product-favourite {
+  display: none;
+}
+.product-describtion {
+  bottom: 0;
+}
+.product {
+  flex: 1 1 200px; /* Ensure each product has a minimum width and can shrink/grow */
+  max-width: 250px; /* Set a maximum width for products */
+}
+/* order info */
+.orders-info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  background-color: rgb(200, 200, 0);
+  height: 50px;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  width: 90%;
+}
+
+/* details-container */
+.details-container {
+  font-weight: bolder;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 90%;
+}
+.details-container p {
+  margin-bottom: 20px;
+}
+
+.details-container div {
+  margin-left: 1vw;
+  width: 40%;
+}
+.details-active-icon {
+  display: flex;
+  gap: 0;
+}
+.details-active-icon i {
+  cursor: pointer;
+  margin-left: 1vw;
+}
+.details-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.details-info-active {
+  max-height: 200px; /* Adjust based on content height */
+}
+
+.details-info-off {
+  max-height: 0; /* Keeps it hidden */
+}
+.details-info p {
+  width: 30vw;
 }

@@ -25,7 +25,7 @@ function deliveryComponent(option) {
     </div>
   </div>`;
 }
-
+let chooseOption = false;
 export function inputChecked() {
   let optionId = "";
   const inputs = document.querySelectorAll(".deliveryCheckBox");
@@ -35,6 +35,7 @@ export function inputChecked() {
       input.checked = true;
     }
     input.addEventListener("click", () => {
+      chooseOption = true;
       optionId = input.getAttribute("data-option-id");
       inputs.forEach((checkInput) => {
         {
@@ -50,6 +51,7 @@ export function inputChecked() {
       localStorage.setItem("deliveryId", JSON.stringify(optionId));
     });
   });
+  return chooseOption;
 }
 
 export function loadCartDelivery() {
