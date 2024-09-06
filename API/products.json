@@ -328,5 +328,77 @@
     "name": "Roosevelt",
     "type": "sunglasses",
     "priceCents": 9500
+  },
+
+  {
+    "id": "12asde89-98fg-12hj-er43-56g9h8jk5432-67porsvbxyz-12qwepoiuwxl",
+    "type": "accessories",
+    "name": "Anti-Fog Lens Spray",
+    "image": "images/products/accessories/Anti-FogLensSpray",
+    "priceCents": 3500
+  },
+  {
+    "id": "90bqazxc-56gh-12lk-op43-23fg9vbcxz45-56qwezxcvbn-34rtyasdflmk",
+    "type": "accessories",
+    "name": "Clean My Lenses Kit with Anti-Fog Spray",
+    "image": "images/products/accessories/CleanMyLensesKitwithAnti-FogSpray.webp",
+    "priceCents": 3500
+  },
+  {
+    "id": "12nmjk90-67fd-34as-ty12-67qweoplkmnb-12wqasdfrty-89iklopqweaz",
+    "type": "accessories",
+    "name": "Esme Medium Clip-On",
+    "image": "images/products/accessories/EsmeMediumClip-On.webp",
+    "priceCents": 3500
+  },
+  {
+    "id": "67dfe45a-78jh-23ls-e9f2-456g7k8h1234-56bfgtyasd-45klnbqwerpl",
+    "type": "accessories",
+    "name": "Felix Clip-On Medium",
+    "image": "images/products/accessories/FelixClip-OnMedium.webp",
+    "priceCents": 3500
+  },
+  {
+    "id": "5hnmj123-78de-45rt-bv09-12qwdfghyuio-45wsedfghyu-67xcmkaslpqw",
+    "type": "accessories",
+    "name": "Keiko Medium Clip-On",
+    "image": "images/products/accessories/KeikoMediumClip-On.webp",
+    "priceCents": 3500
+  },
+  {
+    "id": "78plmk12-56po-34lk-er23-45tyhnjklzxw-23qasdfgtyu-12cmopqasdfgh",
+    "type": "accessories",
+    "name": "Parker Case",
+    "image": "images/products/accessories/ParkerCase.webp",
+    "priceCents": 3500
+  },
+  {
+    "id": "4h7gda23-12fd-89jk-lm56-23c8b9sdf789-12plmjknas-87tyhwrwoprt",
+    "type": "accessories",
+    "name": "Parker Pouch - Double",
+    "image": "images/products/accessories/ParkerPouch-Double.webp",
+    "priceCents": 3500
+  },
+  {
+    "id": "67dfe45a-78jh-23ls-e9f2-456g7k8h1234-56bfgtyasd-45klnbqwerpl",
+    "type": "accessories",
+    "name": "Parker Pouch - Single",
+    "image": "images/products/accessories/ParkerPouch-Single.webp",
+    "priceCents": 3500
+  },
+
+  {
+    "id": "67trfd90-12hy-78re-po67-56bvqweasd98-45xcvplokmn-89qasdmzxcvb",
+    "type": "accessories",
+    "name": "Parker Travel Case",
+    "image": "images/products/accessories/ParkerTravelCase.webp",
+    "priceCents": 3500
+  },
+  {
+    "id": "5rg7sd34-12tr-89lk-df67-12yhnmbvcxz9-34qweasdzxc-45poryqweudc",
+    "type": "accessories",
+    "name": "Perecy Clip-On Medium",
+    "image": "images/products/accessories/PerceyClip-OnMedium.webp",
+    "priceCents": 3500
   }
 ]
