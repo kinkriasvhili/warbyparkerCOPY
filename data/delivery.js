@@ -32,8 +32,7 @@ export function removeOrder() {
   let ordersContainer = document.querySelectorAll(
     ".order .delivery-details span"
   );
-  let newOrder = [];
-
+  let newOrder;
   ordersContainer.forEach((orderTime) => {
     // Assuming the year should be the current year
     let orderDate = dayjs(
@@ -43,6 +42,8 @@ export function removeOrder() {
 
     let orderId;
     if (today.isAfter(orderDate)) {
+      newOrder = [];
+
       orderId = orderTime.getAttribute("data-order-id");
       orders.forEach((order) => {
         if (order.orderId == orderId) {
@@ -55,7 +56,11 @@ export function removeOrder() {
       console.log(false);
     }
   });
-  localStorage.setItem("orderPlace", JSON.stringify(newOrder));
+
+  localStorage.setItem(
+    "orderPlace",
+    JSON.stringify(newOrder ? newOrder : orders)
+  );
   setInterval(() => {}, 1000);
 }
 
