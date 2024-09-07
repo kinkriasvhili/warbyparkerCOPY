@@ -1,40 +1,121 @@
-.products {
-  padding: 20px;
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 100px;
-}
-.product {
-  position: relative;
-  width: 90%;
-  height: 100%;
+.bestSelling-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 50px;
+  background-color: white;
+  border-radius: 10px;
+  background: linear-gradient(to right, gray 45%, white 55%);
+  margin-bottom: 50px;
+  border-radius: 0;
 }
-.product-image {
-  width: 70%;
+
+.bestSelling-info-container {
+  max-width: 40%;
 }
-.product-describtion p {
-  left: 0;
+
+.selling-header-container h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333;
+  max-width: 50px;
+  margin: 0;
 }
-.product-describtion p:nth-child(1) {
-  left: 0;
-  padding-left: 0;
+.selling-describtion-container {
+  margin-top: 20px;
+  color: rgb(161, 161, 161);
+  font-size: 14px;
+  font-weight: bold;
 }
-@media (max-width: 1350px) {
-  .products {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+
+.selling-info {
+  color: #f1a329; /* Matches the yellow-orange theme */
 }
-@media (max-width: 950px) {
-  .products {
-    grid-template-columns: 1fr 1fr;
-  }
+.selling-info-pr {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
 }
-@media (max-width: 750px) {
-  .products {
-    grid-template-columns: 1fr;
-  }
+.selling-describtion {
+  font-size: 14px;
+  color: #d7d7d7;
+  font-weight: bold;
+}
+
+.selling-shop-container {
+  margin-top: 30px;
+}
+.selling-shop {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #f1a329;
+  padding-bottom: 3px;
+  transition: all 0.3s ease;
+}
+
+.selling-shop:hover {
+  color: #f1a329;
+}
+
+.fa-chevron-right {
+  margin-left: 10px;
+}
+/* image */
+.bestSelling-image-container {
+  height: 100%;
+  position: relative;
+  max-width: 40%;
+}
+
+.bestSelling-image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.images-container {
+  position: relative;
+  display: inline-block;
+}
+
+.threeDots {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot-active,
+.dot-off {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+}
+
+.dot-active {
+  background-color: #f1a329;
+}
+
+.dot-off {
+  background-color: #ddd;
+}
+
+/* Optional: Add a 50% badge */
+.selling-badge {
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  background-color: #f1a329;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50%;
+  transform: rotate(-15deg);
 }

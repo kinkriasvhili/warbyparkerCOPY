@@ -81,9 +81,7 @@
 .product-price {
   transform: translate(-40%, 0);
 }
-.product-name {
-  transform: translate(+20%, 0);
-}
+
 .added-to-cart {
   color: black;
   position: absolute;
