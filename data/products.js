@@ -1,10 +1,21 @@
 export function getProduct(productId) {
   let matchingProduct;
-  products.forEach((product) => {
-    if (product.id == productId) {
-      matchingProduct = product;
-    }
-  });
+
+  if (JSON.parse(localStorage.getItem("glassesproducts"))) {
+    let jsonProducts = JSON.parse(localStorage.getItem("glassesproducts"));
+    jsonProducts.forEach((product) => {
+      if (product.id == productId) {
+        matchingProduct = product;
+      }
+    });
+  } else {
+    products.forEach((product) => {
+      if (product.id == productId) {
+        matchingProduct = product;
+      }
+    });
+  }
+
   return matchingProduct;
 }
 
@@ -16,6 +27,10 @@ class Product {
   type;
   location;
   favourite;
+  bestSelling;
+  color;
+  size;
+  colors;
   constructor(productDetails) {
     this.id = productDetails.id;
     this.image = productDetails.image;
@@ -27,6 +42,10 @@ class Product {
     this.bestSelling = productDetails.bestSelling
       ? productDetails.bestSelling
       : false;
+    this.brand = productDetails.brand;
+    this.color = productDetails.color;
+    this.size = productDetails.size;
+    this.colors = productDetails.colors;
   }
 }
 export let products = JSON.parse(localStorage.getItem("glassesproducts")) || [];
@@ -49,6 +68,6 @@ export async function loadProductsFetch(fun) {
   }
 }
 
-export function saveProductToStorage() {
+export function saveProductToStorage(products) {
   localStorage.setItem("glassesproducts", JSON.stringify(products));
 }

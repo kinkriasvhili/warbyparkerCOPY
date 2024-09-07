@@ -1,5 +1,5 @@
 import { products, getProduct, saveProductToStorage } from "./products.js";
-import { loadHeader } from "../scripts/loadPage/loadheader.js";
+import { loadHeader } from "../scripts/loadPage/loadHeader.js";
 import { loadFavouriteProducts } from "../scripts/favouritePage.js";
 
 export let favourite = JSON.parse(localStorage.getItem("favourite")) || [];
@@ -55,11 +55,13 @@ export function addToFavourite() {
   });
   if (favourite) {
     favourite.forEach((product) => {
-      if (product.favourite == true) {
-        let favbutton = document.querySelector(`.fav-btn-${product.id}`);
-        if (favbutton) {
-          favbutton.classList.remove("fa-regular");
-          favbutton.classList.add("fa-solid");
+      if (product) {
+        if (product.favourite == true) {
+          let favbutton = document.querySelector(`.fav-btn-${product.id}`);
+          if (favbutton) {
+            favbutton.classList.remove("fa-regular");
+            favbutton.classList.add("fa-solid");
+          }
         }
       }
     });

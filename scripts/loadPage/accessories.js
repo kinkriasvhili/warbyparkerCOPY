@@ -35,7 +35,7 @@ async function loadAccessories() {
     if (product.bestSelling == true && product.type == "accessories") {
       bestSellingHtml += ` 
         <div class="product-image-container image-off" data-product-id="${product.id}">
-          <a class="singleProduct-link-js" data-productId="${product.id}" href="#">
+          <a class="singleProduct-link-js" data-productId="${product.id}" href="../../singleproduct.html">
             <img
               src="${product.image}"
               alt=""

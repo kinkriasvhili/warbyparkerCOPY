@@ -1,4 +1,4 @@
-import { loadHeader } from "./loadPage/loadheader.js";
+import { loadHeader } from "./loadPage/loadHeader.js";
 import { loadProductsFetch } from "../data/products.js";
 import { formatCurrency } from "./utils/money.js";
 import { addToFavourite, favourite } from "../../data/faovurite.js";
@@ -12,7 +12,7 @@ export async function loadFavouriteProducts() {
   const productsContainerElement = document.querySelector(".products");
   const favouriteInfoText = document.querySelector(".favourite-info-container");
   let productsHtml = ``;
-  if (favourite.length == 0) {
+  if (favourite.length == 0 && favouriteInfoText) {
     favouriteInfoText.classList.add("favouriteInfoTextNone");
     favouriteInfoText.innerHTML = `
     <div class="favouriteEmpty">

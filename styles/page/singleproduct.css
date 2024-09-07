@@ -1,0 +1,144 @@
+/* Reset padding and margin */
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Main section styling */
+main {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+/* Button styling */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+/* Single product container */
+.singleProductCotainer {
+  width: 90%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  gap: 40px;
+  transition: box-shadow 0.3s ease;
+}
+/* Image container */
+.singleProductImage-container {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  align-items: center;
+}
+
+.singleProductImage {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Product details container */
+.singleProductDetails-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 50px;
+}
+
+/* Info section */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-container div {
+  border-bottom: 1px solid rgb(219, 219, 219);
+  padding-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Size selection */
+.colorSelect-container,
+.sizeSelect-container {
+  display: flex;
+  gap: 10px;
+}
+.colorSelect,
+.sizeSelect {
+  padding: 15px 25px;
+  background-color: #f5f5dc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sizeSelect:hover {
+  background-color: #ededd4;
+}
+
+/* Buttons section */
+.addButtons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.product-add-cart button {
+  background-color: #f5f5dc;
+  border: none;
+  padding: 10px 16px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgb(255, 166, 0);
+}
+.product-add-cart button:active {
+  border: 3px solid rgb(130, 85, 0);
+}
+.product-add-cart button img {
+  color: white;
+}
+
+.added-to-cart {
+  display: flex;
+  align-items: center;
+  color: #28a745;
+  font-size: 16px;
+}
+
+.added-to-cart i {
+  margin-right: 6px;
+}
+
+/* Product details */
+.productDetails p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.added-to-cart {
+  display: none;
+}
+.buttonActive {
+  border: 3px solid orange;
+}

@@ -14,11 +14,13 @@ function saveSingleProductId(productId) {
   localStorage.setItem("singleProductId", JSON.stringify(productId));
 }
 export function productHtml(product) {
-  let productHtml = `<div class="product">
+  let productHtml;
+  if (product) {
+    productHtml = `<div class="product">
         <div class="product-image">
           <a class="singleProduct-link-js"  data-productId="${
             product.id
-          }"  href="#">
+          }"  href="../singleproduct.html">
             <img src="${product.image}" alt="" />
           </a>
         </div>
@@ -47,6 +49,7 @@ export function productHtml(product) {
           <p class="product-price">$${formatCurrency(product.priceCents)}</p>
         </div>
       </div>`;
+  }
 
   return productHtml;
 }

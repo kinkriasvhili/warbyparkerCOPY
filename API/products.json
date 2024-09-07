@@ -6,7 +6,11 @@
     "type": "sunglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "f2a5a7e4-b9d3-4d7e-8e9f-63a66b44b705",
@@ -15,7 +19,11 @@
     "type": "sunglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "d60a5f3a-cd3d-4a6f-a7d9-f1c98f57e5bb",
@@ -24,7 +32,11 @@
     "type": "sunglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "a4db4f26-fd73-41a5-bb27-dc0f7e3dbd99",
@@ -33,7 +45,11 @@
     "type": "sunglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "b27f14c1-4a2d-45d7-bf5f-e1547f7c61a5",
@@ -42,7 +58,11 @@
     "type": "sunglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "e15a5f3a-64a9-45d8-a1c8-f1b98d67e2aa",
@@ -51,7 +71,11 @@
     "type": "sunglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "a64b5f3a-a68f-45a7-b7d9-f1c99d67f2bb",
@@ -60,7 +84,11 @@
     "type": "sunglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "c3a5f7a5-d8c4-456b-9b89-e1547f7f51e6",
@@ -69,7 +97,11 @@
     "type": "sunglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "d71a9c5f-4b2d-486a-b5f9-e1547f7f61a8",
@@ -78,7 +110,11 @@
     "type": "sunglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "f25f1a3a-79c6-4d57-919e-1547f7f11b8f",
@@ -87,7 +123,11 @@
     "type": "sunglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "b46a1bda-4f7d-4d5d-9e4c-b1a2f6e0dfb1",
@@ -96,7 +136,11 @@
     "type": "eyeglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "c56d2bea-5e7c-4d6e-9f5c-c1b3f7e1efc2",
@@ -105,7 +149,11 @@
     "type": "eyeglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "d67e3cfb-6f8d-4e7f-a6g6-d2c4g8f2gfd3",
@@ -114,7 +162,11 @@
     "type": "eyeglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "e78f4dfc-7g9e-4f8g-a7h7-e3d5h9g3hge4",
@@ -123,7 +175,11 @@
     "type": "eyeglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "f89g5efg-8h0f-5g9h-a8i8-f4e6i0h4ihf5",
@@ -132,7 +188,11 @@
     "type": "eyeglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "g9ah6fgh-9i1g-5h0i-a9j9-g5f7j1i5jih6",
@@ -141,7 +201,11 @@
     "type": "eyeglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "h0bi7ghi-aj2h-6i1j-b0k0-h6g8k2j6kji7",
@@ -150,7 +214,11 @@
     "type": "eyeglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "i1cj8hij-bk3i-6j2k-c1l1-i7h9l3k7lkj8",
@@ -159,7 +227,11 @@
     "type": "eyeglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "j2dk9ijk-cl4j-7k3l-d2m2-j8i0m4l8mlk9",
@@ -168,7 +240,11 @@
     "type": "eyeglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "k3elajkl-dm5k-7l4m-e3n3-k9j1n5m9nml0",
@@ -177,7 +253,11 @@
     "type": "eyeglasses",
     "priceCents": 9500,
     "location": "warbyparker",
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "a1dfad12-12f3-42e6-b012-123e5f6a7123",
@@ -185,7 +265,11 @@
     "name": "Daisy",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "b2efad34-23f4-43f7-c123-234e6g7a8234",
@@ -193,7 +277,11 @@
     "name": "Gillian",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "c3gfad56-34f5-54g8-d234-345f7h8b9345",
@@ -201,7 +289,11 @@
     "name": "Haskell",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "d4hfad78-45g6-65h9-e345-456g8i9c0456",
@@ -209,7 +301,11 @@
     "name": "Kimball",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "e5ifad90-56h7-76i0-f456-567h9j0d1567",
@@ -217,7 +313,11 @@
     "name": "Shea",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "f6jgad12-67i8-87j1-g567-678i0k1e2678",
@@ -225,7 +325,11 @@
     "name": "Stockton",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "g7khab34-78j9-98k2-h678-789j1l2f3789",
@@ -233,7 +337,11 @@
     "name": "Tatum",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "h8lmac56-89k0-09l3-i789-890k2m3g4890",
@@ -241,7 +349,11 @@
     "name": "Weathers",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "i9nobd78-90l1-10m4-j890-901l3n4h5901",
@@ -249,7 +361,11 @@
     "name": "Whalen",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "j0poca12-01m2-21n5-k901-012m4o5i6012",
@@ -257,77 +373,121 @@
     "name": "Welty",
     "type": "eyeglasses",
     "priceCents": 9500,
-    "favourite": false
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "e39f76a8-7f91-4118-9b87-2f0348e66a16",
     "image": "images/products/sunglasses/sunglasses-atchison.webp",
     "name": "Atchison",
     "type": "sunglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "5dc9e5e4-1b45-4692-9150-5fcda14f6789",
     "image": "images/products/sunglasses/sunglasses-atrell.webp",
     "name": "Atrell",
     "type": "sunglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "682fd92d-2f6f-4b5f-9635-bdfbe1d34f79",
     "image": "images/products/sunglasses/sunglasses-belmar.webp",
     "name": "Belmar",
     "type": "sunglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "ca3d7e68-e20c-4abf-bb6b-754b14721b9f",
     "image": "images/products/sunglasses/sunglasses-blaise.webp",
     "name": "Blaise",
     "type": "sunglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "34a6d6b2-cc25-4b3b-8b7e-cb8e0e0b5e99",
     "image": "images/products/sunglasses/sunglasses-braden.webp",
     "name": "Braden",
     "type": "sunglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "4c301e6c-d457-4723-b3e6-2463c2e3054e",
     "image": "images/products/sunglasses/sunglasses-cowley.webp",
     "name": "Cowley",
     "type": "sunglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "eeb69ef2-b7c8-4b7e-8998-3cbf78d1489f",
     "image": "images/products/sunglasses/sunglasses-fisher.webp",
     "name": "Fisher",
     "type": "sunglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "cf2f43a1-e045-4db7-b548-d37248ac5f54",
     "image": "images/products/sunglasses/sunglasses-gemma.jpg",
     "name": "Gemma",
     "type": "sunglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "3a3d4c6d-8f61-44a7-b282-b0ed8b69cf06",
     "image": "images/products/sunglasses/sunglasses-newman.webp",
     "name": "Newman",
     "type": "sunglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "053bc528-2ff5-4d7d-b97e-7a5b7f4d55a5",
     "image": "images/products/sunglasses/sunglasses-roosevlet.jpg",
     "name": "Roosevelt",
     "type": "sunglasses",
-    "priceCents": 9500
+    "priceCents": 9500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
 
   {
@@ -335,49 +495,77 @@
     "type": "accessories",
     "name": "Anti-Fog Lens Spray",
     "image": "images/products/accessories/Anti-FogLensSpray.webp",
-    "priceCents": 3500
+    "priceCents": 3500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "90bqazxc-56gh-12lk-op43-23fg9vbcxz45-56qwezxcvbn-34rtyasdflmk",
     "type": "accessories",
     "name": "Clean My Lenses Kit",
     "image": "images/products/accessories/CleanMyLensesKitwithAnti-FogSpray.webp",
-    "priceCents": 3500
+    "priceCents": 3500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "12nmjk90-67fd-34as-ty12-67qweoplkmnb-12wqasdfrty-89iklopqweaz",
     "type": "accessories",
     "name": "Esme Medium Clip-On",
     "image": "images/products/accessories/EsmeMediumClip-On.webp",
-    "priceCents": 3500
+    "priceCents": 3500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "67dfe45a-78jh-23ls-e9f2-456g7k8h1234-56bfgtyasd-45klnbqwerpl",
     "type": "accessories",
     "name": "Felix Clip-On Medium",
     "image": "images/products/accessories/FelixClip-OnMedium.webp",
-    "priceCents": 3500
+    "priceCents": 3500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "5hnmj123-78de-45rt-bv09-12qwdfghyuio-45wsedfghyu-67xcmkaslpqw",
     "type": "accessories",
     "name": "Keiko Medium Clip-On",
     "image": "images/products/accessories/KeikoMediumClip-On.webp",
-    "priceCents": 3500
+    "priceCents": 3500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "78plmk12-56po-34lk-er23-45tyhnjklzxw-23qasdfgtyu-12cmopqasdfgh",
     "type": "accessories",
     "name": "Parker Case",
     "image": "images/products/accessories/ParkerCase.webp",
-    "priceCents": 3500
+    "priceCents": 3500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "4h7gda23-12fd-89jk-lm56-23c8b9sdf789-12plmjknas-87tyhwrwoprt",
     "type": "accessories",
     "name": "Parker Pouch - Double",
     "image": "images/products/accessories/ParkerPouch-Double.webp",
-    "priceCents": 3500
+    "priceCents": 3500,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "67dfe45a-78jh-23ls-e9f2-456g7k8h1234-56bfgtyasd-45klnbqwerpl",
@@ -385,7 +573,11 @@
     "name": "Parker Pouch - Single",
     "image": "images/products/accessories/ParkerPouch-Single.webp",
     "priceCents": 3500,
-    "bestSelling": true
+    "bestSelling": true,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
 
   {
@@ -394,7 +586,11 @@
     "name": "Parker Travel Case",
     "image": "images/products/accessories/ParkerTravelCase.webp",
     "priceCents": 3500,
-    "bestSelling": true
+    "bestSelling": true,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   },
   {
     "id": "5rg7sd34-12tr-89lk-df67-12yhnmbvcxz9-34qweasdzxc-45poryqweudc",
@@ -402,6 +598,10 @@
     "name": "Perecy Clip-On Medium",
     "image": "images/products/accessories/PerceyClip-OnMedium.webp",
     "priceCents": 3500,
-    "bestSelling": true
+    "bestSelling": true,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "red",
+    "colors": [{ "name": "yellow" }, { "name": "orange" }, { "name": "red" }]
   }
 ]
