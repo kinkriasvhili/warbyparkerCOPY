@@ -24,6 +24,9 @@ class Product {
     this.type = productDetails.type;
     this.location = productDetails.location;
     this.favourite = productDetails.favourite;
+    this.bestSelling = productDetails.bestSelling
+      ? productDetails.bestSelling
+      : false;
   }
 }
 export let products = JSON.parse(localStorage.getItem("glassesproducts")) || [];

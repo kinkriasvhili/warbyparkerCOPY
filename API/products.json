@@ -384,7 +384,8 @@
     "type": "accessories",
     "name": "Parker Pouch - Single",
     "image": "images/products/accessories/ParkerPouch-Single.webp",
-    "priceCents": 3500
+    "priceCents": 3500,
+    "bestSelling": true
   },
 
   {
@@ -392,13 +393,15 @@
     "type": "accessories",
     "name": "Parker Travel Case",
     "image": "images/products/accessories/ParkerTravelCase.webp",
-    "priceCents": 3500
+    "priceCents": 3500,
+    "bestSelling": true
   },
   {
     "id": "5rg7sd34-12tr-89lk-df67-12yhnmbvcxz9-34qweasdzxc-45poryqweudc",
     "type": "accessories",
     "name": "Perecy Clip-On Medium",
     "image": "images/products/accessories/PerceyClip-OnMedium.webp",
-    "priceCents": 3500
+    "priceCents": 3500,
+    "bestSelling": true
   }
 ]

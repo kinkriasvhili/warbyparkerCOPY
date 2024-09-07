@@ -70,15 +70,9 @@
   position: relative;
   max-width: 40%;
 }
-
 .bestSelling-image-container img {
   max-width: 100%;
   border-radius: 10px;
-}
-
-.images-container {
-  position: relative;
-  display: inline-block;
 }
 
 .threeDots {
@@ -89,8 +83,7 @@
   display: flex;
 }
 
-.dot-active,
-.dot-off {
+.imageDot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -100,10 +93,6 @@
 
 .dot-active {
   background-color: #f1a329;
-}
-
-.dot-off {
-  background-color: #ddd;
 }
 
 /* Optional: Add a 50% badge */
@@ -118,4 +107,13 @@
   padding: 10px 20px;
   border-radius: 50%;
   transform: rotate(-15deg);
+}
+.image-off {
+  display: none;
+}
+.image-on {
+  display: flex;
+}
+.image-dot-js {
+  cursor: pointer;
 }
