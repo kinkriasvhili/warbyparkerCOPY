@@ -1,9 +1,26 @@
 import formatCurrency from "../scripts/utils/money.js";
+export function getClickedProductId() {
+  const links = document.querySelectorAll(".singleProduct-link-js");
 
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      const productId = link.getAttribute("data-productId");
+      saveSingleProductId(productId);
+      console.log(productId);
+    });
+  });
+}
+function saveSingleProductId(productId) {
+  localStorage.setItem("singleProductId", JSON.stringify(productId));
+}
 export function productHtml(product) {
-  return `<div class="product">
+  let productHtml = `<div class="product">
         <div class="product-image">
-          <img src="${product.image}" alt="" />
+          <a class="singleProduct-link-js"  data-productId="${
+            product.id
+          }"  href="#">
+            <img src="${product.image}" alt="" />
+          </a>
         </div>
         <div class="product-favourite">
           <button data-productId="${product.id}">
@@ -30,4 +47,6 @@ export function productHtml(product) {
           <p class="product-price">$${formatCurrency(product.priceCents)}</p>
         </div>
       </div>`;
+
+  return productHtml;
 }

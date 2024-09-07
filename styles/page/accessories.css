@@ -1,3 +1,6 @@
+.accessories-info-container {
+  text-align: center;
+}
 .bestSelling-container {
   display: flex;
   justify-content: space-between;

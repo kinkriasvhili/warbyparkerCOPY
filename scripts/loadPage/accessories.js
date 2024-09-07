@@ -1,7 +1,7 @@
 import { addToFavourite } from "../../data/faovurite.js";
 import { loadGlassesProducts } from "./glassesShopLoad.js";
 import { loadProductsFetch, products } from "../../data/products.js";
-
+import { getClickedProductId } from "../../htmlComponents/product.js";
 function changeDotToImage() {
   const dots = document.querySelectorAll(".image-dot-js");
   const images = document.querySelectorAll(".product-image-container");
@@ -35,7 +35,7 @@ async function loadAccessories() {
     if (product.bestSelling == true && product.type == "accessories") {
       bestSellingHtml += ` 
         <div class="product-image-container image-off" data-product-id="${product.id}">
-          <a href="">
+          <a class="singleProduct-link-js" data-productId="${product.id}" href="#">
             <img
               src="${product.image}"
               alt=""
@@ -49,7 +49,7 @@ async function loadAccessories() {
     productImagesElement.innerHTML = bestSellingHtml;
     loadGlassesProducts("accessories");
   }
-
+  getClickedProductId();
   changeDotToImage();
 }
 loadAccessories();

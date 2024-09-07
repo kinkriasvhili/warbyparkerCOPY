@@ -4,7 +4,7 @@ import { loadHeader } from "./loadPage/loadheader.js";
 import { addToFavourite } from "../data/faovurite.js";
 import { loadFooter } from "./loadPage/loadfooter.js";
 import { addToCart } from "../data/cart.js";
-import { productHtml } from "../htmlComponents/product.js";
+import { productHtml, getClickedProductId } from "../htmlComponents/product.js";
 
 function renderProductsWarbyparker() {
   const productsContainer = document.querySelector(".products");
@@ -26,6 +26,7 @@ function renderProductsWarbyparker() {
   });
 
   productsContainer.innerHTML = productsHtml;
+  getClickedProductId();
   addToFavourite();
   addToCart();
 }

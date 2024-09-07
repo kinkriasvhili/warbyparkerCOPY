@@ -3,7 +3,10 @@ import { products, loadProductsFetch } from "../../data/products.js";
 import { formatCurrency } from "../utils/money.js";
 import { addToFavourite } from "../../data/faovurite.js";
 import { addToCart } from "../../data/cart.js";
-import { productHtml } from "../../htmlComponents/product.js";
+import {
+  productHtml,
+  getClickedProductId,
+} from "../../htmlComponents/product.js";
 export async function loadGlassesProducts(type) {
   await loadProductsFetch();
 
@@ -16,6 +19,7 @@ export async function loadGlassesProducts(type) {
     }
   });
   productsContainerElement.innerHTML = productsHtml;
+  getClickedProductId();
   addToFavourite();
   addToCart();
 }
