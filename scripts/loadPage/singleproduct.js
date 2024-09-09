@@ -1,5 +1,5 @@
 import { loadFooter } from "../loadPage/loadfooter.js";
-import { loadHeader } from "../loadPage/loadHeader.js";
+import { loadHeader } from "./loadPage/loadHeader.js";
 import { saveToCart, cart } from "../../data/cart.js";
 
 import {

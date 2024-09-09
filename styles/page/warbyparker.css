@@ -195,31 +195,32 @@ main .home-container {
   border-radius: 30px;
   cursor: pointer;
 }
-.get-sale-container,
-.new-frames-container {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  gap: 12vw;
-  align-items: center;
+.newFrames-getSale-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  margin-top: 150px;
 }
 .sale-image-container,
 .new-frames-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   object-fit: cover;
-  width: 35vw;
-  max-height: 393px;
+  max-height: 500px;
 }
 .sale-image,
 .new-frames-image {
   width: 100%;
   height: 100%;
+  max-width: 500px;
 }
 /* get sale */
 .sale-info-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
 }
 .info-text {
@@ -238,6 +239,7 @@ main .home-container {
 }
 .info-buttons {
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 .info-buttons button {
