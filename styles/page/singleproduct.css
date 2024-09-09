@@ -69,6 +69,21 @@ button {
   padding-bottom: 20px;
   font-size: 18px;
   color: #333;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.count-rating,
+.star-rating {
+  width: 100px;
+  margin: 0 20px;
+}
+.count-rating {
+  font-size: 14px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 /* Size selection */
@@ -141,4 +156,21 @@ button {
 }
 .buttonActive {
   border: 3px solid orange;
+}
+.update-quantity {
+  margin-right: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chervon {
+  color: orange;
+  font-weight: bolder;
+  font-size: 25px;
+  cursor: pointer;
+}
+.quantity {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0 10px;
 }

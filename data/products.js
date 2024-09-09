@@ -31,7 +31,10 @@ class Product {
   color;
   size;
   colors;
+  ratings;
+  gender;
   constructor(productDetails) {
+    this.gender = productDetails.gender;
     this.id = productDetails.id;
     this.image = productDetails.image;
     this.name = productDetails.name;
@@ -46,6 +49,7 @@ class Product {
     this.color = productDetails.color;
     this.size = productDetails.size;
     this.colors = productDetails.colors;
+    this.ratings = productDetails.ratings;
   }
 }
 export let products = JSON.parse(localStorage.getItem("glassesproducts")) || [];

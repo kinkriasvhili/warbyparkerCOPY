@@ -20,7 +20,7 @@ async function loadSingleProduct() {
   let colorHtml = ``;
   product.colors.forEach((color) => {
     if (product.color == color.name) {
-      colorHtml += `<div class="colorSelect buttonActive">${color.name}</div>`;
+      colorHtml += `<div style="border: 3px solid ${color.name};" class="colorSelect buttonActive">${color.name}</div>`;
     } else {
       colorHtml += `<div class="colorSelect">${color.name}</div>`;
     }
@@ -40,6 +40,11 @@ async function loadSingleProduct() {
             <div>Name: ${product.name}</div>
             <div>Brand: ${product.brand}</div>
             <div>Price: $${formatCurrency(product.priceCents)}</div>
+            <div>Rating Stars: <img src="images/ratings/rating-${
+              product.ratings.stars * 10
+            }.png" class="star-rating"> - <span class="count-rating">
+            ${product.ratings.count}</span> </div>
+
           </div>
           <div class="sizeSelect-container">
             <div class="sizeSelect buttonActive">S</div>
@@ -50,10 +55,13 @@ async function loadSingleProduct() {
             ${colorHtml}
           </div>
           <div class="addButtons">
-            <div class="added-to-cart js-added-cart-${product.id}">
-              <i class="fa-solid fa-plus"></i>
-              Added
+
+            <div class="update-quantity">
+              <i class="fa-solid fa-chevron-left chervon"></i>
+              <span class="quantity">1</span>
+              <i class="fa-solid fa-chevron-right chervon"></i>
             </div>
+
             <div class="product-add-cart">
               <button class="js-cart-btn" data-productId="${product.id}">
                 <img
@@ -63,6 +71,7 @@ async function loadSingleProduct() {
                 />
               </button>
             </div>
+            
           </div>
         </div>`;
   const colors = document.querySelectorAll(".colorSelect");
@@ -78,26 +87,52 @@ async function loadSingleProduct() {
   });
 
   const idProduct = product.id;
-  addToSinglePageCart(idProduct, cartButton);
+  changeQuantity();
   selectOneBtn(colors, product, "color");
   selectOneBtn(sizes, product, "size");
+  addToSinglePageCart(idProduct, cartButton);
+}
+function changeQuantity() {
+  const chervons = document.querySelectorAll(".chervon");
+  let quantityElement = document.querySelector(".quantity");
+  chervons.forEach((chervon) => {
+    chervon.addEventListener("click", () => {
+      if (
+        chervon.classList.contains("fa-chevron-left") &&
+        quantityElement.innerHTML > 1
+      ) {
+        quantityElement.innerHTML--;
+      } else if (chervon.classList.contains("fa-chevron-right")) {
+        quantityElement.innerHTML++;
+      }
+    });
+  });
+  let quantity = Number(quantityElement.innerHTML);
+  return Number(quantity);
 }
 function addToSinglePageCart(productId, button) {
   button.addEventListener("click", () => {
+    let quantity = changeQuantity();
+    console.log(quantity);
     let product = getProduct(productId);
+    console.log(product.size);
+    console.log(product.color);
+
     let matchingItem;
 
     cart.forEach((cartItem) => {
       if (cartItem.productId == productId) {
         matchingItem = true;
-        cartItem.quantity++;
+        cartItem.quantity += Number(quantity);
       }
     });
 
     if (!matchingItem) {
       cart.push({
+        productColor: product.color,
+        productSize: product.size,
         productId: product.id,
-        quantity: 1,
+        quantity,
       });
     }
     loadHeader();
@@ -112,15 +147,20 @@ function selectOneBtn(buttonName, product, detail) {
       buttonName.forEach((c) => {
         if (c.classList.contains("buttonActive")) {
           c.classList.remove("buttonActive");
+          c.style.border = ""; // Reset previous inline border styles
         }
       });
 
       colorSize.classList.add("buttonActive");
-      if (detail == "size") {
-        product.size = colorSize.innerHTML;
-      } else if (detail == "color") {
+
+      if (detail == "color") {
         product.color = colorSize.innerHTML;
+        // Set the border color to the clicked color name
+        colorSize.style.border = `3px solid ${product.color}`;
+      } else if (detail == "size") {
+        product.size = colorSize.innerHTML;
       }
+
       products.forEach((p) => {
         if (p.id == product.id) {
           newProducts.push(product);
@@ -132,6 +172,7 @@ function selectOneBtn(buttonName, product, detail) {
     });
   });
 }
+
 document.addEventListener("DOMContentLoaded", () => {
   loadSingleProduct();
 });

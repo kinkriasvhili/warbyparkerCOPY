@@ -24,7 +24,6 @@ export function addToFavourite() {
             product.favourite = true;
           }
         });
-        console.log(products);
         loadHeader();
         saveProductToStorage();
         saveFavouriteProduct();

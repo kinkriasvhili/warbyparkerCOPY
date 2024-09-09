@@ -27,7 +27,15 @@ export async function loadCartProducts() {
         </div>
         <div class="product-info-container">
           <div class="product-color">
-            <h4>${product.name} - <span>cristal</span></h4>
+            <h4>
+              ${product.name} - 
+              <span>
+              ${
+                cartItem.productColor.charAt(0).toUpperCase() +
+                cartItem.productColor.slice(1)
+              }
+              </span>
+            </h4>
           </div>
            <div class="product-color">
             <h4> Price - <span>$${formatCurrency(
@@ -35,8 +43,9 @@ export async function loadCartProducts() {
             )}</span></h4>
           </div>
           <div class="product-size">
-            <h4>Frame Width - <span>medium</span></h4>
+            <h4>Frame Width - <span>${cartItem.productSize.toUpperCase()}</span></h4>
           </div>
+
           <div class="product-quantity">
             <h4>
               quantity:<span class="cart-quantity-number-js qantity-${

@@ -13,7 +13,6 @@ export function addToCart() {
     button.addEventListener("click", () => {
       productId = button.getAttribute("data-productId");
       let product = getProduct(productId);
-
       let matchingItem;
 
       cart.forEach((cartItem) => {
@@ -25,6 +24,8 @@ export function addToCart() {
 
       if (!matchingItem) {
         cart.push({
+          productColor: product.color,
+          productSize: product.size,
           productId: product.id,
           quantity: 1,
         });
