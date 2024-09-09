@@ -69,5 +69,7 @@ export async function loadProductsFetch(fun) {
 }
 
 export function saveProductToStorage(products) {
-  localStorage.setItem("glassesproducts", JSON.stringify(products));
+  if (products) {
+    localStorage.setItem("glassesproducts", JSON.stringify(products));
+  }
 }

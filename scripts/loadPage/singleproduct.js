@@ -1,5 +1,5 @@
 import { loadFooter } from "../loadPage/loadfooter.js";
-import { loadHeader } from "./loadPage/loadHeader.js";
+import { loadHeader } from "../loadPage/loadHeader.js";
 import { saveToCart, cart } from "../../data/cart.js";
 
 import {
@@ -39,7 +39,7 @@ async function loadSingleProduct() {
           <div class="info-container">
             <div>Name: ${product.name}</div>
             <div>Brand: ${product.brand}</div>
-            <div>Price: ${formatCurrency(product.priceCents)}</div>
+            <div>Price: $${formatCurrency(product.priceCents)}</div>
           </div>
           <div class="sizeSelect-container">
             <div class="sizeSelect buttonActive">S</div>
