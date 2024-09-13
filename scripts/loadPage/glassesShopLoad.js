@@ -14,7 +14,7 @@ export async function loadGlassesProducts(type) {
   let productsHtml = ``;
   products.forEach((product) => {
     // eyeglasses
-    if (product.type == type) {
+    if (/*product.type == */ type) {
       productsHtml += productHtml(product);
     }
   });

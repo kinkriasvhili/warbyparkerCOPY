@@ -1,6 +1,60 @@
 [
   {
     "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+    "image": "images/products/sunglasses/elio.webp",
+    "name": "Elio",
+    "type": "sunglasses",
+    "gender": "male",
+    "priceCents": 9500,
+    "location": "warbyparker",
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "orange",
+    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "ratings": {
+      "stars": 4,
+      "count": 350
+    }
+  },
+  {
+    "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+    "image": "images/products/sunglasses/waller.webp",
+    "name": "Waller",
+    "type": "sunglasses",
+    "gender": "male",
+    "priceCents": 9500,
+    "location": "warbyparker",
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "orange",
+    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "ratings": {
+      "stars": 4,
+      "count": 3250
+    }
+  },
+  {
+    "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+    "image": "images/products/sunglasses/lucien.webp",
+    "name": "Lucien",
+    "type": "sunglasses",
+    "gender": "male",
+    "priceCents": 9500,
+    "location": "warbyparker",
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "orange",
+    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "ratings": {
+      "stars": 4,
+      "count": 3250
+    }
+  },
+  {
+    "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
     "image": "images/products/sunglasses/sunglasses-barkley.webp",
     "name": "Barkley",
     "type": "sunglasses",
@@ -527,6 +581,57 @@
     "ratings": {
       "stars": 4,
       "count": 140
+    }
+  },
+  {
+    "id": "j0poc212-51m2-22n5-3901-f12m4o5i6012",
+    "image": "images/products/eyeglasses/winston.webp",
+    "name": "winston",
+    "type": "eyeglasses",
+    "gender": "female",
+    "priceCents": 9500,
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "orange",
+    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "ratings": {
+      "stars": 4.5,
+      "count": 2140
+    }
+  },
+  {
+    "id": "j0poc212-51m2-22n5-3901-f12m4o5i6012",
+    "image": "images/products/eyeglasses/rufus.webp",
+    "name": "Rufus",
+    "type": "eyeglasses",
+    "gender": "male",
+    "priceCents": 9500,
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "orange",
+    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "ratings": {
+      "stars": 4,
+      "count": 240
+    }
+  },
+  {
+    "id": "j0poc212-51m2-22n5-3901-f12m4o5i6012",
+    "image": "images/products/eyeglasses/hector.webp",
+    "name": "Hector",
+    "type": "eyeglasses",
+    "gender": "female",
+    "priceCents": 9500,
+    "favourite": false,
+    "brand": "warby parker",
+    "size": "s",
+    "color": "orange",
+    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "ratings": {
+      "stars": 3.5,
+      "count": 9912
     }
   },
   {
