@@ -1,6 +1,6 @@
 [
   {
-    "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+    "id": "e43638ce-6aa0-4b12312585-b27f-e1d07eb678c6",
     "image": "images/products/sunglasses/elio.webp",
     "name": "Elio",
     "type": "sunglasses",
@@ -9,16 +9,17 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Wide" }, { "name": "Narrow" }],
+    "color": "pink",
+    "colors": [{ "name": "black" }, { "name": "pink" }, { "name": "red" }],
     "ratings": {
       "stars": 4,
       "count": 350
     }
   },
   {
-    "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+    "id": "e43638ce-6aa0-4b82135-b27f-e1d07eb678c6",
     "image": "images/products/sunglasses/waller.webp",
     "name": "Waller",
     "type": "sunglasses",
@@ -27,16 +28,17 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Wide" }, { "name": "Narrow" }],
+    "color": "black",
+    "colors": [{ "name": "grey" }, { "name": "black" }, { "name": "red" }],
     "ratings": {
       "stars": 4,
       "count": 3250
     }
   },
   {
-    "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+    "id": "e43638ce-6aa0-4b85-f2a5a7e4-e1d07eb678c6",
     "image": "images/products/sunglasses/lucien.webp",
     "name": "Lucien",
     "type": "sunglasses",
@@ -45,7 +47,8 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
     "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
     "ratings": {
@@ -54,7 +57,7 @@
     }
   },
   {
-    "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+    "id": "e43638ce-f2a5a7e4-4b85-b27f-e1d07eb678c6",
     "image": "images/products/sunglasses/sunglasses-barkley.webp",
     "name": "Barkley",
     "type": "sunglasses",
@@ -63,9 +66,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Wide" }, { "name": "Narrow" }],
+    "color": "silver",
+    "colors": [{ "name": "blue" }, { "name": "silver" }, { "name": "gold" }],
     "ratings": {
       "stars": 1.5,
       "count": 350
@@ -81,9 +85,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Wide" }, { "name": "Narrow" }],
+    "color": "brown",
+    "colors": [{ "name": "blue" }, { "name": "brown" }, { "name": "gold" }],
     "ratings": {
       "stars": 5,
       "count": 410
@@ -99,9 +104,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Wide" }, { "name": "Narrow" }],
+    "color": "purple",
+    "colors": [{ "name": "silver" }, { "name": "purple" }, { "name": "red" }],
     "ratings": {
       "stars": 4.5,
       "count": 410
@@ -117,9 +123,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Narrow" }],
+    "color": "green",
+    "colors": [{ "name": "blue" }, { "name": "grenn" }, { "name": "brown" }],
     "ratings": {
       "stars": 4,
       "count": 423
@@ -135,9 +142,14 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Narrow" }],
+    "color": "lightblue",
+    "colors": [
+      { "name": "blue" },
+      { "name": "lightblue" },
+      { "name": "yellow" }
+    ],
     "ratings": {
       "stars": 3.5,
       "count": 220
@@ -153,9 +165,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Narrow" }],
+    "color": "black",
+    "colors": [{ "name": "white" }, { "name": "black" }, { "name": "red" }],
     "ratings": {
       "stars": 3,
       "count": 900
@@ -171,9 +184,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Narrow" }],
+    "color": "lightpink",
+    "colors": [{ "name": "lightpink" }, { "name": "red" }],
     "ratings": {
       "stars": 2.5,
       "count": 550
@@ -189,9 +203,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Narrow" }],
+    "color": "pink",
+    "colors": [{ "name": "blue" }, { "name": "pink" }],
     "ratings": {
       "stars": 5,
       "count": 440
@@ -207,16 +222,17 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Narrow" }],
+    "color": "grey",
+    "colors": [{ "name": "grey" }, { "name": "red" }],
     "ratings": {
       "stars": 4,
       "count": 463
     }
   },
   {
-    "id": "f25f1a3a-79c6-4d57-919e-1547f7f11b8f",
+    "id": "f25f1a3a-79c6213-4d57-919e-1547f7f11b8f",
     "image": "images/products/sunglasses/sunglasses-sutton.jpg",
     "name": "Sutton",
     "type": "sunglasses",
@@ -225,9 +241,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "yellow",
+    "colors": [{ "name": "yellow" }, { "name": "red" }],
     "ratings": {
       "stars": 5,
       "count": 420
@@ -243,9 +260,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "blue",
+    "colors": [{ "name": "blue" }],
     "ratings": {
       "stars": 4,
       "count": 440
@@ -261,16 +279,17 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "red",
+    "colors": [{ "name": "red" }],
     "ratings": {
       "stars": 3.5,
       "count": 940
     }
   },
   {
-    "id": "d67e3cfb-6f8d-4e7f-a6g6-d2c4g8f2gfd3",
+    "id": "d67e3cfb-6f28d-4e7f-a6g6-d2c4g8f2gfd3",
     "image": "images/products/eyeglasses/eyeglasses-carlton.webp",
     "name": "Carlton",
     "type": "eyeglasses",
@@ -279,16 +298,17 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "brown",
+    "colors": [{ "name": "purple" }, { "name": "brown" }, { "name": "red" }],
     "ratings": {
       "stars": 4,
       "count": 420
     }
   },
   {
-    "id": "e78f4dfc-7g9e-4f8g-a7h7-e3d5h9g3hge4",
+    "id": "e78f4dfc-7g49e-4f8g-a7h7-e3d5h9g3hge4",
     "image": "images/products/eyeglasses/eyeglasses-chamberlain.webp",
     "name": "Chamberlain",
     "type": "eyeglasses",
@@ -297,16 +317,17 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "black",
+    "colors": [{ "name": "black" }, { "name": "orange" }, { "name": "pink" }],
     "ratings": {
       "stars": 2.5,
       "count": 420
     }
   },
   {
-    "id": "f89g5efg-8h0f-5g9h-a8i8-f4e6i0h4ihf5",
+    "id": "f89g5efg-8h05f-5g9h-a8i8-f4e6i0h4ihf5",
     "image": "images/products/eyeglasses/eyeglasses-crane.webp",
     "name": "Crane",
     "type": "eyeglasses",
@@ -315,16 +336,17 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "gold",
+    "colors": [{ "name": "gold" }, { "name": "orange" }, { "name": "red" }],
     "ratings": {
       "stars": 5,
       "count": 900
     }
   },
   {
-    "id": "g9ah6fgh-9i1g-5h0i-a9j9-g5f7j1i5jih6",
+    "id": "g9ah6fgh-9i61g-5h0i-a9j9-g5f7j1i5jih6",
     "image": "images/products/eyeglasses/eyeglasses-durand.webp",
     "name": "Durand",
     "type": "eyeglasses",
@@ -333,9 +355,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "green",
+    "colors": [{ "name": "blue" }, { "name": "green" }, { "name": "red" }],
     "ratings": {
       "stars": 2.5,
       "count": 420
@@ -351,9 +374,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "silver" }, { "name": "orange" }, { "name": "gold" }],
     "ratings": {
       "stars": 5,
       "count": 410
@@ -369,9 +393,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "lightblue",
+    "colors": [{ "name": "pink" }, { "name": "lightblue" }, { "name": "red" }],
     "ratings": {
       "stars": 2,
       "count": 430
@@ -387,9 +412,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "pink" }],
     "ratings": {
       "stars": 5,
       "count": 410
@@ -405,9 +431,10 @@
     "location": "warbyparker",
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "red" }, { "name": "orange" }, { "name": "gray" }],
     "ratings": {
       "stars": 1.5,
       "count": 10
@@ -422,9 +449,10 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "black" }, { "name": "orange" }],
     "ratings": {
       "stars": 5,
       "count": 320
@@ -439,9 +467,10 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "pink" }, { "name": "orange" }],
     "ratings": {
       "stars": 3.5,
       "count": 420
@@ -456,9 +485,10 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "gold" }, { "name": "orange" }],
     "ratings": {
       "stars": 3,
       "count": 420
@@ -473,9 +503,10 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "orange" }, { "name": "green" }],
     "ratings": {
       "stars": 3,
       "count": 430
@@ -490,9 +521,10 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "red",
+    "colors": [{ "name": "blue" }, { "name": "red" }],
     "ratings": {
       "stars": 3,
       "count": 430
@@ -507,9 +539,10 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "blue",
+    "colors": [{ "name": "blue" }, { "name": "red" }],
     "ratings": {
       "stars": 3,
       "count": 430
@@ -524,9 +557,10 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "red",
+    "colors": [{ "name": "blue" }, { "name": "red" }],
     "ratings": {
       "stars": 4,
       "count": 540
@@ -541,7 +575,8 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
     "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
     "ratings": {
@@ -558,7 +593,8 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
     "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
     "ratings": {
@@ -575,9 +611,10 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "brown",
+    "colors": [{ "name": "blue" }, { "name": "brown" }, { "name": "red" }],
     "ratings": {
       "stars": 4,
       "count": 140
@@ -592,16 +629,17 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Medium",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }],
+    "color": "brown",
+    "colors": [{ "name": "blue" }, { "name": "brown" }, { "name": "red" }],
     "ratings": {
       "stars": 4.5,
       "count": 2140
     }
   },
   {
-    "id": "j0poc212-51m2-22n5-3901-f12m4o5i6012",
+    "id": "j57;g212-51m2-22n5-3901-f12m4o5i6012",
     "image": "images/products/eyeglasses/rufus.webp",
     "name": "Rufus",
     "type": "eyeglasses",
@@ -609,16 +647,17 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Medium",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "green" }, { "name": "orange" }],
     "ratings": {
       "stars": 4,
       "count": 240
     }
   },
   {
-    "id": "j0poc212-51m2-22n5-3901-f12m4o5i6012",
+    "id": "1g5oc212-51m2-22n5-3901-f12m4o5i6012",
     "image": "images/products/eyeglasses/hector.webp",
     "name": "Hector",
     "type": "eyeglasses",
@@ -626,9 +665,10 @@
     "priceCents": 9500,
     "favourite": false,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Medium",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "green" }, { "name": "orange" }],
     "ratings": {
       "stars": 3.5,
       "count": 9912
@@ -642,9 +682,10 @@
     "gender": "female",
     "priceCents": 9500,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Medium",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "green" }, { "name": "orange" }],
     "ratings": {
       "stars": 4,
       "count": 450
@@ -658,9 +699,10 @@
     "gender": "female",
     "priceCents": 9500,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Medium",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "green" }, { "name": "orange" }],
     "ratings": {
       "stars": 4.5,
       "count": 410
@@ -674,9 +716,10 @@
     "gender": "female",
     "priceCents": 9500,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Medium",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "green" }, { "name": "orange" }],
     "ratings": {
       "stars": 4.5,
       "count": 210
@@ -690,9 +733,10 @@
     "gender": "female",
     "priceCents": 9500,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "pink",
+    "colors": [{ "name": "green" }, { "name": "pink" }],
     "ratings": {
       "stars": 4.5,
       "count": 410
@@ -706,9 +750,10 @@
     "gender": "female",
     "priceCents": 9500,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "grey",
+    "colors": [{ "name": "grey" }, { "name": "red" }],
     "ratings": {
       "stars": 4.5,
       "count": 999
@@ -722,9 +767,10 @@
     "gender": "female",
     "priceCents": 9500,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "black",
+    "colors": [{ "name": "white" }, { "name": "black" }, { "name": "red" }],
     "ratings": {
       "stars": 4.5,
       "count": 410
@@ -738,9 +784,10 @@
     "gender": "female",
     "priceCents": 9500,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "lightblue",
+    "colors": [{ "name": "blue" }, { "name": "lightblue" }],
     "ratings": {
       "stars": 4.5,
       "count": 990
@@ -754,9 +801,10 @@
     "gender": "female",
     "priceCents": 9500,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "yellow",
+    "colors": [{ "name": "yellow" }, { "name": "red" }],
     "ratings": {
       "stars": 4.5,
       "count": 420
@@ -770,9 +818,10 @@
     "gender": "female",
     "priceCents": 9500,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "yellow",
+    "colors": [{ "name": "yellow" }, { "name": "red" }],
     "ratings": {
       "stars": 4.5,
       "count": 540
@@ -786,9 +835,10 @@
     "gender": "male",
     "priceCents": 9500,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "gold",
+    "colors": [{ "name": "blue" }, { "name": "gold" }],
     "ratings": {
       "stars": 4.5,
       "count": 940
@@ -803,9 +853,10 @@
     "image": "images/products/accessories/Anti-FogLensSpray.webp",
     "priceCents": 3500,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "gold",
+    "colors": [{ "name": "blue" }, { "name": "gold" }],
     "ratings": {
       "stars": 4.5,
       "count": 140
@@ -819,9 +870,10 @@
     "image": "images/products/accessories/CleanMyLensesKitwithAnti-FogSpray.webp",
     "priceCents": 3500,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "sivler",
+    "colors": [{ "name": "blue" }, { "name": "sivler" }],
     "ratings": {
       "stars": 5,
       "count": 110
@@ -835,9 +887,10 @@
     "image": "images/products/accessories/EsmeMediumClip-On.webp",
     "priceCents": 3500,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "sivler",
+    "colors": [{ "name": "blue" }, { "name": "sivler" }],
     "ratings": {
       "stars": 5,
       "count": 1230
@@ -851,9 +904,10 @@
     "image": "images/products/accessories/FelixClip-OnMedium.webp",
     "priceCents": 3500,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "purple",
+    "colors": [{ "name": "purple" }],
     "ratings": {
       "stars": 4.5,
       "count": 4120
@@ -867,9 +921,10 @@
     "image": "images/products/accessories/KeikoMediumClip-On.webp",
     "priceCents": 3500,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "purple",
+    "colors": [{ "name": "purple" }],
     "ratings": {
       "stars": 5,
       "count": 410
@@ -883,7 +938,8 @@
     "image": "images/products/accessories/ParkerCase.webp",
     "priceCents": 3500,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
     "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
     "ratings": {
@@ -899,7 +955,8 @@
     "image": "images/products/accessories/ParkerPouch-Double.webp",
     "priceCents": 3500,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
     "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
     "ratings": {
@@ -916,9 +973,10 @@
     "priceCents": 3500,
     "bestSelling": true,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "pink",
+    "colors": [{ "name": "purple" }, { "name": "pink" }, { "name": "red" }],
     "ratings": {
       "stars": 5,
       "count": 220
@@ -934,9 +992,10 @@
     "priceCents": 3500,
     "bestSelling": true,
     "brand": "warby parker",
-    "size": "s",
-    "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
+    "color": "pink",
+    "colors": [{ "name": "purple" }, { "name": "pink" }, { "name": "gray" }],
     "ratings": {
       "stars": 5,
       "count": 420
@@ -951,9 +1010,10 @@
     "priceCents": 3500,
     "bestSelling": true,
     "brand": "warby parker",
-    "size": "s",
+    "size": "Narrow",
+    "sizes": [{ "name": "Medium" }, { "name": "Wide" }, { "name": "Narrow" }],
     "color": "orange",
-    "colors": [{ "name": "blue" }, { "name": "orange" }, { "name": "red" }],
+    "colors": [{ "name": "purple" }, { "name": "orange" }, { "name": "gray" }],
     "ratings": {
       "stars": 5,
       "count": 420

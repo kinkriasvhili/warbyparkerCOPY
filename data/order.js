@@ -2,7 +2,7 @@ import { cart } from "./cart.js";
 import { inputChecked } from "../scripts/loadPage/loadCartDelivery.js";
 let newOrder = [];
 
-function generateUniqueId(existingIds) {
+export function generateUniqueId(existingIds) {
   const characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-=+";
   let id;

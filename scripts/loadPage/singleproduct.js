@@ -1,6 +1,7 @@
 import { loadFooter } from "../loadPage/loadfooter.js";
 import { loadHeader } from "../loadPage/loadHeader.js";
 import { saveToCart, cart } from "../../data/cart.js";
+import { generateUniqueId } from "../../data/order.js";
 
 import {
   getProduct,
@@ -25,7 +26,14 @@ async function loadSingleProduct() {
       colorHtml += `<div class="colorSelect">${color.name}</div>`;
     }
   });
-
+  let sizerHtml = ``;
+  product.sizes.forEach((size) => {
+    if (product.size == size.name) {
+      sizerHtml += `<div class="sizeSelect buttonActive">${size.name}</div>`;
+    } else {
+      sizerHtml += `<div class="sizeSelect">${size.name}</div>`;
+    }
+  });
   singleProductCotainer.innerHTML = `<div class="singleProductImage-container">
           <img
             src="${product.image}"
@@ -47,9 +55,7 @@ async function loadSingleProduct() {
 
           </div>
           <div class="sizeSelect-container">
-            <div class="sizeSelect buttonActive">S</div>
-            <div class="sizeSelect">M</div>
-            <div class="sizeSelect">L</div>
+            ${sizerHtml}
           </div>
           <div class="colorSelect-container">
             ${colorHtml}
@@ -115,24 +121,28 @@ function addToSinglePageCart(productId, button) {
     let quantity = changeQuantity();
     console.log(quantity);
     let product = getProduct(productId);
-    console.log(product.size);
-    console.log(product.color);
 
     let matchingItem;
 
     cart.forEach((cartItem) => {
-      if (cartItem.productId == productId) {
+      if (
+        cartItem.productId == productId &&
+        cartItem.productColor == product.color &&
+        cartItem.productSize == product.size
+      ) {
         matchingItem = true;
         cartItem.quantity += Number(quantity);
       }
     });
-
+    let existingIds = new Set();
+    let cartId = generateUniqueId(existingIds);
     if (!matchingItem) {
       cart.push({
         productColor: product.color,
         productSize: product.size,
         productId: product.id,
         quantity,
+        cartId: cartId,
       });
     }
     loadHeader();

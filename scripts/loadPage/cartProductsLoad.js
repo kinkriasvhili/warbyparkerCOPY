@@ -12,12 +12,13 @@ export async function loadCartProducts() {
   let product;
   cart.forEach((cartItem) => {
     product = getProduct(cartItem.productId);
+
     cartHtml += `
     <div class="productContainer">
         <div class="product-remove">
           <button class="remove-btn js-remove-button" data-product-id="${
             cartItem.productId
-          }">X</button>
+          }" data-cart-id="${cartItem.cartId}">X</button>
         </div>
         <div class="image-container">
           <img
@@ -43,7 +44,7 @@ export async function loadCartProducts() {
             )}</span></h4>
           </div>
           <div class="product-size">
-            <h4>Frame Width - <span>${cartItem.productSize.toUpperCase()}</span></h4>
+            <h4>Frame Width - <span>${cartItem.productSize}</span></h4>
           </div>
 
           <div class="product-quantity">
