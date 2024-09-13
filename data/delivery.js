@@ -53,7 +53,7 @@ export function removeOrder() {
         }
       });
     } else {
-      console.log(false);
+      // console.log(false);
     }
   });
 

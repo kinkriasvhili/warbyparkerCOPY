@@ -13,7 +13,6 @@ function showDetails() {
     detailsIcon.addEventListener("click", function () {
       // Toggle between the down and up chevron icons
       let orderId = detailsIcon.getAttribute("data-order-id");
-
       if (detailsIcon.classList.contains("fa-chevron-down")) {
         detailsIcon.classList.remove("fa-chevron-down");
         detailsIcon.classList.add("fa-chevron-up");
@@ -49,15 +48,15 @@ export async function loadOrder() {
   orders.forEach((order, index) => {
     if (order.cart.length > 1) {
       order.cart.forEach((cartItem) => {
-        let { productId } = cartItem;
+        let { productId, productColor, productSize } = cartItem;
         let product = getProduct(productId);
-        productHtml += productComponent(product);
+        productHtml += productComponent(product, productColor, productSize);
       });
     } else {
       order.cart.forEach((cartItem) => {
-        let { productId } = cartItem;
+        let { productId, productColor, productSize } = cartItem;
         let product = getProduct(productId);
-        productHtml = productComponent(product);
+        productHtml += productComponent(product, productColor, productSize);
       });
     }
     let deliveryDate = order.optionDateString;
@@ -84,7 +83,9 @@ export async function loadOrder() {
               <!-- product START-->
               <div class="products">
                 ${productHtml}
+                
               </div>
+              
               <!-- product END -->
               <div class="details-container">
                 <div class="details-active-icon">
@@ -97,7 +98,7 @@ export async function loadOrder() {
                     <p class="quantity">Products quantity: ${quantity}</p>
                   </div>
                   <div class="delivery-details">
-                    <p class="deliveryDate">Delivery time: <span data-order-id="${order.orderId}">${deliveryDate}</span></p>
+                    <p class="deliveryDate">Delivery date: <span data-order-id="${order.orderId}">${deliveryDate}</span></p>
                   </div>
                 </div>
               </div>

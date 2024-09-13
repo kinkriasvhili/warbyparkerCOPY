@@ -119,3 +119,6 @@ p {
 .details-info p {
   width: 30vw;
 }
+.product-name {
+  left: 10px;
+}
