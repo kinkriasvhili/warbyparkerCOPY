@@ -35,7 +35,6 @@ export function addToCart() {
           cartId: cartId,
         });
       }
-      console.log(cart);
       loadHeader();
       saveToCart();
       addToCartAffect(productId, addedMessageTimeouts);

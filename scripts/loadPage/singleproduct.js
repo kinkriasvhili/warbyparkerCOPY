@@ -2,7 +2,7 @@ import { loadFooter } from "../loadPage/loadfooter.js";
 import { loadHeader } from "../loadPage/loadHeader.js";
 import { saveToCart, cart } from "../../data/cart.js";
 import { generateUniqueId } from "../../data/order.js";
-
+import { productHtml } from "../../htmlComponents/product.js";
 import {
   getProduct,
   loadProductsFetch,
@@ -10,7 +10,9 @@ import {
   products,
 } from "../../data/products.js";
 import { formatCurrency } from "../utils/money.js";
-
+import { addToCart } from "../../data/cart.js";
+import { addToFavourite } from "../../data/faovurite.js";
+import { getClickedProductId } from "../../htmlComponents/product.js";
 async function loadSingleProduct() {
   await loadProductsFetch();
   const productId = JSON.parse(localStorage.getItem("singleProductId"));
@@ -34,7 +36,8 @@ async function loadSingleProduct() {
       sizerHtml += `<div class="sizeSelect">${size.name}</div>`;
     }
   });
-  singleProductCotainer.innerHTML = `<div class="singleProductImage-container">
+  singleProductCotainer.innerHTML = `
+        <div class="singleProductImage-container">
           <img
             src="${product.image}"
             width="100%"
@@ -51,7 +54,8 @@ async function loadSingleProduct() {
             <div>Rating Stars: <img src="images/ratings/rating-${
               product.ratings.stars * 10
             }.png" class="star-rating"> - <span class="count-rating">
-            ${product.ratings.count}</span> </div>
+            ${product.ratings.stars} (${product.ratings.count})
+            </span> </div>
 
           </div>
           <div class="sizeSelect-container">
@@ -68,7 +72,7 @@ async function loadSingleProduct() {
               <i class="fa-solid fa-chevron-right chervon"></i>
             </div>
 
-            <div class="product-add-cart">
+            <div class="product-add-cart-single">
               <button class="js-cart-btn" data-productId="${product.id}">
                 <img
                   class="js-cart-btn-${product.id}"
@@ -80,6 +84,29 @@ async function loadSingleProduct() {
             
           </div>
         </div>`;
+  let count = 0;
+  let relatedProducts = ``;
+  for (let i = 0; i <= products.length; i++) {
+    let productItem;
+    productItem = products[i];
+    console.log(product.brand);
+    if (
+      productItem != product &&
+      productItem.brand == product.brand &&
+      product.priceCents == productItem.priceCents &&
+      productItem.type == product.type &&
+      product.ratings.stars == productItem.ratings.stars
+    ) {
+      count++;
+      relatedProducts += productHtml(productItem);
+      if (count == 4) {
+        console.log(relatedProducts);
+        document.querySelector(".relatedProducts").innerHTML = relatedProducts;
+        break;
+      }
+    }
+  }
+
   const colors = document.querySelectorAll(".colorSelect");
   const sizes = document.querySelectorAll(".sizeSelect");
   const cartButton = document.querySelector(".js-cart-btn");
@@ -94,9 +121,12 @@ async function loadSingleProduct() {
 
   const idProduct = product.id;
   changeQuantity();
+  getClickedProductId();
   selectOneBtn(colors, product, "color");
   selectOneBtn(sizes, product, "size");
   addToSinglePageCart(idProduct, cartButton);
+  addToCart();
+  addToFavourite();
 }
 function changeQuantity() {
   const chervons = document.querySelectorAll(".chervon");
@@ -119,7 +149,6 @@ function changeQuantity() {
 function addToSinglePageCart(productId, button) {
   button.addEventListener("click", () => {
     let quantity = changeQuantity();
-    console.log(quantity);
     let product = getProduct(productId);
 
     let matchingItem;

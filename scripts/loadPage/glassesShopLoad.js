@@ -1,4 +1,4 @@
-import { loadHeader } from "../loadPage/loadheader.js";
+import { loadHeader } from "./loadHeader.js";
 import { products, loadProductsFetch } from "../../data/products.js";
 import { formatCurrency } from "../utils/money.js";
 import { addToFavourite } from "../../data/faovurite.js";
@@ -14,7 +14,7 @@ export async function loadGlassesProducts(type) {
   let productsHtml = ``;
   products.forEach((product) => {
     // eyeglasses
-    if (/*product.type == */ type) {
+    if (product.type == type) {
       productsHtml += productHtml(product);
     }
   });

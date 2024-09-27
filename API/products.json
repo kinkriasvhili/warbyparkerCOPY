@@ -126,7 +126,7 @@
     "size": "Narrow",
     "sizes": [{ "name": "Medium" }, { "name": "Narrow" }],
     "color": "green",
-    "colors": [{ "name": "blue" }, { "name": "grenn" }, { "name": "brown" }],
+    "colors": [{ "name": "blue" }, { "name": "green" }, { "name": "brown" }],
     "ratings": {
       "stars": 4,
       "count": 423

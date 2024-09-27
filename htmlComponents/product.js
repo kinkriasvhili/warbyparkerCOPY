@@ -6,7 +6,6 @@ export function getClickedProductId() {
     link.addEventListener("click", () => {
       const productId = link.getAttribute("data-productId");
       saveSingleProductId(productId);
-      console.log(productId);
     });
   });
 }
@@ -17,7 +16,7 @@ export function productHtml(product, color, size) {
   let colorSizeHtml = ``;
   if (color && size) {
     colorSizeHtml = `
-      <span class="productColor">${
+      - <span class="productColor">${
         color.charAt(0).toUpperCase() + color.slice(1)
       }</span> -
       <span class="productSize">${size}</span>
@@ -55,7 +54,7 @@ export function productHtml(product, color, size) {
         </div>
         <div class="product-describtion">
           
-          <p class="product-name">${product.name} - ${colorSizeHtml}</p>
+          <p class="product-name">${product.name} ${colorSizeHtml}</p>
           <p class="product-price">$${formatCurrency(product.priceCents)}</p>
         </div>
 
