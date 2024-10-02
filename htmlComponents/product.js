@@ -5,6 +5,7 @@ export function getClickedProductId() {
   links.forEach((link) => {
     link.addEventListener("click", () => {
       const productId = link.getAttribute("data-productId");
+      console.log(productId);
       saveSingleProductId(productId);
     });
   });

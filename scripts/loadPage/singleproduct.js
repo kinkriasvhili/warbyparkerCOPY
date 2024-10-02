@@ -86,10 +86,11 @@ async function loadSingleProduct() {
         </div>`;
   let count = 0;
   let relatedProducts = ``;
+  let productItem;
   for (let i = 0; i <= products.length; i++) {
-    let productItem;
-    productItem = products[i];
-    console.log(product.brand);
+    if (products[i]) {
+      productItem = products[i];
+    }
     if (
       productItem != product &&
       productItem.brand == product.brand &&
@@ -100,7 +101,6 @@ async function loadSingleProduct() {
       count++;
       relatedProducts += productHtml(productItem);
       if (count == 4) {
-        console.log(relatedProducts);
         document.querySelector(".relatedProducts").innerHTML = relatedProducts;
         break;
       }

@@ -1,4 +1,3 @@
-// import { headerStyle } from "../pageStyles/headerStyle.js";
 import { headerStyle } from "../pageStyles/headerStyle.js";
 import { cart } from "../../data/cart.js";
 import { favourite } from "../../data/faovurite.js";

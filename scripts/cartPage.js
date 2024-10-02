@@ -1,4 +1,4 @@
-import { loadHeader } from "./loadPage/loadheader.js";
+import { loadHeader } from "./loadPage/loadHeader.js";
 import { loadFooter } from "./loadPage/loadfooter.js";
 import { loadCartProducts } from "./loadPage/cartProductsLoad.js";
 import { loadCartPayment } from "./loadPage/cartPaymentLoad.js";
