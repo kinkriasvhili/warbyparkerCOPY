@@ -9,10 +9,26 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/page/quizz.css" />
     <title>Take a Quizz</title>
   </head>
   <body>
+    <div id="header-placeholder"></div>
+    <div class="quizz-container">
+      <div class="quizz-describtion">
+        <div class="quizz-quantity-container">
+          <span class="quizz-row"></span>
+          <span class="quizz-quantity">7</span>
+        </div>
+        <div class="quizz-qustion">
+          <p></p>
+        </div>
+      </div>
+      <div class="quizz-answers"></div>
+    </div>
+    <div id="footer-placeholder"></div>
+
     <script type="module" src="scripts/loadPage/quizzLoad.js"></script>
   </body>
 </html>

@@ -1,3 +1,17 @@
 body {
-  background-color: green;
+  overflow: hidden;
+}
+
+#footer-placeholder {
+  display: none;
+}
+#menu-icon,
+.header-right,
+.header-middle {
+  display: none;
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
