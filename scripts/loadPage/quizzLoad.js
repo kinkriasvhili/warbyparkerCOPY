@@ -54,11 +54,11 @@ function previousQustion() {
 }
 
 function managment() {
-  document.querySelectorAll(".quizz-management").forEach((manager) => {
+  document.querySelectorAll(".quiz-manager").forEach((manager) => {
     manager.addEventListener("click", (event) => {
-      if (event.target.innerHTML == "next") {
+      if (event.target.innerHTML == "Skip") {
         nextQustion();
-      } else if (event.target.innerHTML == "previous") {
+      } else if (event.target.innerHTML == "Previous") {
         previousQustion();
       }
     });
