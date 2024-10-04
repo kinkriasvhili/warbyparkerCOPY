@@ -1,12 +1,13 @@
 import { loadHeader } from "./loadHeader.js";
 import { loadFooter } from "./loadfooter.js";
-import { quizes } from "../../data/qustions.js";
+import { quizes, addAnswer, removeAnswer } from "../../data/qustions.js";
 import { loadProductsFetch } from "../../data/products.js";
 
 let managerIndex = 0;
 let qustionNumber = document.querySelector(".qustion-number");
 let quizzQustion = document.querySelector(".quizz-qustion");
 let quizAnswer = document.querySelector(".quizz-answers");
+let previousBtn = document.querySelector(".previous-btn");
 
 function answerHml(quiz) {
   let quizHtml = ``;
@@ -54,11 +55,16 @@ function previousQustion() {
 }
 
 function managment() {
+  let answerId;
   document.querySelectorAll(".quiz-manager").forEach((manager) => {
     manager.addEventListener("click", (event) => {
       if (event.target.innerHTML == "Skip") {
+        answerId = "noAnswer";
+        console.log(answerId);
         nextQustion();
-      } else if (event.target.innerHTML == "Previous") {
+      } else if (event.target.innerText == "Previous") {
+        answerId = previousBtn.getAttribute("unanswerId");
+        removeAnswer(answerId);
         previousQustion();
       }
     });
@@ -68,7 +74,9 @@ function managment() {
 function attachAnswerClickEvent() {
   document.querySelectorAll(".quizAnswerContainer").forEach((clickOnAnswer) => {
     clickOnAnswer.addEventListener("click", () => {
-      console.log("we");
+      let answerId = clickOnAnswer.getAttribute("answerid");
+      previousBtn.setAttribute("unanswerId", answerId);
+      addAnswer(answerId);
       nextQustion();
     });
   });
