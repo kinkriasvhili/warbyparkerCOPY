@@ -148,7 +148,7 @@ function changeQuantity() {
 }
 function addToSinglePageCart(productId, button) {
   button.addEventListener("click", () => {
-    let quantity = changeQuantity();
+    let quantity = Number(document.querySelector(".quantity").innerText);
     let product = getProduct(productId);
 
     let matchingItem;
@@ -160,7 +160,8 @@ function addToSinglePageCart(productId, button) {
         cartItem.productSize == product.size
       ) {
         matchingItem = true;
-        cartItem.quantity += Number(quantity);
+        quantity = quantity - 1;
+        cartItem.quantity += quantity;
       }
     });
     let existingIds = new Set();
