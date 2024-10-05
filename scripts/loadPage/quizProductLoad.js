@@ -25,6 +25,7 @@ async function findQuizProducts() {
   let quizProducts = [];
   let sizeIn;
   let colorIn;
+
   products.forEach((product, index) => {
     colorIn = product.colors.find(
       (color) => color.name == productDescribtions[4].color
@@ -32,14 +33,18 @@ async function findQuizProducts() {
     sizeIn = product.sizes.find(
       (size) => size.name === productDescribtions[2].size
     );
-
+    console.log(productDescribtions);
     if (
-      productDescribtions[0].gender == product.gender &&
-      productDescribtions[1].type == product.type &&
-      sizeIn &&
-      productDescribtions[3].shape == product.shape &&
-      colorIn &&
-      productDescribtions[5].material == product.material
+      (productDescribtions[0] == null ||
+        productDescribtions[0].gender == product.gender) &&
+      (productDescribtions[1] == null ||
+        productDescribtions[1].type == product.type) &&
+      (sizeIn || productDescribtions[2] == null) &&
+      (productDescribtions[3] == null ||
+        productDescribtions[3].shape == product.shape) &&
+      (colorIn || productDescribtions[4] == null) &&
+      (productDescribtions[5] == null ||
+        productDescribtions[5].material == product.material)
     ) {
       quizProducts.push(product);
     }

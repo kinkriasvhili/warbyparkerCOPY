@@ -159,28 +159,36 @@ export const quizes = [
 let answerList = [];
 let storageProductDescribtion = [];
 export function addAnswer(answerId) {
-  quizes.forEach((quiz) => {
-    quiz.answers.forEach((answer) => {
-      if (answer.answerId == answerId) {
-        answerList.push(answer);
-        console.log(answerList);
-        if (answerList.length == 6) {
-          answerList.forEach((localAnswer) => {
-            console.log(localAnswer.saveIn);
-            storageProductDescribtion.push(localAnswer.saveIn);
-          });
-          console.log(storageProductDescribtion);
-          if (storageProductDescribtion.length != 0) {
-            localStorage.setItem(
-              "storageProductDescribtion",
-              JSON.stringify(storageProductDescribtion)
-            );
-            window.location.href = "quizProduct.html";
-          }
+  if (answerId === "noAnswer") {
+    answerList.push({ skipped: true });
+    showProducts();
+  } else {
+    quizes.forEach((quiz) => {
+      quiz.answers.forEach((answer) => {
+        if (answer.answerId == answerId) {
+          answerList.push(answer);
+          console.log(answerList);
         }
-      }
+      });
     });
-  });
+    showProducts();
+  }
+}
+function showProducts() {
+  if (answerList.length == 6) {
+    answerList.forEach((localAnswer) => {
+      console.log(localAnswer.saveIn);
+      storageProductDescribtion.push(localAnswer.saveIn);
+    });
+    console.log(storageProductDescribtion);
+    if (storageProductDescribtion.length != 0) {
+      localStorage.setItem(
+        "storageProductDescribtion",
+        JSON.stringify(storageProductDescribtion)
+      );
+      window.location.href = "quizProduct.html";
+    }
+  }
 }
 export function removeAnswer(unanswerId) {
   quizes.forEach((quiz) => {

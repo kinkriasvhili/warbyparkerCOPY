@@ -55,12 +55,10 @@ function previousQustion() {
 }
 
 function managment() {
-  let answerId;
   document.querySelectorAll(".quiz-manager").forEach((manager) => {
     manager.addEventListener("click", (event) => {
       if (event.target.innerHTML == "Skip") {
-        answerId = "noAnswer";
-        console.log(answerId);
+        addAnswer("noAnswer");
         nextQustion();
       } else if (event.target.innerText == "Previous") {
         answerId = previousBtn.getAttribute("unanswerId");
