@@ -54,6 +54,9 @@ class Product {
     this.ratings = productDetails.ratings;
     this.sizes = productDetails.sizes;
     this.topSearch = productDetails.topSearch;
+    this.material = productDetails.material;
+    this.shape = productDetails.shape;
+    this.shape = productDetails.shape;
   }
 }
 export let products = JSON.parse(localStorage.getItem("glassesproducts")) || [];

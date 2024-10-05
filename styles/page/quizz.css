@@ -30,7 +30,6 @@ body {
 }
 .quizz-management {
   position: absolute;
-  width: 100%;
   display: flex;
   top: -112px;
   left: 5vw;

@@ -1,3 +1,9 @@
-body {
-  background-color: green;
+.header-middle,
+.header-right,
+#menu-icon,
+#footer-placeholder {
+  display: none;
+}
+.header-container {
+  justify-content: center;
 }
