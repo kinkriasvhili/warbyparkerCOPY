@@ -6,6 +6,7 @@ import {
 import { loadHeader } from "./loadHeader.js";
 import { addToCart } from "../../data/cart.js";
 import { addToFavourite } from "../../data/faovurite.js";
+import { loadAccessories } from "./accessories.js";
 let productDescribtions = JSON.parse(
   localStorage.getItem("storageProductDescribtion")
 );
@@ -67,5 +68,6 @@ async function findQuizProducts() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  loadAccessories();
   findQuizProducts();
 });

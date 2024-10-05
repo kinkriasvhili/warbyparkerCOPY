@@ -27,7 +27,7 @@ function changeDotToImage() {
     });
   });
 }
-async function loadAccessories() {
+export async function loadAccessories() {
   await loadProductsFetch();
   const productImagesElement = document.querySelector(".product-images");
   let bestSellingHtml = ``;
@@ -47,7 +47,9 @@ async function loadAccessories() {
   });
   if (productImagesElement) {
     productImagesElement.innerHTML = bestSellingHtml;
-    loadGlassesProducts("accessories");
+    if (document.querySelector(".products")) {
+      loadGlassesProducts("accessories");
+    }
   }
   getClickedProductId();
   changeDotToImage();

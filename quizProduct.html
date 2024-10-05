@@ -8,6 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles/page/accessories.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/general.css" />
@@ -24,7 +25,50 @@
       </p>
       <div class="quizProducts"></div>
     </div>
+    <!-- best selling start -->
+    <h3 class="bestSelling-title">
+      Do not forget to check our best selling products
+    </h3>
+    <div id="bestSelling-placeholder" class="bestSelling-container">
+      <div class="bestSelling-info-container bestSelling">
+        <div class="selling-header-container">
+          <h1 class="selling-header">
+            Best <span class="selling-info">Selling</span>
+            <p class="selling-info-pr">PRODUCT</p>
+          </h1>
+        </div>
+        <div class="selling-describtion-container">
+          <p class="selling-describtion">
+            Discover our top-selling products, handpicked by our customers for
+            their outstanding quality and style. These items are flying off the
+            shelves for a reason. Elevate your experience with the best our
+            store has to offer!
+          </p>
+        </div>
+        <div class="selling-shop-container">
+          <a
+            href="http://127.0.0.1:5500/singleproduct.html"
+            class="selling-shop"
+          >
+            Shop now
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="bestSelling-image-container bestSelling">
+        <div class="images-container">
+          <div class="product-images"></div>
 
+          <div class="selling-badge">50% OFF</div>
+        </div>
+        <div class="threeDots">
+          <div class="imageDot image-dot-js"></div>
+          <div class="imageDot image-dot-js"></div>
+          <div class="imageDot image-dot-js"></div>
+        </div>
+      </div>
+    </div>
+    <!-- best selling end -->
     <div id="footer-placeholder"></div>
     <script type="module" src="scripts/loadPage/quizProductLoad.js"></script>
   </body>

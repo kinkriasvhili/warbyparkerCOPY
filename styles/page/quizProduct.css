@@ -121,3 +121,8 @@ body {
   gap: 20px;
   padding: 20px;
 }
+
+.bestSelling-title {
+  width: 100%;
+  text-align: center;
+}
