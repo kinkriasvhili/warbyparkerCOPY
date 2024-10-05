@@ -1,8 +1,7 @@
 .header-middle,
 .right-section-ol li:nth-child(1),
 .right-section-ol li:nth-child(2),
-#menu-icon,
-#footer-placeholder {
+#menu-icon {
   display: none;
 }
 .header-container {
@@ -93,4 +92,32 @@ body {
 .showAddedToCartElement {
   display: flex;
   margin-bottom: 5px;
+}
+
+/* General page styling */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.page-description {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Responsive grid */
+.quizProducts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
