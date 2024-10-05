@@ -12,11 +12,19 @@ let productDescribtions = JSON.parse(
 
 function loadQuizProducts(quizProducts) {
   let productsHtml = ``;
+  let pageTitle = document.querySelector(".page-title");
+  let pageDescribtion = document.querySelector(".page-description");
+
   quizProducts.forEach((quizProduct) => {
     let { size, color } = quizProduct;
     productsHtml += productComponent(quizProduct);
   });
+  if (productsHtml == ``) {
+    pageDescribtion.innerHTML = "Products Like That does not exist";
+    pageTitle.innerHTML = ``;
+  }
   document.querySelector(".quizProducts").innerHTML = productsHtml;
+
   addToCart();
 }
 
