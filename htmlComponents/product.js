@@ -1,14 +1,17 @@
 import formatCurrency from "../scripts/utils/money.js";
-export function getClickedProductId() {
+export function getClickedProductId(shopNowId) {
   const links = document.querySelectorAll(".singleProduct-link-js");
 
-  links.forEach((link) => {
-    link.addEventListener("click", () => {
-      const productId = link.getAttribute("data-productId");
-      console.log(productId);
-      saveSingleProductId(productId);
+  if (shopNowId) {
+    saveSingleProductId(shopNowId);
+  } else {
+    links.forEach((link) => {
+      link.addEventListener("click", () => {
+        const productId = link.getAttribute("data-productId");
+        saveSingleProductId(productId);
+      });
     });
-  });
+  }
 }
 function saveSingleProductId(productId) {
   localStorage.setItem("singleProductId", JSON.stringify(productId));

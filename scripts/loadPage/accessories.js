@@ -2,6 +2,7 @@ import { addToFavourite } from "../../data/faovurite.js";
 import { loadGlassesProducts } from "./glassesShopLoad.js";
 import { loadProductsFetch, products } from "../../data/products.js";
 import { getClickedProductId } from "../../htmlComponents/product.js";
+let shopBestSelling = document.querySelector(".selling-shop");
 function changeDotToImage() {
   const dots = document.querySelectorAll(".image-dot-js");
   const images = document.querySelectorAll(".product-image-container");
@@ -35,7 +36,7 @@ export async function loadAccessories() {
     if (product.bestSelling == true && product.type == "accessories") {
       bestSellingHtml += ` 
         <div class="product-image-container image-off" data-product-id="${product.id}">
-          <a class="singleProduct-link-js" data-productId="${product.id}" href="../../singleproduct.html">
+          <a class="singleProduct-link-js bestSellingProducts" data-productId="${product.id}" href="../../singleproduct.html">
             <img
               src="${product.image}"
               alt=""
@@ -51,6 +52,16 @@ export async function loadAccessories() {
       loadGlassesProducts("accessories");
     }
   }
+  shopBestSelling.addEventListener("click", () => {
+    document
+      .querySelectorAll(".product-image-container")
+      .forEach((productLink) => {
+        if (productLink.classList.contains("image-on")) {
+          let productId = productLink.getAttribute("data-product-id");
+          getClickedProductId(productId);
+        }
+      });
+  });
   getClickedProductId();
   changeDotToImage();
 }
