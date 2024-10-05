@@ -163,10 +163,13 @@ export function addAnswer(answerId) {
     quiz.answers.forEach((answer) => {
       if (answer.answerId == answerId) {
         answerList.push(answer);
+        console.log(answerList);
         if (answerList.length == 6) {
           answerList.forEach((localAnswer) => {
+            console.log(localAnswer.saveIn);
             storageProductDescribtion.push(localAnswer.saveIn);
           });
+          console.log(storageProductDescribtion);
           if (storageProductDescribtion.length != 0) {
             localStorage.setItem(
               "storageProductDescribtion",
