@@ -14,7 +14,7 @@ function loadQuizProducts(quizProducts) {
   let productsHtml = ``;
   quizProducts.forEach((quizProduct) => {
     let { size, color } = quizProduct;
-    productsHtml += productComponent(quizProduct, size, color);
+    productsHtml += productComponent(quizProduct);
   });
   document.querySelector(".quizProducts").innerHTML = productsHtml;
   addToCart();
@@ -27,13 +27,16 @@ async function findQuizProducts() {
   let colorIn;
 
   products.forEach((product, index) => {
-    colorIn = product.colors.find(
-      (color) => color.name == productDescribtions[4].color
-    );
-    sizeIn = product.sizes.find(
-      (size) => size.name === productDescribtions[2].size
-    );
-    console.log(productDescribtions);
+    if (productDescribtions[4]) {
+      colorIn = product.colors.find(
+        (color) => color.name == productDescribtions[4].color
+      );
+    }
+    if (productDescribtions[2]) {
+      sizeIn = product.sizes.find(
+        (size) => size.name === productDescribtions[2].size
+      );
+    }
     if (
       (productDescribtions[0] == null ||
         productDescribtions[0].gender == product.gender) &&
@@ -44,7 +47,8 @@ async function findQuizProducts() {
         productDescribtions[3].shape == product.shape) &&
       (colorIn || productDescribtions[4] == null) &&
       (productDescribtions[5] == null ||
-        productDescribtions[5].material == product.material)
+        productDescribtions[5].material == product.material) &&
+      product.type != "accessories"
     ) {
       quizProducts.push(product);
     }
