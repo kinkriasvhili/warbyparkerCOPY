@@ -2,7 +2,8 @@ import { addToFavourite } from "../../data/faovurite.js";
 import { loadGlassesProducts } from "./glassesShopLoad.js";
 import { loadProductsFetch, products } from "../../data/products.js";
 import { getClickedProductId } from "../../htmlComponents/product.js";
-let shopBestSelling = document.querySelector(".selling-shop");
+import { loadBestSelling } from "./loadBestProduct.js";
+
 function changeDotToImage() {
   const dots = document.querySelectorAll(".image-dot-js");
   const images = document.querySelectorAll(".product-image-container");
@@ -30,6 +31,8 @@ function changeDotToImage() {
 }
 export async function loadAccessories() {
   await loadProductsFetch();
+  await loadBestSelling();
+  let shopBestSelling = document.querySelector(".selling-shop");
   const productImagesElement = document.querySelector(".product-images");
   let bestSellingHtml = ``;
   products.forEach((product) => {
@@ -52,6 +55,7 @@ export async function loadAccessories() {
       loadGlassesProducts("accessories");
     }
   }
+
   shopBestSelling.addEventListener("click", () => {
     document
       .querySelectorAll(".product-image-container")
@@ -62,6 +66,7 @@ export async function loadAccessories() {
         }
       });
   });
+
   getClickedProductId();
   changeDotToImage();
 }

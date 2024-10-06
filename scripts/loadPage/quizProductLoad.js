@@ -7,11 +7,13 @@ import { loadHeader } from "./loadHeader.js";
 import { addToCart } from "../../data/cart.js";
 import { addToFavourite } from "../../data/faovurite.js";
 import { loadAccessories } from "./accessories.js";
+import { loadBestSelling } from "./loadBestProduct.js";
 let productDescribtions = JSON.parse(
   localStorage.getItem("storageProductDescribtion")
 );
 
-function loadQuizProducts(quizProducts) {
+async function loadQuizProducts(quizProducts) {
+  await loadBestSelling();
   let productsHtml = ``;
   let pageTitle = document.querySelector(".page-title");
   let pageDescribtion = document.querySelector(".page-description");
@@ -68,6 +70,7 @@ async function findQuizProducts() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadAccessories();
   findQuizProducts();
+
+  loadAccessories();
 });
