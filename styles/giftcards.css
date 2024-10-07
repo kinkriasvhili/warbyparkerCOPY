@@ -1,0 +1,89 @@
+#gift-cards {
+  margin-top: 50px;
+}
+.gift-main-container {
+  position: relative;
+  padding: 5vw 0;
+  width: 100%;
+  height: 90%;
+  max-height: 900px;
+  background-color: rgb(15, 46, 108);
+  display: flex;
+  justify-content: space-between;
+}
+
+.gift-main-container div {
+  width: 45%;
+}
+.gift-main-left {
+  max-width: 40%;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  color: white;
+}
+.gift-main-left h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.gift-main-left p {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.gift-main-left button {
+  margin-top: 10px;
+  padding: 13px;
+  max-width: 90%;
+  border-radius: 15px;
+  border: none;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.gift-main-left button:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.gift-main-right {
+  position: relative;
+  right: 0;
+}
+.gift-main-right img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .gift-main-container {
+    padding: 10vw 0;
+  }
+}
+@media (max-width: 700px) {
+  .gift-main-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gift-main-container div {
+    width: 100%;
+  }
+  .gift-main-left {
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    color: white;
+    max-width: 90%;
+    margin-bottom: 30px;
+  }
+}
