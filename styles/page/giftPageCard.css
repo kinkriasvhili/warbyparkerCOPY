@@ -1,0 +1,169 @@
+.gift-main-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#gift-cards {
+  margin: 0;
+}
+footer {
+  margin-top: 0;
+}
+.gift-main-container div {
+  width: 100%;
+}
+.gift-main-left {
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 90%;
+  margin-bottom: 30px;
+}
+.gift-main-left button {
+  padding: 15px 30px;
+  border-radius: 22px;
+  background-color: rgb(0, 115, 209);
+  color: white;
+}
+.gift-main-left button:hover {
+  background-color: rgb(0, 107, 194);
+}
+.gift-main-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  margin: 0;
+}
+.gift-main-right img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+.shop-now,
+.off-showGiftCard {
+  display: none;
+}
+
+/* chat gpt */
+.shop {
+  display: contents;
+  max-width: 800px;
+  width: 100%;
+}
+
+.question {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.question h2 {
+  font-size: 1.7em;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.option {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+  text-align: center;
+  width: 150px;
+  transition: box-shadow 0.3s ease;
+}
+
+.option h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.option p {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.option:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ask info chat gpt */
+.center-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: none;
+}
+
+.input-group input,
+.input-group textarea {
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-group textarea {
+  resize: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #006cdf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: rgb(0, 89, 184);
+}

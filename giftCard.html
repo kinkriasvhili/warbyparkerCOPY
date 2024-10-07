@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/giftcards.css" />
+    <link rel="stylesheet" href="styles/page/giftPageCard.css" />
+    <title>Gift Cards</title>
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <div id="gift-cards">
+      <div class="gift-main-container">
+        <div class="gift-main-right">
+          <img src="images/ecfd3908ef.png" alt="" />
+        </div>
+        <div class="gift-main-left">
+          <h3>Give a gift Cards</h3>
+          <p>
+            We make our gift cards super easy to give—and use—by matching them
+            to the costs of some of our favorite products. How’s that for a
+            delivered-to-their-door present that never expires?
+          </p>
+          <button class="gifty-button">Shop now</button>
+        </div>
+      </div>
+
+      <div class="shop-now">
+        <div class="question">
+          <h2>What’ll it be?</h2>
+          <p class="subtitle">Select what kind of gift card you’d like</p>
+          <div class="options">
+            <div class="option">
+              <h3>Gift card</h3>
+              <p>
+                Arrives inside a ready-to-gift envelope in 5 business days. Fun!
+              </p>
+            </div>
+            <div class="option">
+              <h3>E-gift card</h3>
+              <p>Delivered via email on the date of your choosing. Easy!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+          <h2>How much on the gift card?</h2>
+          <div class="options">
+            <div class="option">
+              <h3>$50</h3>
+              <p>Just over halfway to a new pair!</p>
+            </div>
+            <div class="option">
+              <h3>$95</h3>
+              <p>For non-prescription sunglasses or single-vision eyeglasses</p>
+            </div>
+            <div class="option">
+              <h3>$145</h3>
+              <p>Single-vision eyeglasses plus blue-light-filtering lenses</p>
+            </div>
+            <div class="option">
+              <h3>$295</h3>
+              <p>For your nearest and dearest progressives wearers</p>
+            </div>
+          </div>
+        </div>
+        <!-- ask information -->
+        <div class="center-container">
+          <div class="form-container">
+            <h1>Who's the lucky recipient?</h1>
+            <p>Share some details and add a note to go with your gift.</p>
+
+            <form action="#" method="POST">
+              <div class="input-group">
+                <label for="recipient-name">Recipient's Name</label>
+                <input
+                  type="text"
+                  id="recipient-name"
+                  name="recipient-name"
+                  placeholder="Recipient's Name"
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="recipient-email">Recipient's Email</label>
+                <input
+                  type="email"
+                  id="recipient-email"
+                  name="recipient-email"
+                  placeholder="Recipient's Email"
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="your-name">Your Name</label>
+                <input
+                  type="text"
+                  id="your-name"
+                  name="your-name"
+                  placeholder="Your Name"
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="your-email">Your Email</label>
+                <input
+                  type="email"
+                  id="your-email"
+                  name="your-email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <button type="submit">Add to cart</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script type="module" src="scripts/loadPage/loadGiftCards.js"></script>
+  </body>
+</html>
