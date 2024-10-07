@@ -102,6 +102,11 @@ async function loadSingleProduct() {
       relatedProducts += productHtml(productItem);
       if (count == 4) {
         document.querySelector(".relatedProducts").innerHTML = relatedProducts;
+        if (product.type == "contact-lenes") {
+          document
+            .querySelector(".relatedProducts")
+            .classList.add("contact-lences-related-products");
+        }
         break;
       }
     }

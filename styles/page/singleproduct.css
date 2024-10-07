@@ -225,3 +225,11 @@ button {
     max-width: none;
   }
 }
+.contact-lences-related-products .product .product-image {
+  width: 65%;
+}
+.contact-lences-related-products .product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
