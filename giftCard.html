@@ -14,7 +14,7 @@
     <div id="header-placeholder"></div>
 
     <div id="gift-cards">
-      <div class="gift-main-container">
+      <div class="gift-main-container off-showGiftCard">
         <div class="gift-main-right">
           <img src="images/ecfd3908ef.png" alt="" />
         </div>
@@ -33,8 +33,8 @@
         <div class="question">
           <h2>What’ll it be?</h2>
           <p class="subtitle">Select what kind of gift card you’d like</p>
-          <div class="options">
-            <div class="option">
+          <div class="options" optionsId="1">
+            <div class="option choose-option">
               <h3>Gift card</h3>
               <p>
                 Arrives inside a ready-to-gift envelope in 5 business days. Fun!
@@ -50,12 +50,12 @@
         <!-- Question 2 -->
         <div class="question">
           <h2>How much on the gift card?</h2>
-          <div class="options">
+          <div class="options" optionsId="2">
             <div class="option">
               <h3>$50</h3>
               <p>Just over halfway to a new pair!</p>
             </div>
-            <div class="option">
+            <div class="option choose-option">
               <h3>$95</h3>
               <p>For non-prescription sunglasses or single-vision eyeglasses</p>
             </div>
@@ -75,48 +75,42 @@
             <h1>Who's the lucky recipient?</h1>
             <p>Share some details and add a note to go with your gift.</p>
 
-            <form action="#" method="POST">
-              <div class="input-group">
-                <label for="recipient-name">Recipient's Name</label>
-                <input
-                  type="text"
-                  id="recipient-name"
-                  name="recipient-name"
-                  placeholder="Recipient's Name"
-                />
-              </div>
+            <div class="input-group">
+              <input class="info-input" placeholder="Your ID" />
+            </div>
 
-              <div class="input-group">
-                <label for="recipient-email">Recipient's Email</label>
-                <input
-                  type="email"
-                  id="recipient-email"
-                  name="recipient-email"
-                  placeholder="Recipient's Email"
-                />
-              </div>
+            <div class="input-group">
+              <input class="info-input" placeholder="Your Last name" />
+            </div>
 
-              <div class="input-group">
-                <label for="your-name">Your Name</label>
-                <input
-                  type="text"
-                  id="your-name"
-                  name="your-name"
-                  placeholder="Your Name"
-                />
-              </div>
+            <div class="input-group">
+              <label for="your-name">Your Name</label>
+              <input
+                class="info-input"
+                type="text"
+                id="your-name"
+                name="your-name"
+                placeholder="Your Name"
+              />
+            </div>
 
-              <div class="input-group">
-                <label for="your-email">Your Email</label>
-                <input
-                  type="email"
-                  id="your-email"
-                  name="your-email"
-                  placeholder="Your Email"
-                />
-              </div>
-              <button type="submit">Add to cart</button>
-            </form>
+            <div class="input-group">
+              <label for="your-email">Your Email</label>
+              <input
+                class="info-input"
+                type="email"
+                id="your-email"
+                name="your-email"
+                placeholder="Your Email"
+              />
+            </div>
+
+            <button
+              class="js-cart-btn"
+              data-productId="1235-5689-5267-gift-card"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </div>

@@ -49,7 +49,7 @@ div {
   height: 100%;
   object-fit: cover;
 }
-.shop-now,
+/* .shop-now, */
 .off-showGiftCard {
   display: none;
 }
@@ -108,7 +108,9 @@ div {
 .option:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
-
+.choose-option {
+  border: 1px solid gray;
+}
 /* ask info chat gpt */
 .center-container {
   width: 100%;

@@ -10,9 +10,25 @@ export async function loadCartProducts() {
   await loadProductsFetch();
   let cartHtml = ``;
   let product;
+  let frameWidth = ``;
+  let productColor = ``;
   cart.forEach((cartItem) => {
     product = getProduct(cartItem.productId);
-
+    if (cartItem.productSize) {
+      frameWidth = ` <div class="product-size">
+            <h4>Frame Width - <span>${cartItem.productSize}</span></h4>
+          </div>
+          `;
+    }
+    if (cartItem.productColor) {
+      productColor = ` - 
+              <span>
+              ${
+                cartItem.productColor.charAt(0).toUpperCase() +
+                cartItem.productColor.slice(1)
+              }
+              </span>`;
+    }
     cartHtml += `
     <div class="productContainer">
         <div class="product-remove">
@@ -29,13 +45,7 @@ export async function loadCartProducts() {
         <div class="product-info-container">
           <div class="product-color">
             <h4>
-              ${product.name} - 
-              <span>
-              ${
-                cartItem.productColor.charAt(0).toUpperCase() +
-                cartItem.productColor.slice(1)
-              }
-              </span>
+              ${product.name} ${productColor}
             </h4>
           </div>
            <div class="product-color">
@@ -43,9 +53,7 @@ export async function loadCartProducts() {
               product.priceCents
             )}</span></h4>
           </div>
-          <div class="product-size">
-            <h4>Frame Width - <span>${cartItem.productSize}</span></h4>
-          </div>
+          ${frameWidth}
 
           <div class="product-quantity">
             <h4>
