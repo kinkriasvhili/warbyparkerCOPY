@@ -13,7 +13,6 @@ footer {
   width: 100%;
 }
 .gift-main-left {
-  margin-left: 5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,11 +44,11 @@ div {
   margin: 0;
 }
 .gift-main-right img {
-  width: 70%;
-  height: 100%;
+  width: 60%;
   object-fit: cover;
 }
 /* .shop-now, */
+.shop-now,
 .off-showGiftCard {
   display: none;
 }
@@ -155,6 +154,7 @@ h1 {
 }
 
 button {
+  margin-left: 1vw;
   width: 100%;
   padding: 12px;
   background-color: #006cdf;
@@ -168,4 +168,14 @@ button {
 
 button:hover {
   background-color: rgb(0, 89, 184);
+}
+.giftCardOff {
+  opacity: 0.6;
+  cursor: auto;
+}
+.giftCardOff:hover {
+  background-color: #006cdf;
+}
+.gift-main-container {
+  padding: 20px 0;
 }

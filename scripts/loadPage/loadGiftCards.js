@@ -7,7 +7,9 @@ import {
 } from "../../data/products.js";
 import { addToCart } from "../../data/cart.js";
 let info = [];
-
+let addCartBtn = document.querySelector(".gift-cart-add");
+let inputsElement = document.querySelectorAll(".info-input");
+let options = document.querySelectorAll(".option");
 async function giftCardShopLoad() {
   await loadProductsFetch();
   saveProductToStorage(products);
@@ -25,24 +27,50 @@ async function giftCardShopLoad() {
   });
 }
 
-function chooseOneAnswer() {
-  let options = document.querySelectorAll(".option");
+let allFilled;
 
+function addToButtonWorking(stateOfBtn) {
+  allFilled = stateOfBtn;
+  addCartBtn.disabled = !stateOfBtn;
+  addCartBtn.classList.remove("giftCardOff");
+  if (!stateOfBtn) {
+    addCartBtn.classList.add("giftCardOff");
+  }
+}
+
+function checkAnswers() {
+  addToButtonWorking(false);
+  let count = 0;
+  options.forEach((option) => {
+    if (option.classList.contains("choose-option")) {
+      count++;
+    }
+    if (count >= 2) {
+      addToButtonWorking(true);
+    } else {
+      addToButtonWorking(false);
+    }
+  });
+}
+
+function chooseOneAnswer() {
   options.forEach((optionContainer) => {
     optionContainer.addEventListener("click", (event) => {
       const qustionId = optionContainer.parentElement.getAttribute("optionsId");
-
       if (!optionContainer.classList.contains("choose-option")) {
         options.forEach((option) => {
           const removeQustionOptionId =
             option.parentElement.getAttribute("optionsId");
           if (qustionId == removeQustionOptionId) {
-            console.log(qustionId);
+            // console.log(qustionId);
             option.classList.remove("choose-option");
           }
         });
-        optionContainer.classList.add("choose-option");
+        if (!optionContainer.classList.contains("choose-option")) {
+          optionContainer.classList.add("choose-option");
+        }
       }
+      checkAnswers();
     });
   });
 }
@@ -87,6 +115,27 @@ function getCardInfo() {
     saveProductToStorage(newProducts);
   }
 }
+
+function checkInpits() {
+  addCartBtn.disabled = true;
+  addCartBtn.classList.add("giftCardOff");
+  //  choose-option
+  inputsElement.forEach((input) => {
+    input.addEventListener("keydown", (event) => {
+      addToButtonWorking(true);
+      checkAnswers();
+      inputsElement.forEach((input) => {
+        if (input.value.trim() === "") {
+          addCartBtn.disabled = true;
+          addCartBtn.classList.add("giftCardOff");
+          allFilled = false;
+        }
+      });
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   giftCardShopLoad();
+  checkInpits();
 });
