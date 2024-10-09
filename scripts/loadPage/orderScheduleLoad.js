@@ -6,6 +6,9 @@ import {
   calculateDeliveryDate,
 } from "../../data/delivery.js";
 import { removeOrder } from "../../data/delivery.js";
+let trueOrderIds = [];
+checkIfOrderIsMaden();
+
 function showDetails() {
   const detailsIcons = document.querySelectorAll(".details-active-icon i");
   const detailsInfos = document.querySelectorAll(".details-info");
@@ -45,7 +48,10 @@ export async function loadOrder() {
   let orders = JSON.parse(localStorage.getItem("orderPlace")) || [];
   let account = JSON.parse(localStorage.getItem("account")) || [];
   let quantity = 0;
-  orders.forEach((order, index) => {
+  // filteer orders
+  let filteredArray = orders.filter((id) => trueOrderIds.includes(id.orderId));
+  // filter order and make new array of filteredArray
+  filteredArray.forEach((order, index) => {
     if (order.cart.length > 1) {
       order.cart.forEach((cartItem) => {
         let { productId, productColor, productSize } = cartItem;
@@ -83,9 +89,9 @@ export async function loadOrder() {
               <!-- product START-->
               <div class="products">
                 ${productHtml}
-                
+
               </div>
-              
+
               <!-- product END -->
               <div class="details-container">
                 <div class="details-active-icon">
@@ -109,4 +115,31 @@ export async function loadOrder() {
   });
   removeOrder();
 }
-loadOrder();
+
+function checkIfOrderIsMaden() {
+  let ordersIds = [];
+  let accountsIds = [];
+  let orderMade = JSON.parse(localStorage.getItem("orderPlace"));
+  let accoungMade = JSON.parse(localStorage.getItem("account"));
+
+  accoungMade.forEach((acc) => {
+    accountsIds.push(acc.orderId);
+  });
+  orderMade.forEach((order) => {
+    ordersIds.push(order.orderId);
+  });
+  accountsIds.forEach((accId) => {
+    ordersIds.forEach((orderId) => {
+      if (orderId == accId) {
+        trueOrderIds.push(orderId);
+      }
+    });
+  });
+  console.log(trueOrderIds);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (JSON.parse(localStorage.getItem("account"))) {
+    loadOrder();
+  }
+});

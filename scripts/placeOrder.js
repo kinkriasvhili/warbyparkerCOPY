@@ -1,9 +1,15 @@
 const inputs = document.querySelectorAll(".requiredInput");
 const optionalInput = document.querySelector(".optionalInput");
-
 const pageButtonElement = document.querySelector(".orderPageButton");
 pageButtonElement.disabled = true;
 pageButtonElement.classList.add("orderPageButtonOff");
+//
+let order = JSON.parse(localStorage.getItem("orderPlace"));
+let lastOrder = order.length - 1;
+let { orderId } = order[lastOrder];
+
+//
+console.log(JSON.parse(localStorage.getItem("account")));
 
 pageButtonElement.addEventListener("click", () => {
   let account = JSON.parse(localStorage.getItem("account")) || [];
@@ -15,6 +21,7 @@ pageButtonElement.addEventListener("click", () => {
       city: inputs[3].value,
       state: inputs[4].value,
       ...(optionalInput ? { apt: optionalInput.value } : {}),
+      orderId,
     });
   }
   saveAccount(account);
