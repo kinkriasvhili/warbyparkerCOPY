@@ -16,7 +16,6 @@ let allFilled;
 async function giftCardShopLoad() {
   await loadProductsFetch();
   saveProductToStorage(products);
-
   let shopNowBtn = document.querySelector(".gifty-button");
   chooseOneAnswer();
 
@@ -140,4 +139,15 @@ function checkAnswers() {
 document.addEventListener("DOMContentLoaded", () => {
   giftCardShopLoad();
   checkInpits();
+  let timoutId;
+
+  addCartBtn.addEventListener("click", () => {
+    document.querySelector(".added").classList.remove("added-off");
+    if (timoutId) {
+      clearTimeout(timoutId);
+    }
+    timoutId = setTimeout(() => {
+      document.querySelector(".added").classList.add("added-off");
+    }, 1000);
+  });
 });
