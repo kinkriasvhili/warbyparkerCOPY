@@ -176,7 +176,7 @@ function addToSinglePageCart(productId, button) {
         productColor: product.color,
         productSize: product.size,
         productId: product.id,
-        quantity,
+        quantity: quantity - 1,
         cartId: cartId,
       });
     }

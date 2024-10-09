@@ -48,6 +48,7 @@ div {
   object-fit: cover;
 }
 /* .shop-now, */
+
 .shop-now,
 .off-showGiftCard {
   display: none;
@@ -178,4 +179,7 @@ button:hover {
 }
 .gift-main-container {
   padding: 20px 0;
+}
+.inputs-off {
+  display: none;
 }

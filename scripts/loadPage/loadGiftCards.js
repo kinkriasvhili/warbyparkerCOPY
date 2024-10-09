@@ -10,11 +10,12 @@ let info = [];
 let addCartBtn = document.querySelector(".gift-cart-add");
 let inputsElement = document.querySelectorAll(".info-input");
 let options = document.querySelectorAll(".option");
+let inputsCenterContainer = document.querySelector(".center-container");
+let allFilled;
+
 async function giftCardShopLoad() {
   await loadProductsFetch();
   saveProductToStorage(products);
-  getCardInfo();
-  addToCart();
 
   let shopNowBtn = document.querySelector(".gifty-button");
   chooseOneAnswer();
@@ -27,8 +28,6 @@ async function giftCardShopLoad() {
   });
 }
 
-let allFilled;
-
 function addToButtonWorking(stateOfBtn) {
   allFilled = stateOfBtn;
   addCartBtn.disabled = !stateOfBtn;
@@ -36,21 +35,6 @@ function addToButtonWorking(stateOfBtn) {
   if (!stateOfBtn) {
     addCartBtn.classList.add("giftCardOff");
   }
-}
-
-function checkAnswers() {
-  addToButtonWorking(false);
-  let count = 0;
-  options.forEach((option) => {
-    if (option.classList.contains("choose-option")) {
-      count++;
-    }
-    if (count >= 2) {
-      addToButtonWorking(true);
-    } else {
-      addToButtonWorking(false);
-    }
-  });
 }
 
 function chooseOneAnswer() {
@@ -71,6 +55,25 @@ function chooseOneAnswer() {
         }
       }
       checkAnswers();
+    });
+  });
+}
+
+function checkInpits() {
+  addCartBtn.disabled = true;
+  addCartBtn.classList.add("giftCardOff");
+  //  choose-option
+  inputsElement.forEach((input) => {
+    input.addEventListener("keydown", (event) => {
+      addToButtonWorking(true);
+
+      inputsElement.forEach((input) => {
+        if (input.value.trim() === "") {
+          addCartBtn.disabled = true;
+          addCartBtn.classList.add("giftCardOff");
+          allFilled = false;
+        }
+      });
     });
   });
 }
@@ -116,22 +119,21 @@ function getCardInfo() {
   }
 }
 
-function checkInpits() {
-  addCartBtn.disabled = true;
-  addCartBtn.classList.add("giftCardOff");
-  //  choose-option
-  inputsElement.forEach((input) => {
-    input.addEventListener("keydown", (event) => {
+function checkAnswers() {
+  addToButtonWorking(false);
+  let count = 0;
+  options.forEach((option) => {
+    if (option.classList.contains("choose-option")) {
+      count++;
+    }
+    if (count >= 2) {
       addToButtonWorking(true);
-      checkAnswers();
-      inputsElement.forEach((input) => {
-        if (input.value.trim() === "") {
-          addCartBtn.disabled = true;
-          addCartBtn.classList.add("giftCardOff");
-          allFilled = false;
-        }
-      });
-    });
+      checkInpits();
+      inputsCenterContainer.classList.remove("inputs-off");
+      getCardInfo();
+    } else {
+      addToButtonWorking(false);
+    }
   });
 }
 
