@@ -1,4 +1,4 @@
-.containerOfTerms {
+.containerOfUse {
   padding: 20px;
   border-bottom: 1px solid lightgray;
 }
@@ -19,4 +19,12 @@ p {
   margin-bottom: 20px;
   margin-top: 10px;
   font-size: 15px;
+}
+a {
+  text-decoration: none;
+  color: rgb(132, 204, 228);
+  transition: 0.2s;
+}
+a:hover {
+  color: rgb(113, 175, 196);
 }
