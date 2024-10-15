@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/page/quizz.css" />
+    <link rel="stylesheet" href="styles/page/eye-exams.css" />
+    <title>Eye Exam</title>
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+    <div class="quizz-container">
+      <div class="quizz-describtion">
+        <div class="quizz-quantity-container">
+          Qustion
+          <span class="qustion-number">1</span>
+          out of
+          <span class="qustion-quantity">5</span>
+        </div>
+        <div class="quizz-qustion-container">
+          <p class="quizz-qustion"></p>
+        </div>
+      </div>
+      <div class="quizz-answers quizAnswers">
+        <div class="quizAnswerContainer" answerId="1-1">
+          <div class="quizAnswerContainer"></div>
+        </div>
+        <div class="quizAnswerContainer" answerId="1-2">
+          <div class="quizAnswerContainer"></div>
+        </div>
+      </div>
+      <div class="quizz-management">
+        <button class="previous-btn quiz-manager" unanswerId="">
+          Previous
+        </button>
+      </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script type="module" src="scripts/loadPage/eye-examsLoad.js"></script>
+  </body>
+</html>
