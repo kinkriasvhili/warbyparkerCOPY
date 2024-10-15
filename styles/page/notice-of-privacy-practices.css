@@ -1,0 +1,19 @@
+.privacyContainer {
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+h3 {
+  font-size: 30px;
+}
+li,
+p {
+  line-height: 26px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 15px;
+}
