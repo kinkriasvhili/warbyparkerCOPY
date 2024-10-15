@@ -1,0 +1,226 @@
+body {
+  overflow-x: hidden;
+  background-color: white;
+}
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  background-image: url("../../images/virtual-vision-test-Images/virtual-vision-test-main.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .home-container {
+  color: black;
+  text-align: center;
+  position: relative;
+  bottom: none;
+  left: none;
+  top: none;
+  transform: translateX(0);
+  color: rgb(98, 98, 98);
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 600;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.home-container span {
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+.home-container .main-buttons button {
+  background-color: rgba(0, 73, 117, 1);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.home-container .main-buttons button:hover {
+  background-color: rgb(0, 58, 95);
+}
+.home-container a {
+  color: rgb(210, 70, 70);
+  transition: 0.2s;
+}
+.home-container a:hover {
+  color: rgb(190, 70, 70);
+}
+/* Videos */
+img,
+video {
+  width: 450px;
+  border: none;
+  background-color: white;
+  outline: none;
+  box-shadow: none;
+}
+.videos {
+  margin-top: 100px;
+}
+.videos-title {
+  color: rgb(14, 0, 48);
+  font-weight: bold;
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.mainVideoStyle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 90px;
+}
+.mainVideoStyleInfo {
+  margin: 0 20px;
+  max-width: 450px;
+  flex: 1;
+}
+
+.mainVideoStyleInfo h2 {
+  color: black;
+  font-size: 2rem;
+}
+.mainVideoStyleInfo p {
+  color: rgb(94, 94, 94);
+  font-size: 14px;
+  font-weight: bold;
+}
+.mainVideoStyleInfo span {
+  font-size: 12px;
+  font-weight: bolder;
+}
+/* chatGPT start */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.section {
+  margin-bottom: 40px;
+  padding: 10px;
+  background-color: #ffffff;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #e0e0e0;
+}
+section:nth-of-type(1) {
+  border-top: 1px solid #e0e0e0;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #4a5568;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* chatGPT2 */
+.container2 {
+  background-color: rgba(0, 217, 255, 0.059);
+  text-align: center;
+  padding: 50px 20px;
+}
+.container2 h1 {
+  font-size: 2em;
+  color: #333;
+}
+.container2 p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 30px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links button {
+  background-color: rgba(0, 73, 117, 1);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 30px;
+}
+.links button button:hover {
+  background-color: rgb(0, 58, 95);
+}
+.link {
+  color: #0074b7;
+}
+.centerDisclaimer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.disclaimer {
+  text-align: center;
+  max-width: 70vw;
+  background-color: white;
+  padding: 20px 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+.disclaimer a {
+  color: #0074b7;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: 0.2s;
+}
+.disclaimer a:hover {
+  text-decoration: underline;
+}
+/* chatGPT end */
+/* responsive */
+@media (max-width: 1100px) {
+  .mainVideoStyle {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  .mainVideoStyleVideo {
+    order: 1;
+    margin-top: 10px;
+  }
+  .mainVideoStyleInfo {
+    text-align: center;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+}
