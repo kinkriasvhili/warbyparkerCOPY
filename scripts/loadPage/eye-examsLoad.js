@@ -1,6 +1,7 @@
 import { loadHeader } from "./loadHeader.js";
 import { exams } from "../../data/exams.js";
 import { loadProductsFetch } from "../../data/products.js";
+let infoValues = [];
 
 let examIndex = 0;
 let qustionNumber = document.querySelector(".qustion-number"); // Kept as per original
@@ -9,7 +10,10 @@ let quizAnswer = document.querySelector(".quizz-answers"); // Kept as per origin
 let previousBtn = document.querySelector(".previous-btn");
 
 loadExam(exams[0]);
-
+function loadExam(exam) {
+  quizzQustion.innerHTML = exam.title; // Kept as per original
+  renderAnswers(exam);
+}
 function renderAnswers(exam) {
   let answersHtml = ``;
   exam.answers.forEach((answer) => {
@@ -41,9 +45,9 @@ function loadInputs() {
   <div class="inputs-container">
     <input type="text" placeholder="Write Down Your Name" id="name">
     <input type="text" placeholder="Write Down Your Address" id="address">
-    <input type="text" placeholder="Write Down Your Email" id="email">
-    <input type="text" placeholder="Write Down Your Mobile Phone" id="phone">
-    <button class="quizAnswerContainer" disabled>Next</button>
+    <input type="email" placeholder="Write Down Your Email" id="email">
+    <input type="number" placeholder="Write Down Your Mobile Phone" id="phone">
+    <button class="quizAnswerContainer inputsNext" disabled>Next</button>
   </div>
 `;
 
@@ -55,10 +59,10 @@ function loadInputs() {
   const emailInput = document.getElementById("email");
   const phoneInput = document.getElementById("phone");
   const nextButton = document.querySelector(".quizAnswerContainer");
-
+  const addInfosButton = document.querySelector(".inputsNext");
   // Function to check if all inputs are filled
+
   function checkInputs() {
-    let inputValues = [];
     if (
       nameInput.value &&
       addressInput.value &&
@@ -66,24 +70,32 @@ function loadInputs() {
       phoneInput.value
     ) {
       nextButton.disabled = false;
-      inputValues.push({
-        name: nameInput.value,
-        address: addressInput.value,
-        email: emailInput.value,
-        phone: phoneInput.value,
-      });
-      localStorage.setItem("inputValues", JSON.stringify(inputValues));
     } else {
       nextButton.disabled = true;
       // Disable the button
     }
   }
+  if (addInfosButton) {
+    addInfosButton.addEventListener("click", () => {
+      console.log("me");
 
+      infoValues.push({
+        name: nameInput.value,
+        address: addressInput.value,
+        email: emailInput.value,
+        phone: phoneInput.value,
+      });
+      saveInfo(infoValues);
+    });
+  }
   // Attach event listeners to all inputs to check on input change
 
   [nameInput, addressInput, emailInput, phoneInput].forEach((input) => {
     input.addEventListener("input", checkInputs);
   });
+}
+function saveInfo(info) {
+  localStorage.setItem("info", JSON.stringify(info));
 }
 function loadCalendar() {
   let answersHtml = `
@@ -110,7 +122,14 @@ function loadCalendar() {
   `;
 
   quizAnswer.innerHTML = answersHtml;
-
+  const quizAnswerContainerCalendar = document.querySelector(
+    ".quizAnswerContainerCalendar"
+  );
+  if (quizAnswerContainerCalendar) {
+    quizAnswerContainerCalendar.addEventListener("click", () => {
+      dateOfClientExam();
+    });
+  }
   const monthNameElement = document.querySelector(".month-name");
   const prevButton = document.querySelector(".prev");
   const nextButton = document.querySelector(".next");
@@ -175,6 +194,8 @@ function loadCalendar() {
   function checkIfDateSelected() {
     if (selectedDate) {
       nextButtonElement.disabled = false;
+      infoValues.push(selectedDate);
+      saveInfo(infoValues);
     } else {
       nextButtonElement.disabled = true;
     }
@@ -198,10 +219,32 @@ function loadCalendar() {
     renderCalendar(currentMonth, currentYear);
   });
 
-  // Initialize the calendar with the current month
   renderCalendar(currentMonth, currentYear);
 }
+function dateOfClientExam() {
+  document.querySelector(".quizz-quantity-container").innerHTML = "";
 
+  document.querySelector(".previous-btn").classList.add("priviousButtonNone");
+  document.querySelector(".previous-btn").style = "";
+  console.log(infoValues);
+  quizzQustion.innerHTML = "";
+  quizAnswer.innerHTML = "";
+
+  // Create HTML structure with the data
+  const htmlContent = `
+  <div class="info-card">
+    <h2>Date of your Exam</h2>
+    <p><strong>Name:</strong> ${infoValues[0].name}</p>
+    <p><strong>Address:</strong> ${infoValues[0].address}</p>
+    <p><strong>Email:</strong> ${infoValues[0].email}</p>
+    <p><strong>Phone:</strong> ${infoValues[0].phone}</p>
+    <p><strong>Date:</strong> ${infoValues[1]}</p>
+  </div>
+`;
+
+  // Insert the HTML into the page
+  quizAnswer.innerHTML = htmlContent;
+}
 function nextQuestion() {
   if (examIndex < exams.length - 1) {
     examIndex++;
@@ -226,11 +269,6 @@ function previousQuestion() {
       loadExam(exams[examIndex]);
     }
   }
-}
-
-function loadExam(exam) {
-  quizzQustion.innerHTML = exam.title; // Kept as per original
-  renderAnswers(exam);
 }
 
 function management() {
