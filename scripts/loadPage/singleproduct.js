@@ -15,8 +15,23 @@ import { addToFavourite } from "../../data/faovurite.js";
 import { getClickedProductId } from "../../htmlComponents/product.js";
 async function loadSingleProduct() {
   await loadProductsFetch();
-  const productId = JSON.parse(localStorage.getItem("singleProductId"));
-  const product = getProduct(productId);
+  let productId = JSON.parse(localStorage.getItem("singleProductId"));
+  let product = getProduct(productId);
+  // url start
+  // Check if the URL already has a product ID
+  const url = new URL(window.location.href);
+  let productUrl = url.searchParams.get("product");
+
+  if (!productUrl && productId) {
+    // If no product ID is in the URL but we have one from localStorage, redirect
+    const productIdUrl = productId;
+    window.location.href = `singleproduct.html?product=${productIdUrl}`;
+  } else {
+    console.log(`Current product in URL: ${productUrl}`);
+    productId = productUrl;
+    product = getProduct(productUrl);
+  }
+  // url end
   const singleProductCotainer = document.querySelector(
     ".singleProductCotainer"
   );
