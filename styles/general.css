@@ -35,3 +35,9 @@ a {
 a:hover {
   color: #2c2c2c;
 }
+
+button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}

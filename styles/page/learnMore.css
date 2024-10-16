@@ -1,0 +1,90 @@
+html,
+body {
+  overflow-x: hidden;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+.main-container {
+  position: relative;
+  padding: 0 40px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 100px 0;
+}
+span {
+  font-size: 14px;
+  font-weight: bolder;
+}
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 40px;
+}
+h3 {
+  font-size: 2rem;
+  max-width: 800px;
+}
+p {
+  font-size: 15px;
+  font-weight: 10px;
+}
+.peopleImage img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  padding: 50px 0;
+}
+.howItWorksBlackWomen {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+.blackWomenImageContainer {
+  margin: 90px 0;
+}
+.blackWomenImageContainer img {
+  width: 100%;
+}
+.power-icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  width: 100%;
+}
+.icons img {
+  width: 100%;
+}
+.icons-info {
+  width: 80%;
+  max-width: 1000px;
+  margin: 40px 0;
+}
+.shop-places-container {
+  width: 100%;
+}
+.shop-places-container img {
+  width: 100%;
+}
+.peopleImage2 {
+  margin: 40px 0;
+}
+.oneIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 60px 0;
+  padding-bottom: 50px;
+  border-bottom: 1px solid lightgray;
+}
+.oneIcon img {
+  width: 100px;
+}
