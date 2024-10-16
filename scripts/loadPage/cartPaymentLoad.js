@@ -62,9 +62,13 @@ export async function loadCartPayment(deliveryPriceCents) {
         </div>`;
   document.querySelector(".payment-order-container").innerHTML = paymentHtml;
   const placeOrderButton = document.querySelector(".js-placeOrder-button");
+  const linkOfotherPage = document.querySelector(
+    ".place-order-button-container a"
+  );
   if (cart.length == 0) {
     placeOrderButton.disabled = true;
     placeOrderButton.classList.add("placeOrderButtonOff");
+    linkOfotherPage.style.pointerEvents = "none";
     document
       .querySelector(".delivery-container-js")
       .classList.add("deliveryOff");
@@ -73,6 +77,7 @@ export async function loadCartPayment(deliveryPriceCents) {
     document
       .querySelector(".delivery-container-js")
       .classList.remove("deliveryOff");
+    linkOfotherPage.style.pointerEvents = "pointer";
   }
   /**
    *
