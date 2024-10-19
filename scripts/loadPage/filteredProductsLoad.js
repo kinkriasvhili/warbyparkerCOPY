@@ -1,4 +1,6 @@
 import { productHtml } from "../../htmlComponents/product.js";
+import { addToFavourite } from "../../data/faovurite.js";
+import { addToCart } from "../../data/cart.js";
 import { products } from "../../data/products.js";
 import { loadProductsFetch } from "../../data/products.js";
 export async function loadFilteredProducts(type) {
@@ -69,17 +71,15 @@ export async function loadFilteredProducts(type) {
 }
 
 function filteredUrl(productNumbers, type) {
+  addToCart();
+  addToFavourite();
   let productsHtml = ``;
-
   const url = new URL(window.location.href);
   let productUrl = url.searchParams.get("products");
   let productIndexFromUrl = [];
   let urlString = ``;
-  if (
-    document
-      .querySelector(".buttons-box button")
-      .classList.contains("filteredActivated")
-  ) {
+  let clickButton = document.querySelector(".buttons-box button");
+  if (clickButton.classList.contains("filteredActivated")) {
     productNumbers.forEach((num) => {
       urlString += `-${num}`;
     });
