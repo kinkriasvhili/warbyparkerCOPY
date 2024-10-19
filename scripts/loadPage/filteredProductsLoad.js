@@ -38,7 +38,8 @@ export async function loadFilteredProducts(type) {
       priceCents = parseInt(filter.priceCents.replace("$", ""), 10) * 100;
     }
   });
-  products.forEach((product) => {
+  let productNumbers = [];
+  products.forEach((product, index) => {
     console.log();
 
     if (
@@ -59,11 +60,48 @@ export async function loadFilteredProducts(type) {
       product.type == type
     ) {
       // console.log(type);
+      productNumbers.push(index);
       productsHtml += productHtml(product);
     }
   });
   productsContainerElement.innerHTML = productsHtml;
+  filteredUrl(productNumbers, type);
 }
-// if (filterId == p.parentElement.parentElement.getAttribute("filterId")) {
-//   p.classList.remove("activeFilter");
-// }
+
+function filteredUrl(productNumbers, type) {
+  let productsHtml = ``;
+
+  const url = new URL(window.location.href);
+  let productUrl = url.searchParams.get("products");
+  let productIndexFromUrl = [];
+  let urlString = ``;
+  if (
+    document
+      .querySelector(".buttons-box button")
+      .classList.contains("filteredActivated")
+  ) {
+    productNumbers.forEach((num) => {
+      urlString += `-${num}`;
+    });
+    console.log(productNumbers.length);
+    if (productNumbers.length == 0) {
+      urlString = "NOPRODUCT";
+    }
+    window.location.href = `${type}.html?products=${urlString}`;
+    console.log(window.location.href);
+  } else {
+    if (productNumbers.length == 0) {
+      urlString = "";
+    }
+    if (productUrl) {
+      productIndexFromUrl = productUrl.split("-").filter(Boolean).map(Number);
+      products.forEach((product, index) => {
+        if (productIndexFromUrl.includes(index)) {
+          productsHtml += productHtml(product);
+        }
+      });
+      document.querySelector(".products").innerHTML = productsHtml;
+    } else {
+    }
+  }
+}

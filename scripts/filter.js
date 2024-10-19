@@ -30,6 +30,9 @@ export async function filter(type) {
   document
     .querySelector(".buttons-box button")
     .addEventListener("click", () => {
+      document
+        .querySelector(".buttons-box button")
+        .classList.add("filteredActivated");
       loadFilteredProducts(type);
     });
 }
