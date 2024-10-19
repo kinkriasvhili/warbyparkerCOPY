@@ -120,9 +120,6 @@ main .home-container {
   padding-bottom: 50px;
 }
 
-.products::-webkit-scrollbar {
-  display: none;
-}
 /* video */
 .video-container {
   padding-bottom: 40px;
