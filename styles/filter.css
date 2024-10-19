@@ -1,0 +1,162 @@
+body {
+  overflow-x: hidden;
+}
+.filter-main-container {
+  position: relative;
+}
+.info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.info-container span {
+  font-weight: bold;
+  font-size: 13px;
+}
+.info-container span i {
+  margin: 0;
+  margin-right: 10px;
+}
+.eyeSpan {
+  font-weight: bolder;
+}
+.info-container h3 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+.info-container p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+}
+.info-container a {
+  color: rgb(153, 0, 205);
+  font-weight: bolder;
+  transition: 0.2s;
+}
+.info-container a:hover {
+  color: rgb(145, 0, 194);
+  font-weight: bolder;
+}
+.info-container button {
+  max-width: 100px;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.info-container button:hover {
+  background-color: rgb(252, 252, 252);
+}
+/* filter */
+.filter-container {
+  z-index: 11;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1), 2px -2px 5px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 70vh;
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden;
+  display: none;
+}
+.buttons-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons-box button {
+  width: 90%;
+  margin-bottom: 30px;
+  padding: 15px;
+  border: red 1px solid;
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(66, 66, 66);
+  background-color: rgba(255, 0, 0, 0.055);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.buttons-box button:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* this styles comes from javascript needs */
+.filter-active {
+  display: block;
+}
+.filter-container img {
+  display: none;
+}
+.filter-menu ul div:nth-child(1) p {
+  margin-top: -20px;
+}
+.filter-menu ul div p {
+  cursor: pointer;
+  padding: 10px 0;
+  border-radius: 20px;
+  margin-right: 10px;
+  padding-left: 10px;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+}
+
+.filter-title-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.filter-title-container i {
+  cursor: pointer;
+}
+.activeFilter {
+  border: 1px solid black !important;
+  box-sizing: border-box;
+  border-style: solid;
+}
+ul {
+  display: none;
+}
+.ulActive {
+  display: block;
+}
+.fa-chevron-down {
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Rotated state (chevron pointing up) */
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* Dark overlay to cover the page */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+  z-index: 998; /* Below filter container but above other elements */
+}
+
+/* Ensure the filter container is above the overlay */
+.filter-container {
+  position: fixed;
+  z-index: 999; /* Above the overlay */
+}

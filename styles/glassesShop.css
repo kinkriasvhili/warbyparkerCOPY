@@ -7,7 +7,9 @@
   width: 100%;
   justify-content: center;
 }
-
+body {
+  overflow-x: hidden;
+}
 .products .product {
   display: flex;
   justify-self: center;
