@@ -1,8 +1,4 @@
 export function headerStyle() {
-  // Select elements for Home Try-On
-  const buttonTryOn = document.getElementById("homeTryOnBtn-js");
-  const windowTryOn = document.getElementById("windowHomeTryOn-js");
-
   // Select elements for EyeGlasses
   const buttonEyeGlasses = document.getElementById("eyeGlassesBtn-js");
   const windowEyeGlasses = document.getElementById("windoweyeGlasses-js");
@@ -34,17 +30,6 @@ export function headerStyle() {
 
   // Function to handle clicks outside
   function handleClickOutside(event) {
-    // Check for Home Try-On
-    if (
-      !windowTryOn.contains(event.target) &&
-      !buttonTryOn.contains(event.target)
-    ) {
-      if (windowTryOn.classList.contains("show-window-homeTryOn")) {
-        windowTryOn.classList.remove("show-window-homeTryOn");
-        windowTryOn.classList.add("show-window-homeTryOn-off");
-      }
-    }
-
     // Check for EyeGlasses
     if (
       !windowEyeGlasses.contains(event.target) &&
@@ -82,14 +67,7 @@ export function headerStyle() {
     }
   }
   // Add event listeners to buttons
-  buttonTryOn.addEventListener("click", () =>
-    toggleWindow(
-      buttonTryOn,
-      windowTryOn,
-      "show-window-homeTryOn",
-      "show-window-homeTryOn-off"
-    )
-  );
+
   buttonEyeGlasses.addEventListener("click", () =>
     toggleWindow(
       buttonEyeGlasses,
