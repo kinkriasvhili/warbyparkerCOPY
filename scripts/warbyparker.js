@@ -1,6 +1,6 @@
 import { loadProductsFetch, products } from "../data/products.js";
 import { formatCurrency } from "./utils/money.js";
-import { loadHeader } from "warbyparkerCOPY/scripts/loadPage/loadHeader.js";
+import { loadHeader } from "https://kinkriasvhili.github.io/warbyparkerCOPY/scripts/loadPage/loadheader.js";
 import { addToFavourite } from "../data/faovurite.js";
 import { loadFooter } from "warbyparkerCOPY/scripts/loadPage/loadHeader.js";
 import { addToCart } from "../data/cart.js";
